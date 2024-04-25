@@ -1,4 +1,4 @@
-<database timestamp="1707590524">
+<database timestamp="1714066861">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29423,7 +29423,7 @@ The giant spider-like boss fought at the end of Space Junk Galaxy's third missio
 		<files />
 	</object>
 	<object id="Tongari">
-		<name>Spiny Hermit [Underwater]</name>
+		<name>Spinecone [Underwater]</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -29437,12 +29437,12 @@ An undefeatable enemy that carries a white cone-shaped shell with spikes on its 
 		<field id="1" type="bool" name="Use Collision Mesh?" notes="If enabled, it will also load its collision mesh." values="" />
 	</object>
 	<object id="Tongari2D">
-		<name>Spiny Hermit [2D]</name>
+		<name>Spinecone [2D]</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A variant of a Spiny Hermit for 2D sections.
+A variant of a Spinecone for 2D sections.
 
 -- CLASS NOTES --
 An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit.</notes>
