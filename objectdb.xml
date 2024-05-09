@@ -1,4 +1,4 @@
-<database timestamp="1714066861">
+<database timestamp="1715075086">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1285,7 +1285,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="BasaBasa">
-		<name>Swooper</name>
+		<name>Bat</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -1299,12 +1299,12 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
 	</object>
 	<object id="BasaBasaIce">
-		<name>Ice Swooper</name>
+		<name>Ice Bat</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy Swooper that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
+An icy bat that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
 
 -- CLASS NOTES --
 A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up.</notes>
