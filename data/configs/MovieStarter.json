@@ -1,8 +1,55 @@
 {
     "InternalName": "MovieStarter",
     "Name": "MovieStarter",
-    "Notes": "",
+    "Notes": "Starts and plays a THP cutscene video which interrupts the current game scene.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movie ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": true,
+            "Description": "The target movie to play. Using any value not listed will crash the game.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "PrologueA (As Luigi, this movie gets skipped)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "PrologueB (Sends you to Grand Star Rescue)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "FinalBattle, FinalBattleLuigi as Luigi (Sends you to Scenario Select for Bowser's Galaxy Reactor. Can be skipped after watching once.)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "EpilogueA, EpilogueALuigi as Luigi (Screen stays White afterwards, but gameplay is resumed)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "EndingA, EndingALuigi as Luigi (Screen stays Black afterwards, but gameplay is resumed)"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "EndingB"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated, making the movie begin.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activates after the movie finishes",
+            "Exclusives": []
+        }
+    }
 }

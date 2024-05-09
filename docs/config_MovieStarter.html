@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: MovieStarter</h1>
-			<p></p>
+			<p>Starts and plays a THP cutscene video which interrupts the current game scene.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>True</td><td><p><b>Movie ID</b>: The target movie to play. Using any value not listed will crash the game.</p></td><td><ul><li>0: PrologueA (As Luigi, this movie gets skipped)</li><li>1: PrologueB (Sends you to Grand Star Rescue)</li><li>2: FinalBattle, FinalBattleLuigi as Luigi (Sends you to Scenario Select for Bowser's Galaxy Reactor. Can be skipped after watching once.)</li><li>3: EpilogueA, EpilogueALuigi as Luigi (Screen stays White afterwards, but gameplay is resumed)</li><li>5: EndingA, EndingALuigi as Luigi (Screen stays Black afterwards, but gameplay is resumed)</li><li>6: EndingB</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated, making the movie begin.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Activates after the movie finishes</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

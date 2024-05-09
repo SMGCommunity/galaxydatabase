@@ -1,4 +1,4 @@
-<database timestamp="1715075086">
+<database timestamp="1715289052">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19513,8 +19513,9 @@ If the player stays inside this area and fulfills the specified conditions (Obj_
 Starts and plays a THP cutscene video which interrupts the current game scene.
 
 -- CLASS NOTES --
-</notes>
+Starts and plays a THP cutscene video which interrupts the current game scene.</notes>
 		<files />
+		<field id="0" type="int" name="Movie ID" notes="The target movie to play. Using any value not listed will crash the game." values="0 = PrologueA (As Luigi, this movie gets skipped), 1 = PrologueB (Sends you to Grand Star Rescue), 2 = FinalBattle, FinalBattleLuigi as Luigi (Sends you to Scenario Select for Bowser's Galaxy Reactor. Can be skipped after watching once.), 3 = EpilogueA, EpilogueALuigi as Luigi (Screen stays White afterwards, but gameplay is resumed), 5 = EndingA, EndingALuigi as Luigi (Screen stays Black afterwards, but gameplay is resumed), 6 = EndingB" />
 	</object>
 	<object id="MShapeRelayPlanet">
 		<name>Gold Leaf -- M-Shaped Planet</name>
