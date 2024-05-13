@@ -1,4 +1,4 @@
-<database timestamp="1715289052">
+<database timestamp="1715607911">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14354,7 +14354,7 @@ A generic Toad NPC.
 The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly.</notes>
 		<files />
 		<field id="1" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
-		<field id="2" type="int" name="Behavior" notes="The animation/behavior to be used." values="-1 = Default, 0 = Spinning, 1 = Breakdancing, 2 = Faster spinning, 3 = Far talking range, 4 = Connects to collision below, 5 = Swimming, 6 = Digging, 7 = Sleeping, 8 = Spawns Power Star, 9 = Guarding, 10 = Excited/jumping, 11 = Scared, 12 = Holds Star Bit, 13 = Panicking while running, 14 = Scared &amp; turns around (SMG2 only)" />
+		<field id="2" type="int" name="Behavior" notes="The animation/behavior to be used." values="-1 = Default, 0 = Spinning, 1 = Breakdancing, 2 = Faster spinning, 3 = Far talking range, 4 = Connects to collision below (Broken in SMG2), 5 = Swimming, 6 = Digging, 7 = Sleeping, 8 = Spawns Power Star, 9 = Guarding, 10 = Excited/jumping, 11 = Scared, 12 = Holds Star Bit, 13 = Panicking while running, 14 = Scared &amp; turns around (SMG2 only)" />
 		<field id="3" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star and spawn it after triggering the correct event flow." values="" />
 		<field id="4" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4." values="-1 = Appears immediately, 0 = Gets launched from box" />
 		<field id="5" type="bool" name="Strict LOD Distances?" notes="If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models." values="" />
