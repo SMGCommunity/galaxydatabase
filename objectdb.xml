@@ -1,4 +1,4 @@
-<database timestamp="1715607911">
+<database timestamp="1716830920">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5069,6 +5069,7 @@ An area that controls Matter Splatter effects.
 An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.</notes>
 		<files />
 		<field id="0" type="int" name="Display Type" notes="Specifies how the compatible objects are clipped." values="-1 = Hide portions in ClipArea instances, 0 = Show portions in ClipArea instances" />
+		<field id="1" type="int" name="Rim Setting" notes="Changes the Rim of the effect on models. The table with the values for this is hardcoded.  Bulb Yoshi's effect takes priority over this functionality." values="0 = No Rim, 1 = Blue Rim (Default), 2 = Brown Rim, 3 = Thick Beige Rim, 4 = Thick Pink Rim, 5 = White Rim" />
 	</object>
 	<object id="ClipFieldFillDraw">
 		<name>Fill Bright Matter Splatter Surface Controller [Broken]</name>

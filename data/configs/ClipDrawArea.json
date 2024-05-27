@@ -23,6 +23,40 @@
             ],
             "Exclusives": []
         },
+        "Obj_arg1": {
+            "Name": "Rim Setting",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Changes the Rim of the effect on models. The table with the values for this is hardcoded.  Bulb Yoshi's effect takes priority over this functionality.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "No Rim"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Blue Rim (Default)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Brown Rim"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Thick Beige Rim"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Thick Pink Rim"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "White Rim"
+                }
+            ],
+            "Exclusives": []
+        },
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,
