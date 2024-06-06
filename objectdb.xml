@@ -1,4 +1,4 @@
-<database timestamp="1716830920">
+<database timestamp="1717682401">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -22614,8 +22614,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large rotating block used in the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxMoveStepB">
 		<name>Gusty Garden -- Small Rotated Gravity Scramble Block</name>
@@ -22626,8 +22627,9 @@ A large rotating block used in the third mission.
 A small moving block used in the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxMoveStepC">
 		<name>Gusty Garden -- Small Gravity Scramble Block</name>
@@ -22638,8 +22640,9 @@ A small moving block used in the third mission.
 A small moving block used in the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxPlanetA">
 		<name>Gusty Garden -- Gravity Scramble Starting Planet</name>
@@ -22650,8 +22653,9 @@ A small moving block used in the third mission.
 The first group of large block planets visited during the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxPlanetB">
 		<name>Gusty Garden -- Gravity Scramble Block Pair Planet</name>
@@ -22662,8 +22666,9 @@ The first group of large block planets visited during the third mission.
 A pair of two large block planets visited during the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxPlanetC">
 		<name>Gusty Garden -- Gravity Scramble Long Planet</name>
@@ -22674,8 +22679,9 @@ A pair of two large block planets visited during the third mission.
 The long group of large block planets visited during the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxPlanetD">
 		<name>Gusty Garden -- Gravity Scramble Cylinder Planet</name>
@@ -22686,8 +22692,9 @@ The long group of large block planets visited during the third mission.
 A small cylindrical planet segment visited during the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionBoxPlanetE">
 		<name>Gusty Garden -- Gravity Scramble Cannons Planet</name>
@@ -22698,8 +22705,9 @@ A small cylindrical planet segment visited during the third mission.
 The last group of large block planets visited during the third mission.
 
 -- CLASS NOTES --
-</notes>
+An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</notes>
 		<files />
+		<field id="0" type="bool" name="Starting State" notes="Determines the starting state of the object" values="-1 = Off (Default), 0 = On" />
 	</object>
 	<object id="QuestionCoin">
 		<name>? Coin</name>

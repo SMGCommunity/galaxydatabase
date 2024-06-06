@@ -18,7 +18,37 @@
 		</header>
 		<div class="contents">
 			<h1>Config: QuestionBoxGalleryObj</h1>
-			<p></p>
+			<p>An object that can have an On and Off state based on Switches. Objects with "Planet" in the name have a different "Hio". Objects with "PlanetA" in the name have an infinite far clip distance</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Starting State</b>: Determines the starting state of the object</p></td><td><ul><li>-1: Off (Default)</li><li>0: On</li></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Movement Speed / Time</b>: The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Acceleration Time</b>: The time in frames it takes for the object to reach the movement speed set at this point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Stop Time</b>: The time in frames the object waits at this point before it continues moving again.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Speed Type</b>: Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.</p></td><td><ul><li>-1: Point_arg0 specifies movement speed</li><li>1: Point_arg0 specifies time until next point</li></ul></td></tr>
+			</table>
+			<h2>MapParts arguments</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>RotateSpeed</td><td>SMG1</td><td>False</td><td><p><b>Rotate Speed</b>: The speed at which this object rotates. Curiously, the game sets the default value of this to 0x7F7FFFFF and not Zero.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>When activated, the object will switch to it's "On" state</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>When activated, the object will switch to it's "Off" state</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>False</td><td><p>The path that it can move on.</p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG1</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

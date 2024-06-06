@@ -1,8 +1,101 @@
 {
     "InternalName": "QuestionBoxGalleryObj",
     "Name": "QuestionBoxGalleryObj",
-    "Notes": "",
+    "Notes": "An object that can have an On and Off state based on Switches. Objects with \"Planet\" in the name have a different \"Hio\". Objects with \"PlanetA\" in the name have an infinite far clip distance",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Starting State",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Determines the starting state of the object",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Off (Default)"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "On"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Point_arg0 specifies movement speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Point_arg0 specifies time until next point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateSpeed": {
+            "Name": "Rotate Speed",
+            "Games": 1,
+            "Description": "The speed at which this object rotates. Curiously, the game sets the default value of this to 0x7F7FFFFF and not Zero.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "When activated, the object will switch to it's \"On\" state",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "When activated, the object will switch to it's \"Off\" state",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
