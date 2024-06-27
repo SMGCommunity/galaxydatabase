@@ -1,8 +1,79 @@
 {
     "InternalName": "SkeletalFishBoss",
     "Name": "SkeletalFishBoss",
-    "Notes": "",
+    "Notes": "The skeletal shark boss fought in Bonefin Galaxy. Needs at least one SkeletalFishBossRail to be present.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Phase Count",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of phases the fight will have. Defaults to 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Guard Count",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of Guard Fish that will be spawned. Defaults to 4.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "When activated, the boss battle begins.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Used to link to SubmarineVolcanoBigColumn and the unused SubmarineVolcanoSmallColumn. Also links with BirdLouseS and BirdLouseL.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Spawns a power star upon defeat. Requires a properly setup scenario with スカルシャーク as the PowerStarAppearObj.",
+            "Exclusives": []
+        },
+        "NamePos": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "マリオ再セット位置1",
+                    "Notes": "The position to place mario during the first cutscene."
+                },
+                {
+                    "Value": "マリオ再セット位置2",
+                    "Notes": "The position to place mario during the other cutscenes."
+                }
+            ],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 1,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Exclusives": []
+        }
+    }
 }

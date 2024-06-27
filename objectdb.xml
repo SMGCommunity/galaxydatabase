@@ -1,4 +1,4 @@
-<database timestamp="1717682401">
+<database timestamp="1719512440">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25294,20 +25294,23 @@ A useless object that has no actual effect in-game.
 The skeletal shark boss fought in Bonefin Galaxy.
 
 -- CLASS NOTES --
-</notes>
+The skeletal shark boss fought in Bonefin Galaxy. Needs at least one SkeletalFishBossRail to be present.</notes>
 		<files />
+		<field id="0" type="int" name="Phase Count" notes="The number of phases the fight will have. Defaults to 3." values="" />
+		<field id="1" type="int" name="Guard Count" notes="The number of Guard Fish that will be spawned. Defaults to 4." values="" />
 	</object>
 	<object id="SkeletalFishBossRail">
 		<name>Kingfin Subpath</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 Specifies an individual subpath that Kingfin can move on.
 
 -- CLASS NOTES --
-</notes>
+Specifies an individual subpath that Kingfin can move on. These also determind when and where the Guard Fishes spawn.</notes>
 		<files />
+		<field id="0" type="int" name="Rail ID" notes="The ID of this rail. Used by SkeletalFishBoss to decide what path to use for each phase." values="" />
 	</object>
 	<object id="SkullPlanet">
 		<name>Boo's Boneyard -- Starting Planet</name>

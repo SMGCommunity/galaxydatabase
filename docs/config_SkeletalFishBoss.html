@@ -18,7 +18,35 @@
 		</header>
 		<div class="contents">
 			<h1>Config: SkeletalFishBoss</h1>
-			<p></p>
+			<p>The skeletal shark boss fought in Bonefin Galaxy. Needs at least one SkeletalFishBossRail to be present.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Phase Count</b>: The number of phases the fight will have. Defaults to 3.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Guard Count</b>: The number of Guard Fish that will be spawned. Defaults to 4.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>When activated, the boss battle begins.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Group</td><td>SMG1</td><td>False</td><td><p>Used to link to SubmarineVolcanoBigColumn and the unused SubmarineVolcanoSmallColumn. Also links with BirdLouseS and BirdLouseL.</p></td><td><ul></ul></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG1</td><td>True</td><td><p>Spawns a power star upon defeat. Requires a properly setup scenario with スカルシャーク as the PowerStarAppearObj.</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>NamePos</td><td>SMG1</td><td>False</td><td><p>Additional placements that can be freely placed.</p></td><td><ul><li>マリオ再セット位置1: The position to place mario during the first cutscene.</li><li>マリオ再セット位置2: The position to place mario during the other cutscenes.</li></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>SearchTurtle</td><td>SMG1</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
