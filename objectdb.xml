@@ -1,4 +1,4 @@
-<database timestamp="1719512440">
+<database timestamp="1725462755">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -20010,7 +20010,7 @@ A set of Rainbow Notes that can be collected in order to activate a switch. It c
 		<field id="1" type="float" name="Appearance Speed" notes="How fast the creator note moves along the path. Requires Obj_arg3 set to any value between 1 and 6 inclusive. Default is 13." values="" />
 		<field id="2" type="int" name="Time Limit" notes="How long it takes before the notes disappear again. Default is 20." values="" />
 		<field id="3" type="int" name="Appearance Type" notes="Specifies how the individual notes appear and whether a short cutscene should be played or not." values="-1 = Notes already there, 1 = Single note appears, moves along path and creates other notes, starts appearance camera, 2 = Single note appears, moves along path and creates other notes, starts appearance camera, 3 = Single note moves on path and creates trail of notes, cutscene runs until all notes have appeared, 4 = Notes appear one by one, starts appearance camera, 5 = Notes appear one by one, 6 = Notes appear one by one, no appearance jingle plays" />
-		<field id="4" type="int" name="Song Type" notes="Specifies the song that should be played." values="-2 = Low ascending notes, -1 = Ascending notes, 0 = Extended SMB Theme Intro (unused), 1 = SMB Theme Intro (unused), 2 = SMB Underground, 3 = Extended SMB Theme Intro (unused), 4 = SMB Underwater, 5 = SMW Bonus Stage" />
+		<field id="4" type="int" name="Song Type" notes="Specifies the song that should be played." values="-2 = Low ascending notes, -1 = Ascending notes, 0 = Extended SMB Theme Intro (unused), 13 notes, 1 = SMB Theme Intro (unused), 7 notes, 2 = SMB Underground, 43 notes, 3 = SMB Theme Intro (unused), 7 notes, 4 = SMB Underwater, 46 notes, 5 = SMW Bonus Stage, 64 notes" />
 		<field id="5" type="int" name="Completion SFX Type" notes="Can be used to enable the completion jingle." values="-1 = Don't play completion jingle, 0 = Play completion jingle" />
 		<field id="6" type="int" name="BGM Change Type" notes="How the stage's BGM will be changed while the notes are active." values="-1 = Mute stage's BGM, 1 = Lower stage's BGM volume" />
 		<field id="7" type="int" name="Power Star Type" notes="Specifies whether a Power Star should be spawned and how it appears." values="-1 = Doesn't spawn Power Star, 1 = Spawn Power Star from object's position, 2 = Spawn Power Star from note's position, 3 = Spawn Power Star from note's position" />
