@@ -18,7 +18,18 @@
 		</header>
 		<div class="contents">
 			<h1>Config: MagicBell</h1>
-			<p></p>
+			<p>A pink-golden bell that can be interacted with by the player and enable a switch afterwards. It can be interacted with by jumping on it, performing a spin attack or - most notably - touching it with the star pointer, making it the only switch that can be activated by the player's cursor.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Activates after player interaction</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>Player2Targetable</td><td>SMG1</td><td><p>Cannot be actiavted when Player 2 points at the bell. However Player 2 can shoot Starbits at it to activate the switch, which Player 1 can't, as they immediately activate the bell when hovering it with their pointer</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
