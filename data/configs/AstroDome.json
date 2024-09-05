@@ -1,8 +1,18 @@
 {
     "InternalName": "AstroDome",
     "Name": "AstroDome",
-    "Notes": "",
+    "Notes": "The enterable Domes on the Comet Observatory",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Dome",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "0 Terrace\n1 Fountain\n2 Kitchen\n3 Bedroom\n4 Engine\n5 Garden",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

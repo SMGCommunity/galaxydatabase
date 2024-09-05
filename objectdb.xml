@@ -1,4 +1,4 @@
-<database timestamp="1725478152">
+<database timestamp="1725547720">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -637,8 +637,9 @@ The rotating gears found inside the glass of the Comet Observatory.
 The interior of a Dome.
 
 -- CLASS NOTES --
-</notes>
+The enterable Domes on the Comet Observatory</notes>
 		<files />
+		<field id="0" type="int" name="Dome" notes="0 Terrace&#10;1 Fountain&#10;2 Kitchen&#10;3 Bedroom&#10;4 Engine&#10;5 Garden" values="" />
 	</object>
 	<object id="AstroDomeAsteroid">
 		<name>Level Select Asteroids</name>
