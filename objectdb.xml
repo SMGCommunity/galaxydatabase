@@ -1,4 +1,4 @@
-<database timestamp="1725547720">
+<database timestamp="1730565860">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -22780,7 +22780,7 @@ A rabbit that be found in several galaxies, including Gold Leaf Galaxy and Freez
 A cute rabbit NPC that can be talked to.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Yellow, 1 = Blue" />
-		<field id="1" type="int" name="Behavior" notes="How it behaves." values="-1 = Undefined, do not use, 1 = Normal, 2 = Jumps up, 3 = Long jump" />
+		<field id="1" type="int" name="Behavior" notes="How it behaves." values="-1 = Undefined, do not use, 0 = (SMG1 only) Follows a path and disappears when reaching the last path point, then activates SW_DEAD., 1 = Normal, 2 = Jumps up, 3 = Long jump" />
 	</object>
 	<object id="RaceRail">
 		<name>Race Path</name>
