@@ -1,8 +1,8 @@
 {
     "InternalName": "BgmProhibitArea",
     "Name": "BgmProhibitArea",
-    "Notes": "",
+    "Notes": "An area that sets the MuteGroup of the currently playing BGM to state 8 when entered, if used in Deep Dark Galaxy (OceanPhantomCaveGalaxy). State 8 of BGM_GALAXY_05 (Deep Dark's music) is set to lower the volume to 0, effectively muting it. It resets to State 1 when leaving the area. This area is likely an early development leftover and its effect can easily be achieved with a ChangeBgmCube as well.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {}
 }

@@ -1,4 +1,4 @@
-<database timestamp="1730565860">
+<database timestamp="1738357235">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2267,7 +2267,7 @@ Changes the background music using the stage's music information in StageBgmInfo
 An area that mutes Deep Dark Galaxy's main background music (MBGM_GALAXY_05) when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that sets the MuteGroup of the currently playing BGM to state 8 when entered, if used in Deep Dark Galaxy (OceanPhantomCaveGalaxy). State 8 of BGM_GALAXY_05 (Deep Dark's music) is set to lower the volume to 0, effectively muting it. It resets to State 1 when leaving the area. This area is likely an early development leftover and its effect can easily be achieved with a ChangeBgmCube as well.</notes>
 		<files />
 	</object>
 	<object id="BgmVolumeFadeArea">
