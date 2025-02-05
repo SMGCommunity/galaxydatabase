@@ -1,4 +1,4 @@
-<database timestamp="1738357235">
+<database timestamp="1738793731">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8143,7 +8143,7 @@ A controller that spawns a Power Star if all assigned ChildMeramera objects have
 A controller that spawns a Power Star if all objects are destroyed.
 
 -- CLASS NOTES --
-A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
+A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object using GeneratorID. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The Power Star's ID that should be spawned. If set to -1, it will automatically detect the proper Power Star to be spawned." values="" />
 		<field id="2" type="bool" name="Hide Counter?" notes="If set, the counter layout will be hidden." values="" />
@@ -8169,7 +8169,7 @@ A controller that spawns a Power Star if all assigned ChildSkeletalFishBaby obje
 A controller that activates a switch if all objects are destroyed.
 
 -- CLASS NOTES --
-A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
+A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object using GeneratorID. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
 		<files />
 		<field id="1" type="int" name="Activation Delay" notes="The delay until the switch gets activated. Default is 0." values="" />
 	</object>
