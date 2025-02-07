@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object.",
+            "Description": "The message link ID of the BMG/MSBT-message that should be displayed. Not to be confused with the MessageId of an object.",
             "Values": [],
             "Exclusives": []
         },

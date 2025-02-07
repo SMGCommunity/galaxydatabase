@@ -1,4 +1,4 @@
-<database timestamp="1738793731">
+<database timestamp="1738931439">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -18536,7 +18536,7 @@ This area forces to display the linked shouting messages when entered.
 -- CLASS NOTES --
 An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the BMG/MSBT-message that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="MessageAreaCube">
 		<name>Display Message Area [Cube]</name>
@@ -18549,7 +18549,7 @@ This area forces to display the linked shouting messages when entered.
 -- CLASS NOTES --
 An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the BMG/MSBT-message that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="MessageAreaCylinder">
 		<name>Display Message Area [Cylinder]</name>
@@ -18562,7 +18562,7 @@ This area forces to display the linked shouting messages when entered.
 -- CLASS NOTES --
 An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the BMG/MSBT-message that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="Metbo">
 		<name>Goombeetle</name>
