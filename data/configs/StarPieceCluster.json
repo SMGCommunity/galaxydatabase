@@ -1,7 +1,7 @@
 {
     "InternalName": "StarPieceCluster",
     "Name": "StarPieceCluster",
-    "Notes": "A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object.",
+    "Notes": "A large decorative crystal that will be destroyed when touched by the player. Its Link ID needs to be set in another objects Generator Object ID (usually a StarPieceFollowGroup).",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

@@ -1,4 +1,4 @@
-<database timestamp="1738931439">
+<database timestamp="1739985937">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -26902,7 +26902,7 @@ One of the game's main collectibles that can be collected using any player's poi
 A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once the player touches it.
 
 -- CLASS NOTES --
-A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object.</notes>
+A large decorative crystal that will be destroyed when touched by the player. Its Link ID needs to be set in another objects Generator Object ID (usually a StarPieceFollowGroup).</notes>
 		<files />
 	</object>
 	<object id="StarPieceClusterBreak">
