@@ -292,7 +292,7 @@
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "The optional path that it can move on.",
+            "Description": "The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 1.",
             "Exclusives": []
         },
         "Camera": {
