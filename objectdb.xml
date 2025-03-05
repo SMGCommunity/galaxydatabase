@@ -1,4 +1,4 @@
-<database timestamp="1740963987">
+<database timestamp="1741183893">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -22117,7 +22117,7 @@ An area that renders a thick outline around some edges when entered.
 -- CLASS NOTES --
 An area that renders a thick outline around some edges while the player is inside it.</notes>
 		<files />
-		<field id="0" type="int" name="Intensity" notes="Thickness and intensity of the outlines. Ranges from 0 to 255." values="" />
+		<field id="0" type="int" name="Intensity" notes="Thickness and intensity of the outlines. Ranges from 0 to 255. Default is 16." values="" />
 	</object>
 	<object id="PowerStar">
 		<name>Power Star</name>
