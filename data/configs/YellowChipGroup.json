@@ -28,7 +28,7 @@
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000.",
+            "Description": "Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 10000.",
             "Values": [],
             "Exclusives": []
         },
