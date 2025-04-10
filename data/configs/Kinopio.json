@@ -166,6 +166,10 @@
                     "Notes": "Nothing"
                 },
                 {
+                    "Value": "0",
+                    "Notes": "Backpack & Headlamp on"
+                },
+                {
                     "Value": "1",
                     "Notes": "Snorkel"
                 },
@@ -191,7 +195,7 @@
                 },
                 {
                     "Value": "7",
-                    "Notes": "Captain's Headgear"
+                    "Notes": "Backpack & Headlamp off (SMG2 only)"
                 }
             ],
             "Exclusives": []

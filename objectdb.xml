@@ -1,4 +1,4 @@
-<database timestamp="1743524724">
+<database timestamp="1744297417">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14361,7 +14361,7 @@ The iconic mushroom NPC that can be talked to. It features a wide range of diffe
 		<field id="4" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4." values="-1 = Appears immediately, 0 = Gets launched from box" />
 		<field id="5" type="bool" name="Strict LOD Distances?" notes="If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models." values="" />
 		<field id="6" type="bool" name="Invalidate Sensor?" notes="If set, its body sensor will be invalidated so that all sensor-related interactions have no effect." values="" />
-		<field id="7" type="int" name="Equipment" notes="The equipment that he wears/carries." values="-1 = Nothing, 1 = Snorkel, 2 = Pickaxe, 3 = Postman Bag, 4 = Spear and Shield, 5 = Glasses, 6 = Star Bit, 7 = Captain's Headgear" />
+		<field id="7" type="int" name="Equipment" notes="The equipment that he wears/carries." values="-1 = Nothing, 0 = Backpack &amp; Headlamp on, 1 = Snorkel, 2 = Pickaxe, 3 = Postman Bag, 4 = Spear and Shield, 5 = Glasses, 6 = Star Bit, 7 = Backpack &amp; Headlamp off (SMG2 only)" />
 	</object>
 	<object id="KinopioAstro">
 		<name>Toad [Comet Observatory]</name>
