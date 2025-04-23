@@ -1,4 +1,4 @@
-<database timestamp="1745392900">
+<database timestamp="1745393323">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8482,7 +8482,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 		<field id="7" type="int" name="Stick Count" notes="The number of Fire Ball sticks to be created. Default is 1." values="" />
 	</object>
 	<object id="FireBubble">
-		<name>Blue Podoboo</name>
+		<name>Blue Lava Bubble</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
