@@ -2003,7 +2003,7 @@
         "InternalName": "BeeEater",
         "ClassNameSMG1": "BeeEater",
         "ClassNameSMG2": "BeeEater",
-        "Name": "Bee Eater",
+        "Name": "Spindleburr",
         "Notes": "A green plant with red spikes that will try to lunge at the player to damage them.",
         "Category": "enemy",
         "AreaShape": "Any",
