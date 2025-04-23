@@ -9347,7 +9347,7 @@
         "InternalName": "ElectricPressure",
         "ClassNameSMG1": "ElectricPressure",
         "ClassNameSMG2": "ElectricPressure",
-        "Name": "Electric Ball Shooter",
+        "Name": "Zap Nozzle",
         "Notes": "A yellow nozzle that shoots balls of electricity.",
         "Category": "levelfeature",
         "AreaShape": "Any",
