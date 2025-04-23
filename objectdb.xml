@@ -1,4 +1,4 @@
-<database timestamp="1745392079">
+<database timestamp="1745392266">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -20610,7 +20610,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="OtaRock">
-		<name>Octopus</name>
+		<name>Rocto</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
