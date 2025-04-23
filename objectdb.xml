@@ -1,4 +1,4 @@
-<database timestamp="1745393502">
+<database timestamp="1745393745">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3930,7 +3930,7 @@ A decorative butterfly. It can spawn a Star Bit when touched with the pointer. I
 		<field id="1" type="bool" name="Disable Star Bits?" notes="Does not spawn a Star Bit when touched." values="" />
 	</object>
 	<object id="Buzz">
-		<name>Chopper</name>
+		<name>Choppah</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
