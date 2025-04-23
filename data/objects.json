@@ -31811,7 +31811,7 @@
         "InternalName": "StringSpider",
         "ClassNameSMG1": "StringSpider",
         "ClassNameSMG2": "StringSpider",
-        "Name": "Sprangler",
+        "Name": "Spangler",
         "Notes": "A spider-like enemy that hangs from a web.",
         "Category": "enemy",
         "AreaShape": "Any",

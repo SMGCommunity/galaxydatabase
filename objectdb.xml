@@ -1,4 +1,4 @@
-<database timestamp="1745391851">
+<database timestamp="1745392079">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -27186,7 +27186,7 @@ A Silver Star that is trapped in a bubble. It can be collected by popping the bu
 		<files />
 	</object>
 	<object id="StringSpider">
-		<name>Sprangler</name>
+		<name>Spangler</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
