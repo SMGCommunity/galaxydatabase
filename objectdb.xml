@@ -1,4 +1,4 @@
-<database timestamp="1744297417">
+<database timestamp="1745377061">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -23672,7 +23672,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="RingBeamer">
-		<name>Ring Beamer</name>
+		<name>Pulse Beam</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />

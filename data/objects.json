@@ -27715,7 +27715,7 @@
         "InternalName": "RingBeamer",
         "ClassNameSMG1": "RingBeamer",
         "ClassNameSMG2": "RingBeamer",
-        "Name": "Ring Beamer",
+        "Name": "Pulse Beam",
         "Notes": "A yellow enemy with spikes on its head that periodically emits rings of electricity.",
         "Category": "enemy",
         "AreaShape": "Any",
