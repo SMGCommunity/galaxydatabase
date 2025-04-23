@@ -1,4 +1,4 @@
-<database timestamp="1745393745">
+<database timestamp="1745394041">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14400,7 +14400,7 @@ A Toad that delivers special letters, such as those that open up a new mission. 
 		<files />
 	</object>
 	<object id="Kiraira">
-		<name>Underwater Mine</name>
+		<name>Mikey Mine</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -14412,12 +14412,12 @@ A sea mine that is chained to a fixation. When the player approaches it, its eye
 		<files />
 	</object>
 	<object id="KirairaRail">
-		<name>Moving Underwater Mine</name>
+		<name>Moving Mikey Mine</name>
 		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving underwater mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.
+A moving version of Mikey Mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
 A sea mine that moves on a path. When the player approaches it, its eyes will open, and it turns towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
