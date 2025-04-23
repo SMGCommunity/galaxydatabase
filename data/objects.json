@@ -10723,7 +10723,7 @@
         "InternalName": "FlowerMimic",
         "ClassNameSMG1": "FlowerMimic",
         "ClassNameSMG2": "FlowerMimic",
-        "Name": "Flower Trap",
+        "Name": "Trapdragon",
         "Notes": "A large flower that tries to eat the player if they step onto it.",
         "Category": "levelfeature",
         "AreaShape": "Any",

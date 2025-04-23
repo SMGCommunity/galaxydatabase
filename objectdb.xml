@@ -1,4 +1,4 @@
-<database timestamp="1745393323">
+<database timestamp="1745393502">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -9199,7 +9199,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlowerMimic">
-		<name>Flower Trap</name>
+		<name>Trapdragon</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
