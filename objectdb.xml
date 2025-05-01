@@ -1,4 +1,4 @@
-<database timestamp="1744297417">
+<database timestamp="1746106252">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2254,8 +2254,8 @@ Changes the stage's background music in various different ways if entered.
 Changes the background music using the stage's music information in StageBgmInfo. Supports several changing modes.</notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
-		<field id="1" type="int" name="Argument 1" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." values="" />
-		<field id="2" type="int" name="Argument 2" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." values="" />
+		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo." values="If = Obj_arg0 is set to 0: value -1 will mute the music." />
+		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 2: Fade time." values="If = Obj_arg0 is set to 1: value -1 will mute the music." />
 		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmProhibitArea">

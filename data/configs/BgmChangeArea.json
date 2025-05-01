@@ -32,8 +32,13 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1.",
-            "Values": [],
+            "Description": " \nIf Obj_arg0 is set to 0: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 1: Fade time.\nIf Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo.",
+            "Values": [
+                {
+                    "Value": "If",
+                    "Notes": "Obj_arg0 is set to 0: value -1 will mute the music."
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg2": {
@@ -41,8 +46,13 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2.",
-            "Values": [],
+            "Description": " \nIf Obj_arg0 is set to 1: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 2: Fade time.",
+            "Values": [
+                {
+                    "Value": "If",
+                    "Notes": "Obj_arg0 is set to 1: value -1 will mute the music."
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg3": {
