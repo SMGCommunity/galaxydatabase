@@ -1,4 +1,4 @@
-<database timestamp="1746113579">
+<database timestamp="1746213468">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4488,8 +4488,11 @@ A generic planet with a model and optional collision with a far clipping distanc
 Changes the stage's background music in various different ways if entered.
 
 -- CLASS NOTES --
-</notes>
+Changes the background music using the stage's music information in AudStageBgmWrap and AudStageBgmTable. Supports several changing modes.</notes>
 		<files />
+		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
+		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: State-index in AudStageBgmTable." values="-1 = default music from MAStageBgmData (AudStageBgmWrap)." />
+		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = mutes the music if Obj_arg0 is set to 1." />
 	</object>
 	<object id="ChangeRoom">
 		<name>Starship Mario Character Changer</name>

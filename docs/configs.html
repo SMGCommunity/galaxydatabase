@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown configs</th><th>Known configs</th><th>Finished configs</th><th>Total configs</th></tr>
-				<tr><th>Relative</th><td class="punknown">24.22%</td><td class="pknown">0.89%</td><td class="pfinished">74.89%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">218</td><td class="pknown">8</td><td class="pfinished">674</td><td>900</td></tr>
+				<tr><th>Relative</th><td class="punknown">24.11%</td><td class="pknown">1.00%</td><td class="pfinished">74.89%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">217</td><td class="pknown">9</td><td class="pfinished">674</td><td>900</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -163,7 +163,7 @@
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_CelestrialArea.html">CelestrialArea</a></td><td><p>If the player attempts to exit this area while using the Flying power-up, they will be restricted to move inside the area only. The flying effect will be cancelled when the player reaches the edge of this area.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_ChangeAlphaObj.html">ChangeAlphaObj</a></td><td><p>A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.
 It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_ChangeBgmCube.html">ChangeBgmCube</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="config_ChangeBgmCube.html">ChangeBgmCube</a></td><td><p>Changes the background music using the stage's music information in AudStageBgmWrap and AudStageBgmTable. Supports several changing modes.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_ChangeRoom.html">ChangeRoom</a></td><td><p>The room where the player can change between Mario and Luigi. Before the player defeats Bowser in Bowser's Galaxy Generator, the object will remain in a deactivated state. After this event, it will become usable. In order to open the door, its SW_A needs to be activated. If it is registered to a cutscene called チェンジルームからスタート, it can use a special nerve action which cause the player to jump out.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_ChimneyEntryObj.html">ChimneyEntryObj</a></td><td><p>An invisible point that teleports the player to a specified position, just like a Warp Pipe. However, this works in one way only.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_ChooChooTrain.html">ChooChooTrain</a></td><td><p>A toy train that consists of at least one segment. It moves on a set path, and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.</p></td><td>SMG1</td></tr>
