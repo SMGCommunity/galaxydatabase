@@ -341,12 +341,13 @@ def __append_config_arguments__(properties: list[GalaxyConfigProperty], has_excl
     for config_property in properties:
         values = "".join([f"<li>{val_info['Value']}: {val_info['Notes']}</li>" for val_info in config_property.values])
 
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{config_property.type}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p><b>{config_property.name}</b>: {config_property.description.replace('\n', "<br>")}</p></td>' \
+              f'<td><p><b>{config_property.name}</b>: {description}</p></td>' \
               f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
@@ -375,11 +376,12 @@ def __append_config_mapparts_arguments__(properties: list[GalaxyConfigProperty],
     for config_property in properties:
         values = "".join([f"<li>{val_info['Value']}: {val_info['Notes']}</li>" for val_info in config_property.values])
 
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p><b>{config_property.name}</b>: {config_property.description.replace('\n', "<br>")}</p></td>' \
+              f'<td><p><b>{config_property.name}</b>: {description}</p></td>' \
               f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
@@ -406,11 +408,12 @@ def __append_config_switches__(properties: list[GalaxyConfigProperty], has_exclu
                 '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
 
     for config_property in properties:
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p>{config_property.description.replace('\n', "<br>")}</p></td>'
+              f'<td><p>{description}</p></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
             row += f'<td><ul>{exclusives}</ul></td>'
@@ -438,11 +441,12 @@ def __append_config_talking__(properties: list[GalaxyConfigProperty], has_exclus
     for config_property in properties:
         values = "".join([f"<li>{val_info['Value']}: {val_info['Notes']}</li>" for val_info in config_property.values])
 
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p>{config_property.description.replace('\n', "<br>")}</p></td>' \
+              f'<td><p>{description}</p></td>' \
               f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
@@ -471,11 +475,12 @@ def __append_config_setups__(properties: list[GalaxyConfigProperty], has_exclusi
     for config_property in properties:
         values = "".join([f"<li>{val_info['Value']}: {val_info['Notes']}</li>" for val_info in config_property.values])
 
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p>{config_property.description.replace('\n', "<br>")}</p></td>' \
+              f'<td><p>{description}</p></td>' \
               f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
@@ -500,10 +505,11 @@ def __append_config_properties__(properties: list[GalaxyConfigProperty], has_exc
         page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Description</th></tr>\n'
 
     for config_property in properties:
+        description = config_property.description.replace('\n', "<br>")
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
-              f'<td><p>{config_property.description.replace('\n', "<br>")}</p></td>'
+              f'<td><p>{description}</p></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
             row += f'<td><ul>{exclusives}</ul></td>'
