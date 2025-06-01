@@ -10,8 +10,33 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "0 Terrace\n1 Fountain\n2 Kitchen\n3 Bedroom\n4 Engine\n5 Garden",
-            "Values": [],
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Terrace"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Fountain"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Kitchen"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Bedroom"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Engine"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Garden"
+                }
+            ],
             "Exclusives": []
         }
     }

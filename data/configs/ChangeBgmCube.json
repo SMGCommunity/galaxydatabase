@@ -1,8 +1,65 @@
 {
     "InternalName": "ChangeBgmCube",
     "Name": "ChangeBgmCube",
-    "Notes": "",
+    "Notes": "Changes the background music using the stage's music information in AudStageBgmWrap and AudStageBgmTable. Supports several changing modes.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Change Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The music change type.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Change Song"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Fade-out and Change Song"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Change State"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Argument 1",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": " \nIf Obj_arg0 is set to 0: Name-index in AudStageBgmTable.\nIf Obj_arg0 is set to 1: Fade time.\nIf Obj_arg0 is set to 2: State-index in AudStageBgmTable.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "default music from MAStageBgmData (AudStageBgmWrap)."
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Argument 2",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": " \nIf Obj_arg0 is set to 1: Name-index in AudStageBgmTable.\nIf Obj_arg0 is set to 2: Fade time.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "mutes the music if Obj_arg0 is set to 1."
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

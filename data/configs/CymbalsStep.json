@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "If ColorChange.brk exists, this will define the color frame to be used.\n\n",
+            "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
             "Values": [],
             "Exclusives": []
         },
