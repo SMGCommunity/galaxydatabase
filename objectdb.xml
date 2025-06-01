@@ -1,4 +1,4 @@
-<database timestamp="1748739951">
+<database timestamp="1748740490">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -639,7 +639,7 @@ The interior of a Dome.
 -- CLASS NOTES --
 The enterable Domes on the Comet Observatory</notes>
 		<files />
-		<field id="0" type="int" name="Dome" notes="0 Terrace&#10;1 Fountain&#10;2 Kitchen&#10;3 Bedroom&#10;4 Engine&#10;5 Garden" values="" />
+		<field id="0" type="int" name="Dome" notes="" values="0 = Terrace, 1 = Fountain, 2 = Kitchen, 3 = Bedroom, 4 = Engine, 5 = Garden" />
 	</object>
 	<object id="AstroDomeAsteroid">
 		<name>Level Select Asteroids</name>
@@ -2254,8 +2254,8 @@ Changes the stage's background music in various different ways if entered.
 Changes the background music using the stage's music information in StageBgmInfo. Supports several changing modes.</notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
-		<field id="1" type="int" name="Argument 1" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." values="" />
-		<field id="2" type="int" name="Argument 2" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." values="" />
+		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo." values="-1 = If Obj_arg0 is set to 0: value -1 will mute the music." />
+		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = If Obj_arg0 is set to 1: value -1 will mute the music." />
 		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmProhibitArea">
@@ -4488,8 +4488,11 @@ A generic planet with a model and optional collision with a far clipping distanc
 Changes the stage's background music in various different ways if entered.
 
 -- CLASS NOTES --
-</notes>
+Changes the background music using the stage's music information in AudStageBgmWrap and AudStageBgmTable. Supports several changing modes.</notes>
 		<files />
+		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
+		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: State-index in AudStageBgmTable." values="-1 = default music from MAStageBgmData (AudStageBgmWrap)." />
+		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = mutes the music if Obj_arg0 is set to 1." />
 	</object>
 	<object id="ChangeRoom">
 		<name>Starship Mario Character Changer</name>
@@ -6163,7 +6166,7 @@ The cymbals used in Cloudy Court Galaxy.
 -- CLASS NOTES --
 A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used.&#10;&#10;" values="" />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
