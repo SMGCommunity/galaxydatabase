@@ -1,4 +1,4 @@
-<database timestamp="1746213468">
+<database timestamp="1748740490">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1684,7 +1684,7 @@ A set of two rotating cone-shaped planets with electric beams that can be found 
 		<files />
 	</object>
 	<object id="BeeEater">
-		<name>Bee Eater</name>
+		<name>Spindleburr</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -3930,7 +3930,7 @@ A decorative butterfly. It can spawn a Star Bit when touched with the pointer. I
 		<field id="1" type="bool" name="Disable Star Bits?" notes="Does not spawn a Star Bit when touched." values="" />
 	</object>
 	<object id="Buzz">
-		<name>Chopper</name>
+		<name>Choppah</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -8001,7 +8001,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ElectricPressure">
-		<name>Electric Ball Shooter</name>
+		<name>Zap Nozzle</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8485,7 +8485,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 		<field id="7" type="int" name="Stick Count" notes="The number of Fire Ball sticks to be created. Default is 1." values="" />
 	</object>
 	<object id="FireBubble">
-		<name>Blue Podoboo</name>
+		<name>Blue Lava Bubble</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -9202,7 +9202,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlowerMimic">
-		<name>Flower Trap</name>
+		<name>Trapdragon</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -13814,7 +13814,7 @@ A jellyfish enemy that spawns a Coin when defeated. It can be defeated through m
 		<field id="2" type="int" name="Movement Type" notes="Specifies how it should move on the path when it reaches the last point." values="-1 = Moves back towards first point, 1 = Warps back to first point" />
 	</object>
 	<object id="JellyfishElectric">
-		<name>Jellyfish</name>
+		<name>Jam-o'-War</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -14403,7 +14403,7 @@ A Toad that delivers special letters, such as those that open up a new mission. 
 		<files />
 	</object>
 	<object id="Kiraira">
-		<name>Underwater Mine</name>
+		<name>Mikey Mine</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -14415,12 +14415,12 @@ A sea mine that is chained to a fixation. When the player approaches it, its eye
 		<files />
 	</object>
 	<object id="KirairaRail">
-		<name>Moving Underwater Mine</name>
+		<name>Moving Mikey Mine</name>
 		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving underwater mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.
+A moving version of Mikey Mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
 A sea mine that moves on a path. When the player approaches it, its eyes will open, and it turns towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
@@ -20613,7 +20613,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="OtaRock">
-		<name>Octopus</name>
+		<name>Rocto</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -23675,7 +23675,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="RingBeamer">
-		<name>Ring Beamer</name>
+		<name>Pulse Beam</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -27189,7 +27189,7 @@ A Silver Star that is trapped in a bubble. It can be collected by popping the bu
 		<files />
 	</object>
 	<object id="StringSpider">
-		<name>Sprangler</name>
+		<name>Spangler</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
