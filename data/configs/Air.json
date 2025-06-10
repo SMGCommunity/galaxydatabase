@@ -10,7 +10,7 @@
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Active distance from player's position.",
+            "Description": "Active distance from player's position. The value provided here is multiplied by 100 at runtime.\nDefaults to 70 (7000 at runtime)",
             "Values": [],
             "Exclusives": []
         },

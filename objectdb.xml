@@ -1,4 +1,4 @@
-<database timestamp="1748740490">
+<database timestamp="1749570369">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1281,7 +1281,7 @@ The gray foggy air that surrounds the cylindrical planets in Space Storm Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -2106,7 +2106,7 @@ The large cloudy air that surrounds the Starshroom and Glamdozer planet.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section. The model uses a projection map matrix.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -2121,7 +2121,7 @@ The pink atmosphere that surrounds the planets created after feeding a Hungry Lu
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -6364,7 +6364,7 @@ The green void atmosphere used in Ghostly Galaxy and Matter Splatter Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -7270,7 +7270,7 @@ A set of eggshell shards used around Peewee Piranha's planet in Sky Station Gala
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -8375,7 +8375,7 @@ The cloudy atmosphere used in Deep Dark Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section. The model uses a projection map matrix.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -12721,7 +12721,7 @@ A clear blue atmosphere that is used in Good Egg Galaxy and Buoy Base Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -27407,7 +27407,7 @@ The sunset atmosphere used in Deep Dark Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section. The model uses a projection map matrix.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -30837,7 +30837,7 @@ The unusual red atmosphere used in Bubble Breeze Galaxy.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -31326,7 +31326,7 @@ A starry atmosphere that appears during Bowser Jr.'s Fiery Flotilla's boss fight
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -31434,7 +31434,7 @@ The atmosphere used on the Grand World Map.
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
@@ -31518,7 +31518,7 @@ The thunderstorm atmosphere used during the Giga Lakitu battle in Yoshi Star Gal
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section. The model uses a projection map matrix.</notes>
 		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position. The value provided here is multiplied by 100 at runtime.&#10;Defaults to 70 (7000 at runtime)" values="" />
 		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
