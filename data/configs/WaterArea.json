@@ -1,7 +1,7 @@
 {
     "InternalName": "WaterArea",
     "Name": "WaterArea",
-    "Notes": "An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.",
+    "Notes": "An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

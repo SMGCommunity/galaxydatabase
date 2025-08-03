@@ -1,4 +1,4 @@
-<database timestamp="1749570369">
+<database timestamp="1754248340">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12512,7 +12512,7 @@ A button that can be activated using a Ground Pound attack. Once activated, it w
 		<files />
 		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default is 300." values="" />
 		<field id="1" type="int" name="Ticking Type" notes="The ticking sound effect type to be used. Default is 0." values="0 = High ticking noise, 1 = Low ticking noise" />
-		<field id="2" type="int" name="Screen Effect Type" notes="The special screen effect to be used when activating the button." values="-1 = No effect, 1 = SwitchingScreenEffect (crashes due to missing file), 2 = Slow-down effect (TimeStopScreenEffect)" />
+		<field id="2" type="int" name="Screen Effect Type" notes="The special screen effect to be used when activating the button." values="-1 = No effect, 1 = SwitchingScreenEffect (crashes due to missing file), 2 = Slow-down effect (TimeStopScreenEffect). Crashes when the level has a WaterArea" />
 	</object>
 	<object id="HiTowerGoalPlanet">
 		<name>"Temporary High Model" [HiTowerGoalPlanet]</name>
@@ -31914,7 +31914,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.</notes>
 		<files />
 		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
@@ -31993,7 +31993,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.</notes>
 		<files />
 		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
@@ -32007,7 +32007,7 @@ An area consisting of an invisible body of water that the player can swim in. Se
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.</notes>
 		<files />
 		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
@@ -32388,7 +32388,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.</notes>
 		<files />
 		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
