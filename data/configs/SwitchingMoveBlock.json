@@ -61,7 +61,7 @@
         },
         "SW_A": {
             "Games": 2,
-            "Needed": false,
+            "Needed": true,
             "Description": "Applies the offset and rotation to the object's placement when activated. When deactivated again, the object returns to its original placement.",
             "Exclusives": []
         },
