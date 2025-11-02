@@ -1,4 +1,4 @@
-<database timestamp="1759847521">
+<database timestamp="1762120608">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13751,8 +13751,8 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 -- CLASS NOTES --
 A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
-		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the die moves horizontally when hit. Default is 18." values="" />
-		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the die moves vertically when hit. Default is 18." values="" />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the die moves horizontally when hit. Default is 180." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the die moves vertically when hit. Default is 180." values="" />
 	</object>
 	<object id="ItemDrill">
 		<name>Spin Drill</name>
@@ -17377,8 +17377,8 @@ A die cube used in the Luma Shop room of Starship Mario. Can reward the player w
 -- CLASS NOTES --
 A die block that can spawn a single Star Bit, one, three or five 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. Interestingly, it declares 1000 Star Bits, although it can only spawn one.</notes>
 		<files />
-		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
-		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 180." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 180." values="" />
 	</object>
 	<object id="LuckyRoomPlanet">
 		<name>Starship Mario -- Luma Shop Room</name>
@@ -22087,8 +22087,8 @@ A die block that can reward either a Star Bit or a 1-Up Mushroom.
 -- CLASS NOTES --
 A die block that can spawn a single Star Bit or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
-		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
-		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 180." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 180." values="" />
 	</object>
 	<object id="PostFogArea">
 		<name>Post Fog Area</name>
