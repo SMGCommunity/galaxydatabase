@@ -1,4 +1,4 @@
-<database timestamp="1762120608">
+<database timestamp="1762198926">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2048,7 +2048,7 @@ An item that grants the player the Invincibility power-up when collected.</notes
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
-		<field id="2" type="int" name="Escape Type" notes="How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4." values="-1 = Doesn't escape, 1 = Escapes, 2 = Escapes away from player, 3 = Escapes" />
+		<field id="2" type="int" name="Escape Type" notes="How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4." values="-1 = Doesn't escape, 1 = Escapes, 2 = Escapes, 3 = Escapes" />
 		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
@@ -14080,7 +14080,7 @@ A spring-like trampoline that bounces the player into the air when jumping on it
 A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy and Flash Black Galaxy.
 
 -- CLASS NOTES --
-A Goomba that wears a pumpkin mask. It wanders along a set path, and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed.</notes>
+A Goomba that wears a pumpkin mask. It wanders along a set path, and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with a Spin Attack, Fire Flower, Rainbow Starm Koopa Shell, or Spin Drill. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Calculate Gravity?" notes="If set, it won't calculate gravity and the object won't rotate with gravity." values="" />
 	</object>
@@ -26965,7 +26965,7 @@ A floating flower that reveals its petals and releases a Star Bit when touched.<
 		<field id="0" type="bool" name="Enable Shadow?" notes="If set, its shadow will be enabled." values="" />
 	</object>
 	<object id="StarPieceFollowGroup">
-		<name>Following Star Piece Group</name>
+		<name>Following Star Bit Group</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />

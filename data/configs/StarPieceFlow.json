@@ -98,7 +98,7 @@
         "SW_A": {
             "Games": 3,
             "Needed": false,
-            "Description": "If used, the Star Bits will only be collectable while this switch is activated.",
+            "Description": "If used, the Star Bits won't only be collectable with the Star Cursor unless this switch is activated. They can still be collected simply by touching them, however.",
             "Exclusives": []
         },
         "SW_B": {
