@@ -120,7 +120,7 @@
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "This switch activates when Mario exits the pipe.",
+            "Description": "This switch activates when Mario exits the destination pipe.",
             "Exclusives": []
         },
         "SW_AWAKE": {
