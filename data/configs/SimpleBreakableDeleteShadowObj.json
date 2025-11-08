@@ -90,11 +90,11 @@
             "Exclusives": []
         },
         "Obj_arg6": {
-            "Name": "Item Count",
+            "Name": "Star Bit Count",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits.",
+            "Description": "The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70.",
             "Values": [],
             "Exclusives": []
         },

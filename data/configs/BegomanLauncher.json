@@ -15,7 +15,7 @@
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Number of Topman",
+            "Name": "Number of Topmen",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,

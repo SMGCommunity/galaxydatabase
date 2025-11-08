@@ -50,7 +50,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5.",
+            "Description": "The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5. Limit is 70.",
             "Values": [],
             "Exclusives": []
         },

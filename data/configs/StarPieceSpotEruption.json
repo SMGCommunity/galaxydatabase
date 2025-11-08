@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of Star Bits to be spawned. Default is 20.",
+            "Description": "The number of Star Bits to be spawned. Default is 20. Limit is 70",
             "Values": [],
             "Exclusives": []
         },

@@ -28,7 +28,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of items to spawn. Default is 4.",
+            "Description": "The number of items to spawn. Default is 4. Limit is 32 for Coins. There is no limit on Star Bits.",
             "Values": [],
             "Exclusives": []
         },

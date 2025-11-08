@@ -32,7 +32,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The amount of Star Bits to be dropped. Default is 6. Requires Obj_arg0 set to 1.",
+            "Description": "The amount of Star Bits to be dropped. Default is 6. Limit is 70. Requires Obj_arg0 set to 1.",
             "Values": [],
             "Exclusives": []
         },

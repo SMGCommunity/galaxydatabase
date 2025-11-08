@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The number of Coins to be dropped. Default is 1.",
+            "Description": "The number of Coins to be dropped. Default is 1. Limit is 32.",
             "Values": [],
             "Exclusives": []
         },

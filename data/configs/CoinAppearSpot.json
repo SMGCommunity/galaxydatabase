@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of Coins to be spawned. Default is 8.",
+            "Description": "The number of Coins to be spawned. Default is 8. Limit is 32.",
             "Values": [],
             "Exclusives": []
         },

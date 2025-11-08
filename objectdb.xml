@@ -1,4 +1,4 @@
-<database timestamp="1762210340">
+<database timestamp="1762573626">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1863,7 +1863,7 @@ A black hole that spawns Topminis. Defeated Topminis will respawn after some tim
 A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
-		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
+		<field id="3" type="int" name="Number of Topmen" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
 	</object>
 	<object id="BegomanLauncher">
 		<name>Spring Topman Spawner</name>
@@ -1877,7 +1877,7 @@ A black hole that spawns Spring Topmen. Defeated Spring Topmen will respawn afte
 A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
-		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
+		<field id="3" type="int" name="Number of Topmen" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
 	</object>
 	<object id="BegomanRoomPlanet">
 		<name>"BegomanRoomPlanet" [Unfinished]</name>
@@ -4014,7 +4014,7 @@ An area that removes the Bee power-up from the player if they are inside this ar
 A torch with a red flame. May also appear as unlit.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. In that case, the fire may be lit with Li'l Cinders, and fireballs from either FirePressure or the player. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
@@ -4530,7 +4530,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A Li'l Brr that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
 		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
@@ -4573,7 +4573,7 @@ A Goomba that can be defeated using most of the player's attacks. A Spin Attack 
 A Li'l Cinder that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
 		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
@@ -5128,7 +5128,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="CloudAcrossValleyCliffPlanet">
@@ -5429,7 +5429,7 @@ An object that spawns several Coins when activated.
 -- CLASS NOTES --
 A point in space where the requested number of Coins will be spawned after activating its SW_APPEAR switch.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 8." values="" />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 8. Limit is 32." values="" />
 	</object>
 	<object id="CoinBlock2D">
 		<name>Coin ? Block [2D]</name>
@@ -5440,7 +5440,7 @@ A point in space where the requested number of Coins will be spawned after activ
 A ? Block used in SMG2's intro level. It drops exactly one Coin when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
@@ -5724,7 +5724,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="ConstructionLight">
@@ -5879,7 +5879,7 @@ An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles,
 		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
 		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
-		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
+		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5. Limit is 70." values="" />
 		<field id="4" type="bool" name="Hide Broken Pieces?" notes="If set, the remaining broken pieces will be hidden." values="" />
 	</object>
 	<object id="CrystalCageOpaLL">
@@ -5896,7 +5896,7 @@ An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles,
 		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
 		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
-		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
+		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5. Limit is 70." values="" />
 		<field id="4" type="bool" name="Hide Broken Pieces?" notes="If set, the remaining broken pieces will be hidden." values="" />
 	</object>
 	<object id="CrystalCageS">
@@ -11163,7 +11163,7 @@ A basic object that can be destroyed through various means. Unlike other variant
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="GoroRockCoverCage">
@@ -12467,7 +12467,7 @@ A rock that can be Ground Pounded to drop items.
 A rock that can be destroyed with a Ground Pound attack. It can spawn some items after destroying it.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The item to be spawned after destroying it." values="-1 = No item, 0 = 1 Coin, 1 = Star Bits" />
-		<field id="1" type="int" name="Number of Star Bits" notes="The amount of Star Bits to be dropped. Default is 6. Requires Obj_arg0 set to 1." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="The amount of Star Bits to be dropped. Default is 6. Limit is 70. Requires Obj_arg0 set to 1." values="" />
 		<field id="7" type="bool" name="Hide Remains?" notes="If set, the smaller rocks that remain after destroying it will be hidden." values="" />
 	</object>
 	<object id="HipDropSetCylinder">
@@ -13137,7 +13137,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A burning rock enemy that floats around and chases after Mario. It will freeze the player upon contact.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
 		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
@@ -13481,7 +13481,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="IcicleRockLight">
@@ -13693,7 +13693,7 @@ A special platform with collision that follows its animation. If SW_B gets activ
 A ? Block that triggers a switch after being hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
@@ -14971,7 +14971,7 @@ A basic object that can be destroyed through various means. Unlike other variant
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="KoopaLastBattleSky">
@@ -15253,7 +15253,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="KoopaStatueVomit">
@@ -18474,7 +18474,7 @@ A spider-like enemy that lunges across water. When it touches ice collision, it 
 A burning rock enemy that floats around and chases after Mario. It will burn the player upon contact. If attacked with a Fire Ball, it gets reignited.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
 		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
@@ -20960,7 +20960,7 @@ A green bag-like enemy that turns invisible and runs away from the player and dr
 A bag-like enemy that wanders around while becoming fully invisible. However, its path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. Once defeated, it will drop 20 Star Bits.</notes>
 		<files />
 		<field id="0" type="float" name="Footprint Y Offset" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
-		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20. Limit is 70." values="" />
 	</object>
 	<object id="PetitPorter">
 		<name>Bonus Planet Teleporter</name>
@@ -21067,7 +21067,7 @@ A flame that burns the player and other compatible objects upon contact. It can 
 A small torch.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. In that case, the fire may be lit with Li'l Cinders, and fireballs from either FirePressure or the player. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
@@ -22419,7 +22419,7 @@ A standard Brick Block that can be destroyed.
 -- CLASS NOTES --
 A Brick Block that can be destroyed through all player attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1. Limit is 32." values="" />
 		<field id="1" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not." values="-1 = Use shadow, 0 = Disable shadow" />
 	</object>
 	<object id="PunchBox2D">
@@ -22433,7 +22433,7 @@ A small Brick Block variant that is used in the prologue.
 -- CLASS NOTES --
 A Brick Block that can be destroyed through all player attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1. Limit is 32." values="" />
 		<field id="1" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not." values="-1 = Use shadow, 0 = Disable shadow" />
 	</object>
 	<object id="PunchingKinoko">
@@ -24568,7 +24568,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SandUpDownTowerBreakableWallB">
@@ -24588,7 +24588,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SandUpDownTowerMoveStepA">
@@ -25086,7 +25086,7 @@ A shooting star that releases Star Bits when it hits the ground.
 -- CLASS NOTES --
 A shooting star that releases Star Bits when it hits the ground. It will periodically reappear until all of its Star Bits have been collected.</notes>
 		<files />
-		<field id="0" type="int" name="Star Bits per Iteration" notes="How many Star Bits should be released at max per iteration. Default is 5." values="" />
+		<field id="0" type="int" name="Star Bits per Iteration" notes="How many Star Bits should be released at max per iteration. Default is 5. Limit is 70." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The spawn delay of the individual shooting stars in seconds. Default is 240." values="" />
 		<field id="2" type="float" name="Falling Distance" notes="From how far up it will fall down. Default is 2000." values="" />
 		<field id="3" type="int" name="Number of Total Star Bits" notes="How many Star Bits can appear in total. Default is 5." values="" />
@@ -25742,7 +25742,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SnowBlockTicoSearchPlanet">
@@ -26036,7 +26036,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SpaceCocoon">
@@ -26498,9 +26498,9 @@ An area that toggles a switch once the player performs a Spin Attack inside it.<
 A ? Block that drops some Coins when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
+		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8. Limit is 70 for SplashPieceBlock, Limit is 32 for SplashCoinBlock." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
@@ -26513,9 +26513,9 @@ A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn C
 A ? Block that drops Star Bits when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
+		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8. Limit is 70 for SplashPieceBlock, Limit is 32 for SplashCoinBlock." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
@@ -26933,7 +26933,7 @@ A small blue crystal that releases some Star Bits or Coins when broken using the
 A small blue crystal that releases some Star Bits or Coins when broken using the Rock power-up. The Star Bits will automatically move towards the player.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = Star Bits, 1 = Coins" />
-		<field id="1" type="int" name="Item Count" notes="The number of items to spawn. Default is 4." values="" />
+		<field id="1" type="int" name="Item Count" notes="The number of items to spawn. Default is 4. Limit is 32 for Coins. There is no limit on Star Bits." values="" />
 	</object>
 	<object id="StarPieceFlow">
 		<name>Moving Star Bit Group</name>
@@ -27026,7 +27026,7 @@ An object that spawns several Star Bits when activated.
 -- CLASS NOTES --
 An invisible spot from which some Star Bits can spawn. If SW_APPEAR is used, they will only appear when triggering said switch. Otherwise, the Star Bits will spawn when attacking the spot with a Spin Attack.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 5." values="" />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 5. Limit is 70." values="" />
 	</object>
 	<object id="StarPieceSpotEruption">
 		<name>Star Bit Volcano Eruption</name>
@@ -27039,7 +27039,7 @@ Spawns a bunch of Star Bits when activated. This also creates a volcanic eruptio
 -- CLASS NOTES --
 A decorative volcanic smoke effect that can spawn Star Bits when activating its SW_A.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 20." values="" />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 20. Limit is 70" values="" />
 		<field id="1" type="float" name="Vertical Speed" notes="The vertical speed at which the Star Bits are emitted. Default is 150." values="" />
 		<field id="2" type="float" name="Horizontal Speed" notes="The horizontal speed at which the Star Bits are emitted. Default is 30." values="" />
 	</object>
@@ -27369,7 +27369,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SunLightArea">
@@ -28130,7 +28130,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="TakoBarrelB">
@@ -28660,7 +28660,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A lit candlestick used in Ghostly Galaxy.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. In that case, the fire may be lit with Li'l Cinders, and fireballs from either FirePressure or the player. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
@@ -28733,7 +28733,7 @@ A basic object that can be destroyed through various means. However, the support
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="TeresaMansionLightA">
@@ -29291,7 +29291,7 @@ A large collectable clock that adds ten seconds to the Comet timer when collecte
 A ? Block that gives one Coin every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -29333,7 +29333,7 @@ A generic object with a model and collision that usually features panels with la
 A ? Block that gives one Star Bit every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBlock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -29365,7 +29365,7 @@ A black hole that spawns Spiky Topman. Defeated Spiky Topman will respawn after 
 A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
-		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
+		<field id="3" type="int" name="Number of Topmen" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
 	</object>
 	<object id="Togepin">
 		<name>Pinhead</name>
@@ -32596,9 +32596,9 @@ A wooden box that can be destroyed through most attacks. It can spawn various di
 -- CLASS NOTES --
 A wooden box that can be destroyed through most of the player and enemy attacks. It can spawn various different items when destroyed.</notes>
 		<files />
-		<field id="0" type="int" name="Coin Count" notes="The number of Coins to be spawned when destroyed. Default 1." values="" />
+		<field id="0" type="int" name="Coin Count" notes="The number of Coins to be spawned when destroyed. Default is 1. Limit is 32." values="" />
 		<field id="1" type="bool" name="Remnants Type" notes="Can be used to hide the broken remnants when destroyed." values="-1 = Show broken remnants, 0 = Hide broken remnants" />
-		<field id="2" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default 0." values="" />
+		<field id="2" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="3" type="int" name="Riddle SFX Type" notes="If enabled, will play a jingle when broken." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="4" type="bool" name="1-Up Type" notes="Can be used to specify whether a 1-Up Mushroom should be spawned or not." values="-1 = Spawns no 1-Up Mushroom, 1 = Spawns 1-Up Mushroom" />
 		<field id="7" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 does not register a Power Star." values="" />
@@ -33372,7 +33372,7 @@ A basic object that can be destroyed through various means. Unlike other variant
 		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = 1-Up Mushroom, 2 = Power Star, 3 = Star Bits" />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
 		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
-		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="6" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70." values="" />
 		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="ZeroGravityBox">

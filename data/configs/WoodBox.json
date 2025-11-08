@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The number of Coins to be spawned when destroyed. Default 1.",
+            "Description": "The number of Coins to be spawned when destroyed. Default is 1. Limit is 32.",
             "Values": [],
             "Exclusives": []
         },
@@ -37,7 +37,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The number of Star Bits to be spawned when destroyed. Default 0.",
+            "Description": "The number of Star Bits to be spawned when destroyed. Default is 0. Limit is 70.",
             "Values": [],
             "Exclusives": []
         },
