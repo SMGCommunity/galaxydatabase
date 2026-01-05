@@ -1,4 +1,4 @@
-<database timestamp="1762573626">
+<database timestamp="1767593782">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -21542,7 +21542,7 @@ A beanstalk-like vine that the player can swing along by shaking the Wiimote. On
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs and colors are available:
-0 Violets
+0 Pansies
 - 0 Yellow
 - 1 Purple
 - 2 Red
