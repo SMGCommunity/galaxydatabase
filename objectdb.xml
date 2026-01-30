@@ -1,4 +1,4 @@
-<database timestamp="1767593782">
+<database timestamp="1769802730">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12512,7 +12512,7 @@ A button that can be activated using a Ground Pound attack. Once activated, it w
 		<files />
 		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default is 300." values="" />
 		<field id="1" type="int" name="Ticking Type" notes="The ticking sound effect type to be used. Default is 0." values="0 = High ticking noise, 1 = Low ticking noise" />
-		<field id="2" type="int" name="Screen Effect Type" notes="The special screen effect to be used when activating the button." values="-1 = No effect, 1 = SwitchingScreenEffect (crashes due to missing file), 2 = Slow-down effect (TimeStopScreenEffect). Crashes when the level has a WaterArea" />
+		<field id="2" type="int" name="Screen Effect Type" notes="The special screen effect to be used when activating the button." values="-1 = No effect, 1 = SwitchingScreenEffect (crashes due to missing file), 2 = Slow-down effect (TimeStopScreenEffect)" />
 	</object>
 	<object id="HiTowerGoalPlanet">
 		<name>"Temporary High Model" [HiTowerGoalPlanet]</name>

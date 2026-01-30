@@ -49,7 +49,7 @@
                 },
                 {
                     "Value": "2",
-                    "Notes": "Slow-down effect (TimeStopScreenEffect). Crashes when the level has a WaterArea"
+                    "Notes": "Slow-down effect (TimeStopScreenEffect)"
                 }
             ],
             "Exclusives": []
