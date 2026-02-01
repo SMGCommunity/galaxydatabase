@@ -3,7 +3,7 @@
     "Name": "RestartCube",
     "Notes": "",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Spawn ID",
@@ -14,9 +14,37 @@
             "Values": [],
             "Exclusives": []
         },
+        "Obj_arg1": {
+            "Name": "Music Change",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Name-index in AudStageBgmTable.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No change"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Music State Change",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "State-index in AudStageBgmTable.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No change"
+                }
+            ],
+            "Exclusives": []
+        },
         "Obj_arg3": {
             "Name": "Activation Type",
-            "Type": "Integer",
+            "Type": "Boolean",
             "Games": 1,
             "Needed": false,
             "Description": "Determines if the player must be on the ground to activate this checkpoint.",

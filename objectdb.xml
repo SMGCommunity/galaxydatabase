@@ -1,4 +1,4 @@
-<database timestamp="1769957034">
+<database timestamp="1769958842">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -23378,7 +23378,9 @@ An area that sets the next respawn point.
 </notes>
 		<files />
 		<field id="0" type="int" name="Spawn ID" notes="The ID of the spawn point that the player should respawn at after entering this area." values="" />
-		<field id="3" type="int" name="Activation Type" notes="Determines if the player must be on the ground to activate this checkpoint." values="-1 = False, 0 = True" />
+		<field id="1" type="int" name="Music Change" notes="Name-index in AudStageBgmTable." values="-1 = No change" />
+		<field id="2" type="int" name="Music State Change" notes="State-index in AudStageBgmTable." values="-1 = No change" />
+		<field id="3" type="bool" name="Activation Type" notes="Determines if the player must be on the ground to activate this checkpoint." values="-1 = False, 0 = True" />
 	</object>
 	<object id="RestartObj">
 		<name>Checkpoint Flag</name>
