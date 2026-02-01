@@ -19,6 +19,20 @@
 		<div class="contents">
 			<h1>Config: AstroChangeStageCube</h1>
 			<p></p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>True</td><td><p><b>Change Type</b>: Defines where this area should take you to.</p></td><td><ul><li>0: Move to Comet Observatory (Dome Exit)</li><li>1: Move to Gateway Galaxy</li><li>2: Move to Comet Observatory (Unused)</li><li>3: Move to Library</li><li>4: Move to Comet Observatory (Library Exit)</li><li>5: Move to Observatory Dome</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Spawn ID</b>: If Obj_arg0 is set to 0, this value goes unused.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Dome</b>: If Obj_arg0 is not set to 5, this value goes unused.</p></td><td><ul><li>1: Terrace</li><li>2: Fountain</li><li>3: Kitchen</li><li>4: Bedroom</li><li>5: Engine</li><li>6: Garden</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>If enabled, disables the area.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

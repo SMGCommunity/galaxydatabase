@@ -3,6 +3,13 @@
     "Name": "RailPlanetMap",
     "Notes": "",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path this object moves on.",
+            "Exclusives": []
+        }
+    }
 }

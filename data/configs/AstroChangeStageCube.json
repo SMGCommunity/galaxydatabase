@@ -3,6 +3,90 @@
     "Name": "AstroChangeStageCube",
     "Notes": "",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Change Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": true,
+            "Description": "Defines where this area should take you to.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Move to Comet Observatory (Dome Exit)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Move to Gateway Galaxy"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Move to Comet Observatory (Unused)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Move to Library"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Move to Comet Observatory (Library Exit)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Move to Observatory Dome"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Spawn ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If Obj_arg0 is set to 0, this value goes unused.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Dome",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If Obj_arg0 is not set to 5, this value goes unused.",
+            "Values": [
+                {
+                    "Value": "1",
+                    "Notes": "Terrace"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Fountain"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Kitchen"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Bedroom"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Engine"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Garden"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If enabled, disables the area.",
+            "Exclusives": []
+        }
+    }
 }

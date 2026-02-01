@@ -3,6 +3,34 @@
     "Name": "RestartCube",
     "Notes": "",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawn ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The ID of the spawn point that the player should respawn at after entering this area.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Activation Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Determines if the player must be on the ground to activate this checkpoint.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "False"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "True"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }

@@ -1,4 +1,4 @@
-<database timestamp="1769802730">
+<database timestamp="1769957034">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -564,6 +564,9 @@ An area that will exit the current scene and start another one. For example, thi
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Change Type" notes="Defines where this area should take you to." values="0 = Move to Comet Observatory (Dome Exit), 1 = Move to Gateway Galaxy, 2 = Move to Comet Observatory (Unused), 3 = Move to Library, 4 = Move to Comet Observatory (Library Exit), 5 = Move to Observatory Dome" />
+		<field id="1" type="int" name="Spawn ID" notes="If Obj_arg0 is set to 0, this value goes unused." values="" />
+		<field id="2" type="int" name="Dome" notes="If Obj_arg0 is not set to 5, this value goes unused." values="1 = Terrace, 2 = Fountain, 3 = Kitchen, 4 = Bedroom, 5 = Engine, 6 = Garden" />
 	</object>
 	<object id="AstroChildRoom">
 		<name>Comet Observatory -- Gateway Planet</name>
@@ -23374,6 +23377,8 @@ An area that sets the next respawn point.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Spawn ID" notes="The ID of the spawn point that the player should respawn at after entering this area." values="" />
+		<field id="3" type="int" name="Activation Type" notes="Determines if the player must be on the ground to activate this checkpoint." values="-1 = False, 0 = True" />
 	</object>
 	<object id="RestartObj">
 		<name>Checkpoint Flag</name>
