@@ -1,4 +1,4 @@
-<database timestamp="1769958842">
+<database timestamp="1772125723">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -21475,10 +21475,10 @@ An area that extends the player's sensor range to detect items. This allows the 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that restricts movement to a 2D plane when entered.
+An area that restricts movement to a 2D plane when entered. It works along the X-axis and Y-axis.
 
 -- CLASS NOTES --
-An area that restricts the player's movement to a 2D plane while the player is inside it.</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside. It works along the X-axis and Y-axis.</notes>
 		<files />
 	</object>
 	<object id="PlaneModeCube">
@@ -21487,10 +21487,10 @@ An area that restricts the player's movement to a 2D plane while the player is i
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that restricts movement to a 2D plane when entered.
+An area that restricts movement to a 2D plane when entered. It works along the X-axis and Y-axis.
 
 -- CLASS NOTES --
-An area that restricts the player's movement to a 2D plane while the player is inside it.</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside. It works along the X-axis and Y-axis.</notes>
 		<files />
 	</object>
 	<object id="PlanetDisk">
