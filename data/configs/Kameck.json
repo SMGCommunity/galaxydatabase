@@ -65,7 +65,7 @@
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "If used, it will remain invisible until this switch gets activated.",
+            "Description": "Appears when this switch is activated. This object will be visible in the Galaxy's intro cutscene.",
             "Exclusives": []
         },
         "SW_AWAKE": {

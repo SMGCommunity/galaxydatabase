@@ -1,4 +1,4 @@
-<database timestamp="1772125723">
+<database timestamp="1772906222">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4739,7 +4739,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A black spiky enemy that appears in both Honeybloom Galaxy and Flipsville Galaxy.
 
 -- CLASS NOTES --
-A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact.</notes>
+A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by fireballs, the Spin Drill. It damages the player upon contact.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Specifies the movement speed. Default is 3." values="" />
 	</object>
@@ -14209,7 +14209,7 @@ A small enemy that will chase after the player if they get too close. It will tr
 A dead skeleton of a Koopa Troopa.
 
 -- CLASS NOTES --
-A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only).</notes>
+A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill, Yoshi's projectiles, or explosions. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only).</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Stop SW_A Animation?" notes="If set, its idle animation won't stop when SW_A is used and not activated yet." values="" />
 		<field id="1" type="bool" name="Use Path Direction Sight?" notes="If set, it will only look and move into the path's direction." values="" />
@@ -31346,7 +31346,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A purple Urchin with spikes on its body; intended for water areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLand">
@@ -31358,7 +31358,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 A red furry Urchin with spikes on its body; intended for land areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLauncher">
@@ -31382,7 +31382,7 @@ A point that periodically spawns several Land Urchins.
 A purple Urchin with spikes on its body. It doesn't create any water splash particles when it moves.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="ValveSwitch">
