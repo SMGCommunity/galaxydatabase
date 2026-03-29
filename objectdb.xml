@@ -1,4 +1,4 @@
-<database timestamp="1772906222">
+<database timestamp="1774818181">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2299,7 +2299,7 @@ An electric ball-shaped enemy that moves on a set path.
 A large electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the movement speed." values="" />
-		<field id="2" type="int" name="Shadow Type" notes="Sets the shadow type." values="-1 = Validate shadows, 1 = Invalidate shadows" />
+		<field id="2" type="int" name="Shadow" notes="Sets the shadow type." values="-1 = Use no shadow, 1 = Use shadow" />
 	</object>
 	<object id="BigBubble">
 		<name>Big Bubble</name>
@@ -2940,7 +2940,7 @@ A small electric ball enemy that causes electrical damage. It can only be defeat
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the movement speed." values="" />
 		<field id="1" type="int" name="Side Type" notes="Specifies the side direction." values="-1 = Side is path direction, 1 = Opposite of path direction" />
-		<field id="2" type="int" name="Shadow Type" notes="Sets the shadow type." values="-1 = Validate shadows, 1 = Invalidate shadows" />
+		<field id="2" type="int" name="Shadow Type" notes="Sets the shadow type." values="-1 = Use no shadow, 1 = Use shadow" />
 		<field id="3" type="int" name="Gravity Type" notes="Specifies the gravity calculation type." values="-1 = Ignore gravity, 0 = Negated gravity is up. Always calculate gravity, 1 = Negated gravity is up. Calculate gravity once" />
 	</object>
 	<object id="BirthdayCakePlanet">
@@ -5300,7 +5300,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A green coconut. Changes into a watermelon when the player has accumulated 9999 Star Bits.
 
 -- CLASS NOTES --
-A coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if it's destroyed.</notes>
+A coconut that can be flung into various obstacles and enemies with a Spin Attack, unless the player has the Ice Flower power-up. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if it's destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Spherical Shadow?" notes="If set, it will use a spherical shadow instead of a cylindrical volume." values="" />
 		<field id="1" type="bool" name="Continue Rolling?" notes="If set, it will continue rolling while it is colliding with other coconuts." values="" />
@@ -7592,7 +7592,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 The yellow drill bullet enemy used in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it.</notes>
+A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it, as well as Yoshi eating it.</notes>
 		<files />
 		<field id="0" type="int" name="Pose Type" notes="Specifies how it moves along the path." values="-1 = Negated gravity is up, 0 = Always turn to path's front direction" />
 	</object>
@@ -28237,7 +28237,7 @@ A shark NPC that appears in Sea Slide Galaxy and Deep Dark Galaxy.
 A ball with a Power Star or Purple Coin inside it.
 
 -- CLASS NOTES --
-A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned. The Star Ball may also even interact with objects without the player riding on it, such as QuestionCoin.</notes>
 		<files />
 		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>
@@ -28534,7 +28534,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A Star Ball which uses a signboard tutorial to explain the Star Ball mechanics.
 
 -- CLASS NOTES --
-A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned. The Star Ball may also even interact with objects without the player riding on it, such as QuestionCoin.</notes>
 		<files />
 		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>

@@ -15,7 +15,7 @@
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Shadow Type",
+            "Name": "Shadow",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
@@ -23,11 +23,11 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Validate shadows"
+                    "Notes": "Use no shadow"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Invalidate shadows"
+                    "Notes": "Use shadow"
                 }
             ],
             "Exclusives": []

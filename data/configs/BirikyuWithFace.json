@@ -41,11 +41,11 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Validate shadows"
+                    "Notes": "Use no shadow"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Invalidate shadows"
+                    "Notes": "Use shadow"
                 }
             ],
             "Exclusives": []

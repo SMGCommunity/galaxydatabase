@@ -29,7 +29,7 @@
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "Gets activated after starting the third phase (after he looses the crown).",
+            "Description": "Gets activated after starting the third phase (after he loses the crown).",
             "Exclusives": []
         },
         "AppearPowerStar": {
