@@ -1,4 +1,4 @@
-<database timestamp="1774818181">
+<database timestamp="1775377222">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7846,7 +7846,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
+		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change to once the pipe is left." values="0 = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
@@ -7866,7 +7866,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
+		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change to once the pipe is left." values="0 = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
