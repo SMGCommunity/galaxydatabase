@@ -1,4 +1,4 @@
-<database timestamp="1775377222">
+<database timestamp="1776291294">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19403,12 +19403,12 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoFoo">
-		<name>Flying Star</name>
+		<name>Red Star</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Flying Star that transforms the player into a Flying character.
+A Red Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Flying character. This temporary power-up state allows them to fly around.</notes>
