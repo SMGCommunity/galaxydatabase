@@ -1,4 +1,4 @@
-<database timestamp="1776291294">
+<database timestamp="1777320760">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2047,7 +2047,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A collectable power-up that transforms the player into a Rainbow character.
 
 -- CLASS NOTES --
-An item that grants the player the Invincibility power-up when collected.</notes>
+An item that grants the player the Invincibility power-up when collected. This temporary power-up state lasts for 20 seconds, and makes the player invincible to everything except DeathArea and Black Holes.</notes>
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
@@ -7846,7 +7846,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change to once the pipe is left." values="0 = Use music for current scenario from ScenarioBgmInfo." />
+		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
@@ -7866,7 +7866,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change to once the pipe is left." values="0 = Use music for current scenario from ScenarioBgmInfo." />
+		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
@@ -13766,7 +13766,7 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom dependi
 A drill power-up that allows the player to dig through certain dirt upon spinning.
 
 -- CLASS NOTES --
-A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.</notes>
+A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
 		<files />
 		<field id="0" type="bool" name="Against Collision Normal?" notes="If set, it will always dig against the normal of the collision triangle below." values="" />
 		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
@@ -19373,7 +19373,7 @@ Displays a model of a power-up that cannot be collected. These objects only serv
 A Bee Mushroom that transforms the player into a Bee character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee.</notes>
+A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19392,7 +19392,7 @@ A collectable item that turns the player into a Bee character. This power-up sta
 A Fire Flower that transforms the player into a Fire character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot fireballs.</notes>
+A collectable item that turns the player into a Fire character. This temporary power-up state lasts for 20 seconds, and allows the player to shoot fireballs.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19403,15 +19403,15 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoFoo">
-		<name>Red Star</name>
+		<name>Flying Star</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Red Star that transforms the player into a Flying character.
+A Flying Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Flying character. This temporary power-up state allows them to fly around.</notes>
+A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19431,7 +19431,7 @@ A collectable item that turns the player into a Flying character. This temporary
 A Spring Mushroom that transforms the player into a Spring character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring.</notes>
+A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring. The player will lose this power-up upon taking damage, contact with water or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19450,7 +19450,7 @@ A collectable item that turns the player into a Spring character. This power-up 
 An Ice Flower that transforms the player into an Ice character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into an Ice character. This temporary power-up state allows them to create ice platforms when touching water surface.</notes>
+A collectable item that turns the player into an Ice character. This temporary power-up state lasts for 20 seconds, and allows the player to create ice platforms while touching water surface.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19469,7 +19469,7 @@ A collectable item that turns the player into an Ice character. This temporary p
 A Boo Mushroom that transforms the player into a Boo character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.</notes>
+A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls. The player will lose this power-up upon taking damage, or upon contact with Sling/Launch Stars.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19488,7 +19488,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 A Rock Mushroom that transforms the player into a Rock character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock.</notes>
+A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock. The player will lose this power-up upon taking damage, or upon contact with Sling/Launch Stars.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -26374,7 +26374,7 @@ An area that controls and sets the facing direction of all Cloud Flower platform
 A Cloud Flower that turns the player into a Cloud character, which allows them to create up to three temporary cloud platforms.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudMarioItem">
@@ -26386,7 +26386,7 @@ A collectable item that turns the player into a Cloud character. This power-up s
 An unused duplicate of the Cloud Flower object.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water.</notes>
 		<files />
 	</object>
 	<object id="SpinDriver">

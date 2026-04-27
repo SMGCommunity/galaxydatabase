@@ -1,7 +1,7 @@
 {
     "InternalName": "MorphItemNeoIce",
     "Name": "MorphItemNeoIce",
-    "Notes": "A collectable item that turns the player into an Ice character. This temporary power-up state allows them to create ice platforms when touching water surface.",
+    "Notes": "A collectable item that turns the player into an Ice character. This temporary power-up state lasts for 20 seconds, and allows the player to create ice platforms while touching water surface.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {

@@ -1,7 +1,7 @@
 {
     "InternalName": "SpinCloudItem",
     "Name": "SpinCloudItem",
-    "Notes": "A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.",
+    "Notes": "A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

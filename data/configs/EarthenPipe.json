@@ -71,13 +71,8 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Column ID in StageBgmInfo to change to once the pipe is left.",
-            "Values": [
-                {
-                    "Value": "0",
-                    "Notes": "Use music for current scenario from ScenarioBgmInfo."
-                }
-            ],
+            "Description": "Index of the music to change to once the pipe is left.",
+            "Values": [],
             "Exclusives": []
         },
         "Obj_arg5": {
