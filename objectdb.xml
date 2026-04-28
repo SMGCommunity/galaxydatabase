@@ -1,4 +1,4 @@
-<database timestamp="1777336581">
+<database timestamp="1777346199">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1297,7 +1297,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A bat enemy that is mostly found in cave sections.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated by most of the player's attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -1311,7 +1311,7 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 An icy bat that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated by most of the player's attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -3320,7 +3320,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue Koopa that throws boomerangs.
 
 -- CLASS NOTES --
-A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it.</notes>
+A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Any other player attack will stun the enemy, and using a spin attack or jumping on the enemy will defeat it. The Spin Drill, explosions, Koopa Shells, and Spiny projectiles will instantly defeat the enemy, while the Fire, Rainbow and Rock power-ups will all stun it.</notes>
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
@@ -4533,10 +4533,10 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A Li'l Brr that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core is destroyed upon contact with the player. Also destroys instances of CrystalCage and CrystalCageOpa upon contact. Additionally, this enemy can be defeated by: the Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, and Spiny projectiles. If the object is called IceMeramera, hitting it with a fireball will reveal its core, and hitting the core will defeat the enemy. If the object is called Meramera, hitting the core with a fireball will re-ignite the enemy.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when defeated." values="" />
 	</object>
 	<object id="ChildKameck">
 		<name>Fire Ball Magikoopa [Child]</name>
@@ -4562,7 +4562,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Goomba that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when defeated through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -4576,10 +4576,10 @@ A Goomba that can be defeated by most of the player's attacks. A Spin Attack wil
 A Li'l Cinder that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core is destroyed upon contact with the player. Also destroys instances of CrystalCage and CrystalCageOpa upon contact. Additionally, this enemy can be defeated by: the Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, and Spiny projectiles. If the object is called IceMeramera, hitting it with a fireball will reveal its core, and hitting the core will defeat the enemy. If the object is called Meramera, hitting the core with a fireball will re-ignite the enemy.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when defeated." values="" />
 	</object>
 	<object id="ChildRoomSky">
 		<name>Toy Time Sky</name>
@@ -6732,7 +6732,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Enemy Kill Type" notes="Specifies what objects this area affects. Default is 0." values="0: = Kill player and compatible objects, 1: = Kill compatible objects except player" />
 	</object>
 	<object id="DeathCube">
 		<name>Death Area [Cube]</name>
@@ -6745,7 +6745,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Enemy Kill Type" notes="Specifies what objects this area affects. Default is 0." values="0: = Kill player and compatible objects, 1: = Kill compatible objects except player" />
 	</object>
 	<object id="DeathCylinder">
 		<name>Death Area [Cylinder]</name>
@@ -6758,7 +6758,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Enemy Kill Type" notes="Specifies what objects this area affects. Default is 0." values="0: = Kill player and compatible objects, 1: = Kill compatible objects except player" />
 	</object>
 	<object id="DeathPromenade2DPlanet">
 		<name>Boo's Boneyard -- Main Planet</name>
@@ -6919,7 +6919,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Enemy Kill Type" notes="Specifies what objects this area affects. Default is 0." values="0: = Kill player and compatible objects, 1: = Kill compatible objects except player" />
 	</object>
 	<object id="DecorationBigCloud">
 		<name>Fluffy Bluff -- Background Cloud</name>
@@ -7973,8 +7973,11 @@ A sparkling effect that is used in the Comet Observatory.
 A set of rotating electric balls that are used in Battlerock Galaxy and Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A set of rotating electric balls that are placed in a circle. They can follow a path or remain stationary.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Balls" notes="The amount of electric balls to be placed in the circle. Default is 4." values="" />
+		<field id="1" type="int" name="Ball Placement Radius" notes="The radius of the electric ball circle. Default is 750." values="" />
+		<field id="2" type="int" name="Rotation Speed" notes="The speed in which the balls rotate around the object's position. Default is 0. Negative values will make the balls rotate in the opposite direction." values="" />
 	</object>
 	<object id="ElectricBazooka">
 		<name>Electric Undergrunt Gunner</name>
@@ -8216,6 +8219,7 @@ A platform with a large eye that creates a beam that shocks the player upon cont
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Beam Length" notes="The lenght of the electric beam. Default is 2000." values="" />
 	</object>
 	<object id="EyeBeamerCubePlanet">
 		<name>Dreadnought -- Eye Beamer Cube Planet</name>
@@ -10499,7 +10503,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A shining light area that kills Boos when they enter it.
+A shining light area that defeats Boos when they enter it.
 
 -- CLASS NOTES --
 An area that defeats Boos and removes the Boo power-up from the player once entered.</notes>
@@ -10511,7 +10515,7 @@ An area that defeats Boos and removes the Boo power-up from the player once ente
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A shining light area that kills Boos when they enter it.
+A shining light area that defeats Boos when they enter it.
 
 -- CLASS NOTES --
 An area that defeats Boos and removes the Boo power-up from the player once entered.</notes>
@@ -11769,7 +11773,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A Koopa Troopa variant that throws hammers at the player.
 
 -- CLASS NOTES --
-A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it.</notes>
+A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Any other player attack will stun the enemy, and using a spin attack or jumping on the enemy will defeat it. The Spin Drill, explosions, Koopa Shells, and Spiny projectiles will instantly defeat the enemy, while the Fire, Rainbow and Rock power-ups will all stun it.</notes>
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
@@ -13140,10 +13144,10 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A burning rock enemy that floats around and chases after Mario. It will freeze the player upon contact.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core is destroyed upon contact with the player. Also destroys instances of CrystalCage and CrystalCageOpa upon contact. Additionally, this enemy can be defeated by: the Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, and Spiny projectiles. If the object is called IceMeramera, hitting it with a fireball will reveal its core, and hitting the core will defeat the enemy. If the object is called Meramera, hitting the core with a fireball will re-ignite the enemy.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when defeated." values="" />
 	</object>
 	<object id="IceMerameraKing">
 		<name>Baron Brrr</name>
@@ -13927,7 +13931,7 @@ A stationary platform that breaks and falls when hit by a Banzai Bill, Megahamme
 A Koopa that sits on a cloud and throws Spinys at the player.
 
 -- CLASS NOTES --
-An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks, and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.</notes>
+An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been defeated, it will throw another one. It can be defeated using most of the player's attacks, and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="How long it takes for it to respawn after it dies. Default is 900." values="" />
 	</object>
@@ -13996,7 +14000,7 @@ A pole that can be swung from and jumped off of.</notes>
 A stationary green robot enemy that launches several Topminis when the player comes near it. The head can be bounced off by the player.
 
 -- CLASS NOTES --
-A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
+A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player has defeated some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
 		<files />
 		<field id="0" type="int" name="Useless" notes="The number of Coins to declare. Useless because the Coins are never spawned." values="" />
 		<field id="1" type="int" name="Launch Velocity" notes="The speed at which the Topmini are launched from this object." values="0 = 16, 1 = 8, 2 = 4" />
@@ -14197,7 +14201,7 @@ A crab enemy that damages the player upon contact. It can be defeated by attacki
 A small blue enemy that will stick onto player if they get near it. If the enemy is not defeated, it will begin to damage the player.
 
 -- CLASS NOTES --
-A small enemy that will chase after the player if they get too close. It will try to stick to the player's body to damage them. The player can get rid of them by using a Spin Attack. It can be defeated using most of the player's attacks. If shot by a Star Bit, it will drop three Star Bits instead of one. It can also be defeated by an enemy's explosion crush attack.</notes>
+A small enemy that will chase after the player if they get too close. It will try to stick to the player's body to damage them. The player can get rid of them by using a Spin Attack. If shot by a Star Bit, it will drop three Star Bits instead of one. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps. This enemy will not drop anything if crushed by a Silver Chomp.</notes>
 		<files />
 	</object>
 	<object id="Karon">
@@ -14209,7 +14213,7 @@ A small enemy that will chase after the player if they get too close. It will tr
 A dead skeleton of a Koopa Troopa.
 
 -- CLASS NOTES --
-A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated by the Rainbow power-up, Spin Drill, explosions, and Spinies. Furthermore, it will be stunned if hit with the player's Fireballs. It will sink down when touching SinkDown collision or lava collision (SMG2 only).
+A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated by the Rainbow power-up, Spin Drill, explosions, and Spiny projectiles. Furthermore, it will be stunned if hit with the player's Fireballs. It will sink down when touching SinkDown collision or lava collision (SMG2 only).
 </notes>
 		<files />
 		<field id="0" type="bool" name="Don't Stop SW_A Animation?" notes="If set, its idle animation won't stop when SW_A is used and not activated yet." values="" />
@@ -16158,7 +16162,7 @@ A bug-like enemy that remains idle until the player approaches it. If the player
 The infamous Goomba enemy that appeared in most Mario games since 1985.
 
 -- CLASS NOTES --
-A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when defeated through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -16172,7 +16176,7 @@ A Goomba that can be defeated by most of the player's attacks. A Spin Attack wil
 A big Goomba that appears in Gateway Galaxy and the Supermassive Galaxy.
 
 -- CLASS NOTES --
-A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means.</notes>
+A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when defeated through other means.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register cameras." values="" />
 	</object>
@@ -16200,7 +16204,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (always a Coin in SMG1).
 
 -- CLASS NOTES --
-A small Goomba enemy that can be instantly defeated by most of the player's attacks. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops a Star Bit when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+A small Goomba enemy that can be instantly defeated by most of the player's attacks. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops a Star Bit when defeated through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="LargeChain">
@@ -18478,10 +18482,10 @@ A spider-like enemy that lunges across water. When it touches ice collision, it 
 A burning rock enemy that floats around and chases after Mario. It will burn the player upon contact. If attacked with a Fire Ball, it gets reignited.
 
 -- CLASS NOTES --
-An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions. Also destroys instances of CrystalCage and CrystalCageOpa upon contact.</notes>
+An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core is destroyed upon contact with the player. Also destroys instances of CrystalCage and CrystalCageOpa upon contact. Additionally, this enemy can be defeated by: the Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, and Spiny projectiles. If the object is called IceMeramera, hitting it with a fireball will reveal its core, and hitting the core will defeat the enemy. If the object is called Meramera, hitting the core with a fireball will re-ignite the enemy.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when defeated." values="" />
 	</object>
 	<object id="MercatorCube">
 		<name>Mercator Projection Area [Cube]</name>
@@ -19937,7 +19941,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A small turtle that drops its Shell when jumped on.
 
 -- CLASS NOTES --
-A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones.</notes>
+A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones. Additionally, this enemy will go into its shell when hit by: the Fire, Rainbow and Rock power-ups, the Spin Drill, and Spiny projectiles. Furthermore, the enemy can be defeated by explosions and Koopa shells.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue" />
 		<field id="3" type="bool" name="Doesn't Respawn?" notes="If set, it will not respawn after destroying its shell." values="" />
@@ -20705,7 +20709,7 @@ A small floating island with a palm tree that is used in Loopdeeloop Galaxy and 
 A flying Goomba with wings.
 
 -- CLASS NOTES --
-A Goomba with wings that flies across a set path. It can be defeated by stomping or Ground Pounding on top of it. All other attacks cause it to lose its wings, turning it into a regular Goomba.</notes>
+A Goomba with wings that flies across a set path. It can be defeated by most player attacks. A spin attack or Yoshi's tongue will cause it to lose its wings, turning it into a regular Goomba. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, Koopa Shells, and Spiny projectiles.</notes>
 		<files />
 	</object>
 	<object id="PatakuriBig">
@@ -22317,7 +22321,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy used in underwater levels.
 
 -- CLASS NOTES --
-A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all player attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
+A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated by most of the player's attacks. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when defeated through other means.</notes>
 		<files />
 	</object>
 	<object id="PukupukuGambolPlanet">
@@ -22344,7 +22348,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy that is intended to swim on the water's surface.
 
 -- CLASS NOTES --
-A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all player attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
+A fish enemy that swims on the surface of the water area it's inside. It can be defeated by most of the player's attacks. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when defeated through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, Koopa Shells, and Spiny projectiles. When it touches ice collision, it will be frozen to ice, causing the enemy to die upon contact, dropping Star Bits.</notes>
 		<files />
 		<field id="0" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
@@ -28165,7 +28169,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue octopus enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="int" name="Lava Interaction" notes="How it interacts with lava collision." values="-1 = Doesn't die to lava, 1 = Dies to lava" />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
@@ -28183,7 +28187,7 @@ An octopus enemy that can be defeated using most player attacks. It moves a set 
 A pink Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+An octopus enemy that can be defeated using most player attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
@@ -28210,7 +28214,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
+An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
 		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
@@ -29432,7 +29436,7 @@ A controller for The Chimp's Bowling Challenge which sets up the mini-game where
 An enemy with a red spiky shell on its back.
 
 -- CLASS NOTES --
-An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks. However, touching its spikes will damage the player. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Spinies, and Silver Chomps.</notes>
+An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks. However, touching its spikes will damage the player. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Spiny projectiles, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="TombSpider">
@@ -31347,7 +31351,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A purple Urchin with spikes on its body; intended for water areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLand">
@@ -31359,7 +31363,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 A red furry Urchin with spikes on its body; intended for land areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLauncher">
@@ -31383,7 +31387,7 @@ A point that periodically spawns several Land Urchins.
 A purple Urchin with spikes on its body. It doesn't create any water splash particles when it moves.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="ValveSwitch">

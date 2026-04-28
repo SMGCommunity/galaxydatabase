@@ -1,8 +1,102 @@
 {
     "InternalName": "ElectricBall",
     "Name": "ElectricBall",
-    "Notes": "",
+    "Notes": "A set of rotating electric balls that are placed in a circle. They can follow a path or remain stationary.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Balls",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The amount of electric balls to be placed in the circle. Default is 4.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Ball Placement Radius",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The radius of the electric ball circle. Default is 750.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Rotation Speed",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The speed in which the balls rotate around the object's position. Default is 0. Negative values will make the balls rotate in the opposite direction.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Path_arg1": {
+            "Name": "Movement Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How the object behaves once it reaches the last path point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Stops at last point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves back towards first point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Warps back to first point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, the balls won't be able to electrocute the player until this switch is activated. Also starts movement if a path is assigned.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
     "InternalName": "PukupukuWaterSurface",
     "Name": "PukupukuWaterSurface",
-    "Notes": "A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all player attacks, which causes it to drop a Coin or three Star Bits when defeated.",
+    "Notes": "A fish enemy that swims on the surface of the water area it's inside. It can be defeated by most of the player's attacks. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when defeated through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, Koopa Shells, and Spiny projectiles. When it touches ice collision, it will be frozen to ice, causing the enemy to die upon contact, dropping Star Bits.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

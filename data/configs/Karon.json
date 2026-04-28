@@ -1,7 +1,7 @@
 {
     "InternalName": "Karon",
     "Name": "Karon",
-    "Notes": "A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated by the Rainbow power-up, Spin Drill, explosions, and Spinies. Furthermore, it will be stunned if hit with the player's Fireballs. It will sink down when touching SinkDown collision or lava collision (SMG2 only).\n",
+    "Notes": "A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated by the Rainbow power-up, Spin Drill, explosions, and Spiny projectiles. Furthermore, it will be stunned if hit with the player's Fireballs. It will sink down when touching SinkDown collision or lava collision (SMG2 only).\n",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

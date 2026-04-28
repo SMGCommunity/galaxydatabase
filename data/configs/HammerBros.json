@@ -1,7 +1,7 @@
 {
     "InternalName": "HammerBros",
     "Name": "HammerBros",
-    "Notes": "A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it.",
+    "Notes": "A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Any other player attack will stun the enemy, and using a spin attack or jumping on the enemy will defeat it. The Spin Drill, explosions, Koopa Shells, and Spiny projectiles will instantly defeat the enemy, while the Fire, Rainbow and Rock power-ups will all stun it.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

@@ -1,7 +1,7 @@
 {
     "InternalName": "Patakuri",
     "Name": "Patakuri",
-    "Notes": "A Goomba with wings that flies across a set path. It can be defeated by stomping or Ground Pounding on top of it. All other attacks cause it to lose its wings, turning it into a regular Goomba.",
+    "Notes": "A Goomba with wings that flies across a set path. It can be defeated by most player attacks. A spin attack or Yoshi's tongue will cause it to lose its wings, turning it into a regular Goomba. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, Koopa Shells, and Spiny projectiles.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

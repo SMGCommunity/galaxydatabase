@@ -1,7 +1,7 @@
 {
     "InternalName": "Unizo",
     "Name": "Unizo",
-    "Notes": "An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.",
+    "Notes": "An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spiny projectiles, and Silver Chomps. Once defeated, it will drop six Star Bits.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

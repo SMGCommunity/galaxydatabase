@@ -3,6 +3,27 @@
     "Name": "EyeBeamer",
     "Notes": "",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Beam Length",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The lenght of the electric beam. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

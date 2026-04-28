@@ -1,7 +1,7 @@
 {
     "InternalName": "Togezo",
     "Name": "Togezo",
-    "Notes": "An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks. However, touching its spikes will damage the player. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Spinies, and Silver Chomps.",
+    "Notes": "An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks. However, touching its spikes will damage the player. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Spiny projectiles, and Silver Chomps.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

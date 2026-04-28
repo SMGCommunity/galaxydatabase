@@ -6,18 +6,18 @@
     "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Death Type",
+            "Name": "Enemy Kill Type",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
             "Description": "Specifies what objects this area affects. Default is 0.",
             "Values": [
                 {
-                    "Value": "0",
+                    "Value": "0:",
                     "Notes": "Kill player and compatible objects"
                 },
                 {
-                    "Value": "1",
+                    "Value": "1:",
                     "Notes": "Kill compatible objects except player"
                 }
             ],
