@@ -1,7 +1,7 @@
 {
     "InternalName": "DashFruit",
     "Name": "DashFruit",
-    "Notes": "A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds.",
+    "Notes": "A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds. The effect of this fruit may also stack with the Bulb Berry.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

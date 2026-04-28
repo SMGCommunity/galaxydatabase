@@ -1,7 +1,7 @@
 {
     "InternalName": "LightFruit",
     "Name": "LightFruit",
-    "Notes": "A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds.",
+    "Notes": "A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds. The effect of this fruit may also stack with the Dash Pepper or Blimp Fruit.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

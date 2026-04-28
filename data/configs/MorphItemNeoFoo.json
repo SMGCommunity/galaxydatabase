@@ -1,7 +1,7 @@
 {
     "InternalName": "MorphItemNeoFoo",
     "Name": "MorphItemNeoFoo",
-    "Notes": "A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars.",
+    "Notes": "A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars and WaterPressure bubbles, or upon usage of a Pull Star.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {

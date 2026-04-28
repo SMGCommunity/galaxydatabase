@@ -1,7 +1,7 @@
 {
     "InternalName": "MorphItemNeoBee",
     "Name": "MorphItemNeoBee",
-    "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water.",
+    "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

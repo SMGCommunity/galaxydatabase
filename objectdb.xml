@@ -1,4 +1,4 @@
-<database timestamp="1777320760">
+<database timestamp="1777336581">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1082,7 +1082,7 @@ A blow fish enemy that inflates once the player gets in its range. It will then 
 The blue fruit that Yoshi can eat to expand and fly like a balloon.
 
 -- CLASS NOTES --
-A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
+A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds. The effect of this fruit may also stack with the Bulb Berry.</notes>
 		<files />
 	</object>
 	<object id="BallOpener">
@@ -4562,7 +4562,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Goomba that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
+A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -6457,7 +6457,7 @@ An area that causes the player to turn yellow and run significantly faster when 
 The red pepper that Yoshi can eat to obtain the Dash power-up.
 
 -- CLASS NOTES --
-A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
+A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds. The effect of this fruit may also stack with the Bulb Berry.</notes>
 		<files />
 	</object>
 	<object id="DashRing">
@@ -7846,7 +7846,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
+		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change once the pipe is left." values="0: = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
@@ -7866,7 +7866,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
-		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
+		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change once the pipe is left." values="0: = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
 		<field id="6" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation of the pipe will not be affected by gravity." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The animation frame to use as the pipe's color." values="-1 = Green, 1 = Orange" />
@@ -13766,7 +13766,7 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom dependi
 A drill power-up that allows the player to dig through certain dirt upon spinning.
 
 -- CLASS NOTES --
-A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
+A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water, RollingWater or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
 		<files />
 		<field id="0" type="bool" name="Against Collision Normal?" notes="If set, it will always dig against the normal of the collision triangle below." values="" />
 		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
@@ -14209,7 +14209,8 @@ A small enemy that will chase after the player if they get too close. It will tr
 A dead skeleton of a Koopa Troopa.
 
 -- CLASS NOTES --
-A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill, Yoshi's projectiles, or explosions. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only).</notes>
+A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a Koopa Shell. However, it will be defeated by the Rainbow power-up, Spin Drill, explosions, and Spinies. Furthermore, it will be stunned if hit with the player's Fireballs. It will sink down when touching SinkDown collision or lava collision (SMG2 only).
+</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Stop SW_A Animation?" notes="If set, its idle animation won't stop when SW_A is used and not activated yet." values="" />
 		<field id="1" type="bool" name="Use Path Direction Sight?" notes="If set, it will only look and move into the path's direction." values="" />
@@ -16157,7 +16158,7 @@ A bug-like enemy that remains idle until the player approaches it. If the player
 The infamous Goomba enemy that appeared in most Mario games since 1985.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
+A Goomba that can be defeated by most of the player's attacks. A Spin Attack will stun it, though. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -16199,7 +16200,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (always a Coin in SMG1).
 
 -- CLASS NOTES --
-A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops a Star Bit when damaged through other means.</notes>
+A small Goomba enemy that can be instantly defeated by most of the player's attacks. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops a Star Bit when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="LargeChain">
@@ -17312,7 +17313,7 @@ An area that changes the currently active lighting configuration when entered. T
 A berry that turns Yoshi into Bulb Yoshi who can make parts of the stage appear.
 
 -- CLASS NOTES --
-A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds.</notes>
+A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds. The effect of this fruit may also stack with the Dash Pepper or Blimp Fruit.</notes>
 		<files />
 	</object>
 	<object id="LongCylinderFlowSandPlanet">
@@ -19373,7 +19374,7 @@ Displays a model of a power-up that cannot be collected. These objects only serv
 A Bee Mushroom that transforms the player into a Bee character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water.</notes>
+A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19411,7 +19412,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 A Flying Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars.</notes>
+A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars and WaterPressure bubbles, or upon usage of a Pull Star.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19431,7 +19432,7 @@ A collectable item that turns the player into a Flying character. This temporary
 A Spring Mushroom that transforms the player into a Spring character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring. The player will lose this power-up upon taking damage, contact with water or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
+A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring. The player will lose this power-up upon taking damage, contact with water, WaterPressure bubbkes and RollingWater, or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19469,7 +19470,7 @@ A collectable item that turns the player into an Ice character. This temporary p
 A Boo Mushroom that transforms the player into a Boo character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls. The player will lose this power-up upon taking damage, or upon contact with Sling/Launch Stars.</notes>
+A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls. The player will lose this power-up upon taking damage, as well as upon contact with Sling/Launch Stars and GlaringLightArea/SunLightArea. In this state, the player takes damage from several objects that normally don't damage them, such as Coconuts, RollingWater and WaterPressure bubbles.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19488,7 +19489,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 A Rock Mushroom that transforms the player into a Rock character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock. The player will lose this power-up upon taking damage, or upon contact with Sling/Launch Stars.</notes>
+A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock. The player will lose this power-up upon taking damage, or upon contact with Sling/Launch Stars and RollingWater.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -28164,7 +28165,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue octopus enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 		<field id="0" type="int" name="Lava Interaction" notes="How it interacts with lava collision." values="-1 = Doesn't die to lava, 1 = Dies to lava" />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
@@ -28182,7 +28183,7 @@ An octopus enemy that can be defeated using most player attacks. It can also be 
 A pink Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
@@ -28209,7 +28210,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most player attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps.</notes>
 		<files />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
 		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
@@ -29431,7 +29432,7 @@ A controller for The Chimp's Bowling Challenge which sets up the mini-game where
 An enemy with a red spiky shell on its back.
 
 -- CLASS NOTES --
-An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player.</notes>
+An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks. However, touching its spikes will damage the player. Additionally, this enemy can be defeated by: the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Spinies, and Silver Chomps.</notes>
 		<files />
 	</object>
 	<object id="TombSpider">
@@ -31346,7 +31347,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A purple Urchin with spikes on its body; intended for water areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLand">
@@ -31358,7 +31359,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 A red furry Urchin with spikes on its body; intended for land areas.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLauncher">
@@ -31382,7 +31383,7 @@ A point that periodically spawns several Land Urchins.
 A purple Urchin with spikes on its body. It doesn't create any water splash particles when it moves.
 
 -- CLASS NOTES --
-An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Coconuts, Koopa Shells, the Spin Drill, the Rock and Rainbow power-ups, and explosions. Once defeated, it will drop six Star Bits.</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated by the Fire, Rainbow and Rock power-ups, the Spin Drill, explosions, coconuts, Stretch Plants, Topmen, Koopa Shells, Spinies, and Silver Chomps. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="ValveSwitch">
@@ -32310,7 +32311,7 @@ A group of decorative seaweed that can appear in many shapes. The seaweed attach
 This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.
 
 -- CLASS NOTES --
-A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. The cannon can be set to rotate towards the player.</notes>
+A blue cannon that periodically shoots bubbles that trap the player inside upon contact, unless the player is riding Yoshi or in Rainbow form. It cannot be destroyed through any means. The cannon can be set to rotate towards the player.</notes>
 		<files />
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />

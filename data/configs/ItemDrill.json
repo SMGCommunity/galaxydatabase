@@ -1,7 +1,7 @@
 {
     "InternalName": "ItemDrill",
     "Name": "ItemDrill",
-    "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water or Sling/Launch Stars, or upon usage of a Pull Star.",
+    "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water, RollingWater or Sling/Launch Stars, or upon usage of a Pull Star.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
