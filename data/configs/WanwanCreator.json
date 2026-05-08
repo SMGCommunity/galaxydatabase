@@ -1,7 +1,7 @@
 {
     "InternalName": "WanwanCreator",
     "Name": "WanwanCreator",
-    "Notes": "A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.",
+    "Notes": "A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up and explosions. Any non-Gold Chomps can be destroyed by Stretch Plants and Coconuts. With a properly configured Scenario entry, Gold Chomps will spawn a Power Star when defeated in SMG1, and in SMG2, when defeated by WanwanGoal. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it. If WanwanRollingMini enters WanwanGoal, this will crash the game.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -142,10 +142,8 @@
         "SW_DEAD": {
             "Games": 2,
             "Needed": false,
-            "Description": "Gets activated when it dies.",
-            "Exclusives": [
-                "WanwanRollingMini"
-            ]
+            "Description": "Gets activated when it dies. If the object isn't WanwanRollingMini, this switch will only activate when defeated by WanwanGoal.",
+            "Exclusives": []
         },
         "SW_A": {
             "Games": 3,

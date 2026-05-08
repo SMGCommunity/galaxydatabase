@@ -1,4 +1,4 @@
-<database timestamp="1777346199">
+<database timestamp="1778201031">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19408,12 +19408,12 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoFoo">
-		<name>Flying Star</name>
+		<name>Red Star</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Flying Star that transforms the player into a Flying character.
+A Red Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Flying character. This temporary power-up state lasts for 60 seconds, and allows the player to fly around freely. The player will lose this power-up upon contact with Sling/Launch Stars and WaterPressure bubbles, or upon usage of a Pull Star.</notes>
@@ -22361,7 +22361,7 @@ A fish enemy that swims on the surface of the water area it's inside. It can be 
 An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
 -- CLASS NOTES --
-An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.</notes>
+An area that returns the player to the last safe position they stood on before entering this area. The game won't treat Ice and GlassIce collision as proper safe collision triangles, although, this can be enabled with RecoveryFloorControlArea.</notes>
 		<files />
 		<field id="0" type="int" name="Throw Type" notes="If used, the player will be thrown out instead of returning to the previous safe collision triangle. This setting is only usable by cylindrical areas. All other shapes will return the player to the previous safe collision triangle." values="-1 = Throw player out, 1 = Return to previous safe collision" />
 	</object>
@@ -22374,7 +22374,7 @@ An area that returns the player to the last safe position they stood on before e
 An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
 -- CLASS NOTES --
-An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.</notes>
+An area that returns the player to the last safe position they stood on before entering this area. The game won't treat Ice and GlassIce collision as proper safe collision triangles, although, this can be enabled with RecoveryFloorControlArea.</notes>
 		<files />
 	</object>
 	<object id="PullBackCylinder">
@@ -22386,7 +22386,7 @@ An area that returns the player to the last safe position they stood on before e
 An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
 -- CLASS NOTES --
-An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.</notes>
+An area that returns the player to the last safe position they stood on before entering this area. The game won't treat Ice and GlassIce collision as proper safe collision triangles, although, this can be enabled with RecoveryFloorControlArea.</notes>
 		<files />
 		<field id="0" type="int" name="Throw Type" notes="If used, the player will be thrown out instead of returning to the previous safe collision triangle. This setting is only usable by cylindrical areas. All other shapes will return the player to the previous safe collision triangle." values="-1 = Throw player out, 1 = Return to previous safe collision" />
 	</object>
@@ -31682,7 +31682,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The hole used as the goal for Chomps in Chompworks Galaxy.
 
 -- CLASS NOTES --
-A goal that Chomps can roll into. It will cause different effects depending on the type of Chomp that rolls into it.</notes>
+A goal that Chomps can roll into. It will cause different effects depending on the type of Chomp that rolls into it. This object is required for WanwanRolling and WanwanRollingGold's SW_DEAD functionality.</notes>
 		<files />
 	</object>
 	<object id="WanwanLiftUpStepA">
@@ -31770,7 +31770,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up and explosions. Any non-Gold Chomps can be destroyed by Stretch Plants and Coconuts. With a properly configured Scenario entry, Gold Chomps will spawn a Power Star when defeated in SMG1, and in SMG2, when defeated by WanwanGoal. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it. If WanwanRollingMini enters WanwanGoal, this will crash the game.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31789,7 +31789,7 @@ A spawner that creates rolling Chomps that move on a set path. The Chomps can be
 A rolling golden Chomp that moves along a set path and spawns a Power Star when defeated.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up and explosions. Any non-Gold Chomps can be destroyed by Stretch Plants and Coconuts. With a properly configured Scenario entry, Gold Chomps will spawn a Power Star when defeated in SMG1, and in SMG2, when defeated by WanwanGoal. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it. If WanwanRollingMini enters WanwanGoal, this will crash the game.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31807,7 +31807,7 @@ A spawner that creates rolling Chomps that move on a set path. The Chomps can be
 A small rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up and explosions. Any non-Gold Chomps can be destroyed by Stretch Plants and Coconuts. With a properly configured Scenario entry, Gold Chomps will spawn a Power Star when defeated in SMG1, and in SMG2, when defeated by WanwanGoal. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it. If WanwanRollingMini enters WanwanGoal, this will crash the game.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31840,7 +31840,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 An aggressive version of a Chomp that moves around freely.
 
 -- CLASS NOTES --
-A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with WanwanGoal, although the Chomp won't break apart.</notes>
 		<files />
 		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>
@@ -31853,7 +31853,7 @@ A silver, aggressive version of a Chomp that rolls around freely. It can be defe
 A more aggressive version of a Silver Chomp. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with WanwanGoal, although the Chomp won't break apart.</notes>
 		<files />
 		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>

@@ -1,7 +1,7 @@
 {
     "InternalName": "WanwanGoal",
     "Name": "WanwanGoal",
-    "Notes": "A goal that Chomps can roll into. It will cause different effects depending on the type of Chomp that rolls into it.",
+    "Notes": "A goal that Chomps can roll into. It will cause different effects depending on the type of Chomp that rolls into it. This object is required for WanwanRolling and WanwanRollingGold's SW_DEAD functionality.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
