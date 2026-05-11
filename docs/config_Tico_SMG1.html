@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Config: Tico (SMG1)</h1>
-			<p></p>
+			<p>A cute star-shaped NPC that can be talked to. It supports various different behaviors.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used. Default is 0.</p></td><td><ul><li>0: Yellow</li><li>1: Blue</li><li>2: Green</li><li>3: Red</li><li>4: Purple</li><li>5: Pink</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Behavior</b>: Its general behavior.</p></td><td><ul><li>0: Default</li><li>3: Transform after talking</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated when it transforms.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG1</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -55,7 +55,7 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "Movement Speed / Time",
+            "Name": "Movement Speed",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,

@@ -1,8 +1,8 @@
 {
     "InternalName": "SubmarineSteam",
     "Name": "SubmarineSteam",
-    "Notes": "",
+    "Notes": "An effect object that will damage the player if they get too close.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {}
 }

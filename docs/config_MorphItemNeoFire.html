@@ -18,18 +18,18 @@
 		</header>
 		<div class="contents">
 			<h1>Config: MorphItemNeoFire</h1>
-			<p>A collectable item that turns the player into a Fire character. This temporary power-up state lasts for 20 seconds, and allows the player to shoot fireballs.</p>
+			<p>A collectable item that turns the player into a Fire character. This temporary power-up state lasts for 20 seconds, and allows the player to shoot fireballs. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Type</b>: Specifies how the item appears after SW_APPEAR gets activated.</p></td><td><ul><li>-1: Appears in place</li><li>1: Appears above and falls down</li></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Binder Type</b>: Enables or disables collision binding.</p></td><td><ul><li>-1: Deactivated</li><li>1: Activated</li></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Landing Type</b>: Specifies whether the power-up falls down after appearing or not.</p></td><td><ul><li>-1: Lands when it appears</li><li>1: Stays in position where it appeared</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Inside Bubble?</b>: Specifies if the item is stored in a bubble or not.</p></td><td><ul><li>-1: Not contained in a bubble</li><li>1: Contained in a bubble</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Landing Type</b>: Specifies whether the power-up falls down after appearing or not.</p></td><td><ul><li>-1: Lands when it appears</li><li>1: Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Container</b>: Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns.</p></td><td><ul><li>-1: Contained in a crystal (SMG1)/None (SMG2)</li><li>0: Contained in a bubble</li><li>1: None</li></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow & Clipping Type</b>: Specifies the shadow and clipping properties.</p></td><td><ul><li>-1: Calculate shadow drop direction from gravity once</li><li>0: Use no shadow</li><li>1: Calculate shadow</li><li>2: Calculate shadow drop and direction from gravity</li><li>3: Use spherical clipping and calculate shadow drop direction from gravity once</li><li>4: Use spherical clipping and calculate shadow drop direction from gravity once</li></ul></td></tr>
 				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Camera Type</b>: Specifies what appearance event cameras are to be used.</p></td><td><ul><li>-1: No cameras</li><li>1: Use 出現1</li><li>2: Use 出現1 and 出現2</li></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: Specifies how the item rotates. It never visibly rotates while inside a bubble.</p></td><td><ul><li>-1: Always rotates</li><li>0: Don't rotate</li><li>1: Rotation updates while outside bubble</li><li>2: Rotation updates while inside bubble</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal.</p></td><td><ul><li>-1: Always rotates</li><li>0: Don't rotate</li><li>1: Rotation updates while outside container</li><li>2: Rotation updates while inside container</li></ul></td></tr>
 				<tr><td>Path_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Initial Position Type</b>: The object's initial position.</p></td><td><ul><li>-1: Start at nearest position on path</li><li>1: Start at nearest path point</li><li>2: Start at first path point</li></ul></td></tr>
 				<tr><td>Path_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Snapping Speed</b>: If used, the object stays at its original position and moves to its actual position on the path. This setting specifies how fast the object snaps back into its original position. The higher the value is, the slower it moves.</p></td><td><ul></ul></td></tr>
 				<tr><td>Point_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Movement Speed / Time</b>: The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.</p></td><td><ul></ul></td></tr>
@@ -56,7 +56,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 0.</p></td><td><ul></ul></td></tr>
 				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the item appears.</p></td><td><ul></ul></td></tr>
 				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>

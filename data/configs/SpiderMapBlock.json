@@ -1,8 +1,8 @@
 {
     "InternalName": "SpiderMapBlock",
     "Name": "SpiderMapBlock",
-    "Notes": "",
+    "Notes": "A breakable rock that can be destroyed by either ground-pounding it or slinging into it with a Sling Pod. If destroyed, a coin will drop.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {}
 }

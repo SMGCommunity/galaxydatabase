@@ -1,8 +1,27 @@
 {
     "InternalName": "SpaceCocoon",
     "Name": "SpaceCocoon",
-    "Notes": "",
+    "Notes": "A sticky object that grabs the player when they get close, unless they have the Spring or Boo power-ups. The player can use the Star Pointer to sling themselves in any direction.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sling Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The amount of time in frames before the player slows down. Default is 80.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Height",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The height of the Sling Pod.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

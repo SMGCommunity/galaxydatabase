@@ -1,7 +1,7 @@
 {
     "InternalName": "MorphItemNeoTeresa",
     "Name": "MorphItemNeoTeresa",
-    "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls. The player will lose this power-up upon taking damage, as well as upon contact with Sling/Launch Stars and GlaringLightArea/SunLightArea. In this state, the player takes damage from several objects that normally don't damage them, such as Coconuts, RollingWater and WaterPressure bubbles.",
+    "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls. The player will lose this power-up upon taking damage, as well as upon contact with Sling/Launch Stars and GlaringLightArea/SunLightArea. In this state, the player takes damage from several objects that normally don't damage them, such as Coconuts, RollingWater and WaterPressure bubbles. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -54,25 +54,29 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Stays in position where it appeared"
+                    "Notes": "Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Inside Bubble?",
+            "Name": "Container",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies if the item is stored in a bubble or not.",
+            "Description": "Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Not contained in a bubble"
+                    "Notes": "Contained in a crystal (SMG1)/None (SMG2)"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Contained in a bubble"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Contained in a bubble"
+                    "Notes": "None"
                 }
             ],
             "Exclusives": []
@@ -138,7 +142,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
+            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal.",
             "Values": [
                 {
                     "Value": "-1",
@@ -150,11 +154,11 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Rotation updates while outside bubble"
+                    "Notes": "Rotation updates while outside container"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Rotation updates while inside bubble"
+                    "Notes": "Rotation updates while inside container"
                 }
             ],
             "Exclusives": []
@@ -292,7 +296,7 @@
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 1.",
+            "Description": "The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 0.",
             "Exclusives": []
         },
         "Camera": {

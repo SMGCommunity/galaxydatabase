@@ -60,19 +60,23 @@
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Inside Bubble?",
+            "Name": "Container",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Specifies if the item is stored in a bubble or not.",
+            "Description": "Specifies the container the item appears in.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Not contained in a bubble"
+                    "Notes": "None"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Contained in a bubble"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Contained in a bubble"
+                    "Notes": "None"
                 }
             ],
             "Exclusives": []
@@ -138,7 +142,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
+            "Description": "Specifies how the item rotates. It never visibly rotates while inside a container.",
             "Values": [
                 {
                     "Value": "-1",
@@ -150,11 +154,11 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Rotation updates while outside bubble"
+                    "Notes": "Rotation updates while outside container"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Rotation updates while inside bubble"
+                    "Notes": "Rotation updates while inside container"
                 }
             ],
             "Exclusives": []
@@ -310,7 +314,7 @@
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "The optional path that it can move on.",
+            "Description": "The optional path that it can move on. This object will only move on a path if Obj_arg3 is set to 0.",
             "Exclusives": []
         },
         "Camera": {

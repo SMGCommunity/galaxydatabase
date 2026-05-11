@@ -1,8 +1,91 @@
 {
     "InternalName": "Tico_SMG1",
     "Name": "Tico (SMG1)",
-    "Notes": "",
+    "Notes": "A cute star-shaped NPC that can be talked to. It supports various different behaviors.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The color frame to be used. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Pink"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Its general behavior.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Default"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Transform after talking"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it transforms.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,8 +1,217 @@
 {
     "InternalName": "KinopioAstro",
     "Name": "KinopioAstro",
-    "Notes": "",
+    "Notes": "A variant of a Toad that is used in the Comet Observatory. It features a wide range of different behaviors and equipment. It can attach to Sling Pods.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Yellow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The animation/behavior to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Default"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Spinning"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Breakdancing"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Faster spinning"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Far talking range"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Connects to collision below (Broken in SMG2)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Swimming"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Digging"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Sleeping"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "Spawns Power Star"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Guarding"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Excited/jumping"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Scared"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Holds Star Bit"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Panicking while running"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "SW_APPEAR Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears immediately"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Gets launched from box"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Strict LOD Distances?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Invalidate Sensor?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, its body sensor will be invalidated so that all sensor-related interactions have no effect.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Equipment",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The equipment that he wears/carries.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Backpack & Headlamp on"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Snorkel"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Pickaxe"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Postman Bag"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Spear and Shield"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Glasses"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Star Bit"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        }
+    }
 }

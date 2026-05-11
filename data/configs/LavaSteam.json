@@ -1,8 +1,8 @@
 {
     "InternalName": "LavaSteam",
     "Name": "LavaSteam",
-    "Notes": "",
+    "Notes": "A geyser object that will emit steam periodically. This steam will burn the player upon contact.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {}
 }

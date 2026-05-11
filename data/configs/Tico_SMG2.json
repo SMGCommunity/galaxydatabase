@@ -156,7 +156,7 @@
         "SW_DEAD": {
             "Games": 2,
             "Needed": false,
-            "Description": "Gets activated when it dies.",
+            "Description": "Gets activated when it transforms.",
             "Exclusives": []
         },
         "SW_A": {

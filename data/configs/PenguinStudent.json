@@ -1,8 +1,8 @@
 {
     "InternalName": "PenguinStudent",
     "Name": "PenguinStudent",
-    "Notes": "",
+    "Notes": "A penguin NPC that swims around holding or chasing a Golden Shell. It will only start holding the shell when a switch is activated.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {}
 }

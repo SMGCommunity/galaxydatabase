@@ -1,8 +1,78 @@
 {
     "InternalName": "RainCloud",
     "Name": "RainCloud",
-    "Notes": "",
+    "Notes": "A cloud platform that can be stood on using the Bee power-up. If the player does not have this power-up and steps on the platform, they will fall through it. The platform remains stationary or moves on a path. By default, rain will fall from this platform, causing the player to lose the Bee power-up upon passing under it.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Rain/Shadow Length",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Sets the rain length. This also sets the shadow drop length. Default is 1000. No rain will appear if Obj_arg3 is set.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Is not Raining?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, no rain will fall from the cloud.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RailObj_arg1": {
+            "Name": "Movement Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How the object behaves once it reaches the last path point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Stops at last point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves back towards first point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Disappears and reappears at first point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
