@@ -1,4 +1,4 @@
-<database timestamp="1778477387">
+<database timestamp="1778544549">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3891,7 +3891,7 @@ A dinosaur enemy that moves around on a path. It can be defeated by stomping on 
 A variant of Polari that is used for explanation and tutorial sequences.
 
 -- CLASS NOTES --
-</notes>
+An elderly, dark-brown luma NPC that can be talked to. By default, it is hidden, and may only appear under certain conditions or via SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="ButlerExplain">
@@ -3917,6 +3917,7 @@ A dark-brown Luma that displays the map when talked to.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Default Map Type" notes="The version of the map that is shown to the player by default." values="-1 = Galaxies, 0 = Domes" />
 	</object>
 	<object id="Butterfly">
 		<name>Butterfly</name>
@@ -17419,8 +17420,9 @@ A generic planet with a model and optional collision with a far clipping distanc
 A special Luigi NPC who can be found in some levels to give you a Power Star when talked to.
 
 -- CLASS NOTES --
-</notes>
+A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.</notes>
 		<files />
+		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. The animation will always be &quot;Normal&quot; for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing." values="-1 = Normal (Always appeared, cannot spawn Power Star), 0 = Normal, 1 = Stuck to a wall, then Normal, 2 = Panicked" />
 	</object>
 	<object id="LuigiIntrusively">
 		<name>Playable Luigi</name>
@@ -17444,8 +17446,9 @@ An NPC variant of Luigi. It enables the player to play as Luigi when talked to i
 Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
-</notes>
+A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.</notes>
 		<files />
+		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. The animation will always be &quot;Normal&quot; for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing." values="-1 = Normal (Always appeared, cannot spawn Power Star), 0 = Normal, 1 = Stuck to a wall, then Normal, 2 = Panicked" />
 	</object>
 	<object id="LuigiOnMarioParts">
 		<name>Mario Squared -- Yellow Tile</name>
@@ -20739,7 +20742,7 @@ A huge Goomba with wings that flies across a set path. Any of the player's attac
 The character in a pink dress that always gets kidnapped by Bowser.
 
 -- CLASS NOTES --
-An NPC version of Mario's eternal damsel in distress that can be talked to. When attacked, she will pull an umbrella to defend herself. However, this behavior is exclusive to SMG2.</notes>
+An NPC version of Mario's eternal damsel in distress that can be talked to. In SMG1, she stays in a single looping animation and will not react to being attacked. In SMG2, when attacked, she will pull an umbrella to defend herself.</notes>
 		<files />
 	</object>
 	<object id="PeachCastleGardenPlanet">
@@ -29104,10 +29107,10 @@ A cute star-shaped NPC that can be talked to. It supports various different beha
 A variant of a Luma that does not appear until collecting a specific amount of Green Stars.
 
 -- CLASS NOTES --
-</notes>
+A special Luma NPC that appears when a certain Green Star is collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink" />
-		<field id="1" type="int" name="&lt;unnamed&gt;" notes="Its general behavior." values="0 = Default, 3 = Transform after talking" />
+		<field id="1" type="int" name="Behavior" notes="Its general behavior." values="0 = Default, 1 = Transform after talking, start appearance camera, 3 = Transform after talking, 5 = Idle (Does not react, needs SW_APPEAR / SW_SLEEP), 7 = Moves on path, 8 = Appears instantly with SW_APPEAR / SW_SLEEP" />
 	</object>
 	<object id="TicoBaby">
 		<name>Master Luma</name>
@@ -29178,8 +29181,10 @@ The blue Luma who transforms into the Terrace's Pull Star during the cutscene wh
 A pink Luma that is hungry for Star Bits.
 
 -- CLASS NOTES --
-</notes>
+A bigger Luma that requests a certain number of Star Bits. If the player feeds them the requested amount, it will transform, disappear and activate a switch. If the player has fed it all the Star Bits before and Obj_arg7 is not -1, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional. Despite there only being 7 instances of TicoFat in SMG1, the game's save data can handle more.</notes>
 		<files />
+		<field id="1" type="int" name="Requested Star Bits" notes="The number of requested Star Bits. Default is 10." values="" />
+		<field id="7" type="int" name="Hungry Luma Save Data" notes="The save data slot that keeps track of the number of star bits fed. Setting this to -1 will make the Hungry Luma respawn every time." values="" />
 	</object>
 	<object id="TicoFatCoin">
 		<name>Hungry Luma [Coins]</name>
@@ -29216,8 +29221,9 @@ A Hungry Luma that appears when requested on a World map. The number of Star Bit
 A pink Luma that is hungry for Star Bits and transforms into a portal to a galaxy accessible from the Comet Observatory.
 
 -- CLASS NOTES --
-</notes>
+A hungry luma NPC that appears under certain conditions. After it has been fed, the NPC will appear as a Pink Luma on any subsequent time the stage is visited.</notes>
 		<files />
+		<field id="7" type="int" name="Galaxy Index" notes="The index of the galaxy the player can go to. If the index is out of bounds, the Pink Luma will always be present." values="0 = Sweet Sweet, 1 = Sling Pod, 2 = Drip Drop, 3 = Boo's Boneyard, 4 = Snow Cap, 5 = Sand Spiral, 6 = Bigmouth" />
 	</object>
 	<object id="TicoRail">
 		<name>Moving Luma</name>
@@ -29294,8 +29300,9 @@ A Luma salesman who sells the player 1-Up Chance Cubes. It can request either St
 A Green Luma who transforms into a Green Launch Star upon player request.
 
 -- CLASS NOTES --
-</notes>
+A special Green Luma NPC that appears under certain conditions. Unlike TicoAstro, its behavior is very limited.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Index" notes="The index of the galaxy the player can go to. If set to 4 or higher, the object will spawned in by default." values="-1 = Rolling Gizmo, 0 = Rolling Gizmo, 1 = Loopdeeswoop, 2 = Bubble Blast, 3 = Grand Finale" />
 	</object>
 	<object id="TimeAttackClock">
 		<name>Plus Clock</name>

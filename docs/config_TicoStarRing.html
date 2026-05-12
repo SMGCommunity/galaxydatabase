@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TicoStarRing</h1>
-			<p></p>
+			<p>A special Green Luma NPC that appears under certain conditions. Unlike TicoAstro, its behavior is very limited.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Galaxy Index</b>: The index of the galaxy the player can go to. If set to 4 or higher, the object will spawned in by default.</p></td><td><ul><li>-1: Rolling Gizmo</li><li>0: Rolling Gizmo</li><li>1: Loopdeeswoop</li><li>2: Bubble Blast</li><li>3: Grand Finale</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated when it transforms.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG1</td><td>False</td><td><p>The text message ID to be used.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -1,8 +1,62 @@
 {
     "InternalName": "TicoStarRing",
     "Name": "TicoStarRing",
-    "Notes": "",
+    "Notes": "A special Green Luma NPC that appears under certain conditions. Unlike TicoAstro, its behavior is very limited.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Galaxy Index",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The index of the galaxy the player can go to. If set to 4 or higher, the object will spawned in by default.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rolling Gizmo"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Rolling Gizmo"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Loopdeeswoop"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Bubble Blast"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Grand Finale"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it transforms.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used.",
+            "Exclusives": []
+        }
+    }
 }

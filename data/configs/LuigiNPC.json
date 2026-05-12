@@ -1,8 +1,46 @@
 {
     "InternalName": "LuigiNPC",
     "Name": "LuigiNPC",
-    "Notes": "",
+    "Notes": "A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The animation/behavior to be used. The animation will always be \"Normal\" for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal (Always appeared, cannot spawn Power Star)"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Stuck to a wall, then Normal"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Panicked"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,8 +1,33 @@
 {
     "InternalName": "TicoFat",
     "Name": "TicoFat",
-    "Notes": "",
+    "Notes": "A bigger Luma that requests a certain number of Star Bits. If the player feeds them the requested amount, it will transform, disappear and activate a switch. If the player has fed it all the Star Bits before and Obj_arg7 is not -1, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional. Despite there only being 7 instances of TicoFat in SMG1, the game's save data can handle more.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Requested Star Bits",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of requested Star Bits. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Hungry Luma Save Data",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The save data slot that keeps track of the number of star bits fed. Setting this to -1 will make the Hungry Luma respawn every time.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on after eating the player's Star Bits.",
+            "Exclusives": []
+        }
+    }
 }

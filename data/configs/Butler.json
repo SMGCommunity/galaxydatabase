@@ -1,8 +1,20 @@
 {
     "InternalName": "Butler",
     "Name": "Butler",
-    "Notes": "",
+    "Notes": "An elderly, dark-brown luma NPC that can be talked to. By default, it is hidden, and may only appear under certain conditions or via SW_SLEEP.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used.",
+            "Exclusives": []
+        }
+    }
 }

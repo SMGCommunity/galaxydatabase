@@ -1,7 +1,7 @@
 {
     "InternalName": "TicoAstro",
     "Name": "TicoAstro",
-    "Notes": "",
+    "Notes": "A special Luma NPC that appears when a certain Green Star is collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
@@ -40,7 +40,7 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "<unnamed>",
+            "Name": "Behavior",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
@@ -51,8 +51,24 @@
                     "Notes": "Default"
                 },
                 {
+                    "Value": "1",
+                    "Notes": "Transform after talking, start appearance camera"
+                },
+                {
                     "Value": "3",
                     "Notes": "Transform after talking"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Idle (Does not react, needs SW_APPEAR / SW_SLEEP)"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Moves on path"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "Appears instantly with SW_APPEAR / SW_SLEEP"
                 }
             ],
             "Exclusives": []
@@ -84,7 +100,7 @@
         "Message": {
             "Games": 1,
             "Needed": false,
-            "Description": "",
+            "Description": "The text message ID to be used.",
             "Exclusives": []
         }
     }

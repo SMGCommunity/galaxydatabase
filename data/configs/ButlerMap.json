@@ -3,6 +3,30 @@
     "Name": "ButlerMap",
     "Notes": "",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Default Map Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The version of the map that is shown to the player by default.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Galaxies"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Domes"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        }
+    }
 }

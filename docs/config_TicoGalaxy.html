@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TicoGalaxy</h1>
-			<p></p>
+			<p>A hungry luma NPC that appears under certain conditions. After it has been fed, the NPC will appear as a Pink Luma on any subsequent time the stage is visited.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Galaxy Index</b>: The index of the galaxy the player can go to. If the index is out of bounds, the Pink Luma will always be present.</p></td><td><ul><li>0: Sweet Sweet</li><li>1: Sling Pod</li><li>2: Drip Drop</li><li>3: Boo's Boneyard</li><li>4: Snow Cap</li><li>5: Sand Spiral</li><li>6: Bigmouth</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated when it transforms.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>False</td><td><p>The path that it can move on after eating the player's Star Bits.</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

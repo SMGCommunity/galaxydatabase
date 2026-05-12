@@ -210,7 +210,7 @@
         "Message": {
             "Games": 1,
             "Needed": false,
-            "Description": "",
+            "Description": "The text message ID to be used.",
             "Exclusives": []
         }
     }

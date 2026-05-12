@@ -1,7 +1,7 @@
 {
     "InternalName": "Peach",
     "Name": "Peach",
-    "Notes": "An NPC version of Mario's eternal damsel in distress that can be talked to. When attacked, she will pull an umbrella to defend herself. However, this behavior is exclusive to SMG2.",
+    "Notes": "An NPC version of Mario's eternal damsel in distress that can be talked to. In SMG1, she stays in a single looping animation and will not react to being attacked. In SMG2, when attacked, she will pull an umbrella to defend herself.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

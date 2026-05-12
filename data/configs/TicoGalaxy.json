@@ -1,8 +1,66 @@
 {
     "InternalName": "TicoGalaxy",
     "Name": "TicoGalaxy",
-    "Notes": "",
+    "Notes": "A hungry luma NPC that appears under certain conditions. After it has been fed, the NPC will appear as a Pink Luma on any subsequent time the stage is visited.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Galaxy Index",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The index of the galaxy the player can go to. If the index is out of bounds, the Pink Luma will always be present.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Sweet Sweet"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Sling Pod"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Drip Drop"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Boo's Boneyard"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Snow Cap"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Sand Spiral"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Bigmouth"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it transforms.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on after eating the player's Star Bits.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

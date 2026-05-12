@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TicoFat</h1>
-			<p></p>
+			<p>A bigger Luma that requests a certain number of Star Bits. If the player feeds them the requested amount, it will transform, disappear and activate a switch. If the player has fed it all the Star Bits before and Obj_arg7 is not -1, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional. Despite there only being 7 instances of TicoFat in SMG1, the game's save data can handle more.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Requested Star Bits</b>: The number of requested Star Bits. Default is 10.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Hungry Luma Save Data</b>: The save data slot that keeps track of the number of star bits fed. Setting this to -1 will make the Hungry Luma respawn every time.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>False</td><td><p>The path that it can move on after eating the player's Star Bits.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
