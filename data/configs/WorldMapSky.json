@@ -1,7 +1,7 @@
 {
     "InternalName": "WorldMapSky",
     "Name": "WorldMapSky",
-    "Notes": "A decorative background object that loads a different model depending on the World the player has currently selected. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the models uss a projection map matrix.",
+    "Notes": "A decorative background object that loads a different model depending on the World the player has currently selected. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the models uses a projection map matrix.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

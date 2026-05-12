@@ -28,7 +28,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Changes the Rim of the effect on models. The table with the values for this is hardcoded.  Bulb Yoshi's effect takes priority over this functionality.",
+            "Description": "Changes the Rim of the effect on models. The table with the values for this is hardcoded. Bulb Yoshi's effect takes priority over this functionality.",
             "Values": [
                 {
                     "Value": "0",

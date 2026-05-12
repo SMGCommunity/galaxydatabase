@@ -1,4 +1,4 @@
-<database timestamp="1778544549">
+<database timestamp="1778551341">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2067,7 +2067,7 @@ An item that grants the player the Invincibility power-up when collected. This t
 A collectable mushroom that increases the player's health to 6.
 
 -- CLASS NOTES --
-An item that increases the player's health to 6 when collected.</notes>
+An item that increases the player's health to 6 when collected. When placed on its own, this item will not appear on Daredevil (Dark) comets, though they can still be spawned in through TicoShop, and collecting it will still give the player 6 health, albeit with a buggy health meter. In SMG2, collecting this item while already at 6 health will instead reward the player a 1-Up.</notes>
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
@@ -2883,7 +2883,7 @@ A useless area that has no actual effect in-game.</notes>
 A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -3074,7 +3074,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 		<field id="0" type="int" name="Mirror Reflection Type" notes="Specifies whether to use a reflection model or not." values="-1 = Don't use reflection model, 0 = Use reflection model" />
 	</object>
 	<object id="BlueChip">
-		<name>Blue Chip</name>
+		<name>Blue Star Chip</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -3091,7 +3091,7 @@ A collectable blue chip. Usually five of these are linked together by a BlueChip
 		<field id="5" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Cylinder" />
 	</object>
 	<object id="BlueChipGroup">
-		<name>Blue Chip Group</name>
+		<name>Blue Star Chip Group</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -3099,9 +3099,9 @@ A collectable blue chip. Usually five of these are linked together by a BlueChip
 Controls a collection of Blue Chips and activates something once all are collected.
 
 -- CLASS NOTES --
-Controls a group of Blue Chips (BlueChip) and activates SW_A once all of them have been collected. It is recommended to have five Blue Star Chips per group. The group for this object and the individual Blue Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
+Controls a group of Blue Star Chips (BlueChip) and activates SW_A once all of them have been collected. It is recommended to have five Blue Star Chips per group. The group for this object and the individual Blue Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
 		<files />
-		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object and its Blue Star Chips." values="" />
+		<field id="0" type="int" name="Blue Star Chip Group ID" notes="The group ID of this object and its Blue Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Blue Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
 		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Destroys chips after reloading the scene, SW_A won't be activated" />
@@ -3915,7 +3915,7 @@ A special variant of Polari that is used for the cutscene after collecting the v
 A dark-brown Luma that displays the map when talked to.
 
 -- CLASS NOTES --
-</notes>
+An elderly, dark-brown luma NPC that will show the player the map upon being talked to.</notes>
 		<files />
 		<field id="0" type="int" name="Default Map Type" notes="The version of the map that is shown to the player by default." values="-1 = Galaxies, 0 = Domes" />
 	</object>
@@ -5077,7 +5077,7 @@ An area that controls Matter Splatter effects.
 An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.</notes>
 		<files />
 		<field id="0" type="int" name="Display Type" notes="Specifies how the compatible objects are clipped." values="-1 = Hide portions in ClipArea instances, 0 = Show portions in ClipArea instances" />
-		<field id="1" type="int" name="Rim Setting" notes="Changes the Rim of the effect on models. The table with the values for this is hardcoded.  Bulb Yoshi's effect takes priority over this functionality." values="0 = No Rim, 1 = Blue Rim (Default), 2 = Brown Rim, 3 = Thick Beige Rim, 4 = Thick Pink Rim, 5 = White Rim" />
+		<field id="1" type="int" name="Rim Setting" notes="Changes the Rim of the effect on models. The table with the values for this is hardcoded. Bulb Yoshi's effect takes priority over this functionality." values="0 = No Rim, 1 = Blue Rim (Default), 2 = Brown Rim, 3 = Thick Beige Rim, 4 = Thick Pink Rim, 5 = White Rim" />
 	</object>
 	<object id="ClipFieldFillDraw">
 		<name>Fill Bright Matter Splatter Surface Controller [Broken]</name>
@@ -7937,7 +7937,7 @@ A generic particles effect with a clipping radius of 1000 units and a far clippi
 A particle effect that depicts several small Boos.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -8282,7 +8282,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A particle effect that consists of green falling leaves.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -8319,7 +8319,7 @@ Sets up and controls the visual Matter Splatter effect that causes parts of an o
 A particle effect that consists of brown falling leaves.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -13757,7 +13757,7 @@ A special model without collision which is usually visible unless it is assigned
 A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 
 -- CLASS NOTES --
-A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
+A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. After getting hit, if it does not hit the ground after 5 seconds, it will automatically spawn an item.</notes>
 		<files />
 		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the die moves horizontally when hit. Default is 180." values="" />
 		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the die moves vertically when hit. Default is 180." values="" />
@@ -15122,7 +15122,7 @@ A controller for Bowser battles that activates several switches depending on Bow
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller that causes Bowser's model to appear if it's not appeared yet.
+A controller that causes Bowser's model to appear if it has not appeared yet.
 
 -- CLASS NOTES --
 </notes>
@@ -17055,7 +17055,7 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 A large lava sparks particle effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -17390,7 +17390,7 @@ A floating lily pad platform that shakes when the player stands on it.</notes>
 A die cube used in the Luma Shop room of Starship Mario. Can reward the player with a Star Bit, a 1-Up, a 3-Up or a 5-Up.
 
 -- CLASS NOTES --
-A die block that can spawn a single Star Bit, one, three or five 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. Interestingly, it declares 1000 Star Bits, although it can only spawn one.</notes>
+A die block that can spawn a single Star Bit, one, three or five 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. Interestingly, it declares 1000 Star Bits, although it can only spawn one. After getting hit, if it does not hit the ground after 5 seconds, it will automatically spawn an item.</notes>
 		<files />
 		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 180." values="" />
 		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 180." values="" />
@@ -18210,7 +18210,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
+A target for a cannon that the player can be shot against. If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioLauncherTargetB">
@@ -18222,7 +18222,7 @@ A target for a cannon that the player can be shot against.  If the player hits t
 A target for a cannon used on the cloud Ferris wheel planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
+A target for a cannon that the player can be shot against. If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioLauncherTargetC">
@@ -18234,7 +18234,7 @@ A target for a cannon that the player can be shot against.  If the player hits t
 A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
+A target for a cannon that the player can be shot against. If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioNoCapArea">
@@ -19205,7 +19205,7 @@ A layer of water that reflects compatible objects when placed in a MirrorArea.
 A wood NPC who appears in Puzzle Plank Galaxy and Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A strange wood NPC that can be talked to.</notes>
+A strange wood NPC that can be talked to. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.</notes>
 		<files />
 		<field id="0" type="int" name="Shape" notes="The shape to use." values="-1 = Rectangular, 1 = Triangular, 2 = Oval" />
 		<field id="1" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn." values="" />
@@ -22106,7 +22106,7 @@ A pink enemy that tries to cling onto Yoshi, but runs away from the player under
 A die block that can reward either a Star Bit or a 1-Up Mushroom.
 
 -- CLASS NOTES --
-A die block that can spawn a single Star Bit or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
+A die block that can spawn a single Star Bit or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. After getting hit, if it does not hit the ground after 5 seconds, it will automatically spawn an item.</notes>
 		<files />
 		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 180." values="" />
 		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 180." values="" />
@@ -24287,7 +24287,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 A small sand breeze effect used in sand sections.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -25928,7 +25928,7 @@ A point that activates a switch if the snow nearby (SnowFloor) gets removed.
 A decorative snowflakes effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 580, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -26089,7 +26089,7 @@ A sticky object that grabs the player when they get close, unless they have the 
 A large space dust effect consisting of round particles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -32960,7 +32960,7 @@ A panel switch that will open the World Map screen when stepped on.</notes>
 The sky controller used on Starship Mario that uses a different model depending on the currently selected world.
 
 -- CLASS NOTES --
-A decorative background object that loads a different model depending on the World the player has currently selected. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the models uss a projection map matrix.</notes>
+A decorative background object that loads a different model depending on the World the player has currently selected. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the models uses a projection map matrix.</notes>
 		<files />
 		<field id="0" type="int" name="Mirror Reflection Type" notes="Specifies whether to use a reflection model or not." values="-1 = Don't use reflection model, 0 = Use reflection model" />
 	</object>
@@ -33041,9 +33041,9 @@ A collectable yellow chip. Usually five of these are linked together by a Yellow
 Controls a collection of Star Chips and activates something once all are collected.
 
 -- CLASS NOTES --
-Controls a group of Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Yellow Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
+Controls a group of Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
 		<files />
-		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object and its Yellow Star Chips." values="" />
+		<field id="0" type="int" name="Star Chip Group ID" notes="The group ID of this object and its Yellow Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Yellow Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 10000." values="" />
 		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Destroys chips after reloading the scene, SW_A won't be activated" />

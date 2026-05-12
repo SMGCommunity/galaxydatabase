@@ -1,12 +1,12 @@
 {
     "InternalName": "YellowChipGroup",
     "Name": "YellowChipGroup",
-    "Notes": "Controls a group of Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Yellow Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.",
+    "Notes": "Controls a group of Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Yellow Chip Group ID",
+            "Name": "Star Chip Group ID",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,

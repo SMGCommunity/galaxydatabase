@@ -1,7 +1,7 @@
 {
     "InternalName": "ButlerMap",
     "Name": "ButlerMap",
-    "Notes": "",
+    "Notes": "An elderly, dark-brown luma NPC that will show the player the map upon being talked to.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {

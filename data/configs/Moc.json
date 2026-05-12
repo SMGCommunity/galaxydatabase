@@ -1,7 +1,7 @@
 {
     "InternalName": "Moc",
     "Name": "Moc",
-    "Notes": "A strange wood NPC that can be talked to.",
+    "Notes": "A strange wood NPC that can be talked to. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

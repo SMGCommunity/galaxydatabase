@@ -18,12 +18,12 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BlueChipGroup</h1>
-			<p>Controls a group of Blue Chips (BlueChip) and activates SW_A once all of them have been collected. It is recommended to have five Blue Star Chips per group. The group for this object and the individual Blue Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</p>
+			<p>Controls a group of Blue Star Chips (BlueChip) and activates SW_A once all of them have been collected. It is recommended to have five Blue Star Chips per group. The group for this object and the individual Blue Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Blue Chip Group ID</b>: The group ID of this object and its Blue Star Chips.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Blue Star Chip Group ID</b>: The group ID of this object and its Blue Star Chips.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Time Limit</b>: Specifies how long it takes before the Blue Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Float</td><td>SMG1</td><td>False</td><td><p><b>Counter Display Range</b>: Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Reactivation Type</b>: Specifies what to do with the individual chips after reloading the scene, for example after a death.</p></td><td><ul><li>-1: Player has to collect items again after reloading the scene</li><li>1: Destroys chips after reloading the scene, SW_A won't be activated</li></ul></td></tr>
