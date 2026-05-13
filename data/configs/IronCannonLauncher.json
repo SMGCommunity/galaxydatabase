@@ -1,8 +1,38 @@
 {
     "InternalName": "IronCannonLauncher",
     "Name": "IronCannonLauncher",
-    "Notes": "",
+    "Notes": "A cannon that periodically launches cannonballs that damage players and compatible objects upon contact. These cannonballs can be defeated by jumping on either of their yellow spots, or by simply shooting a star bit at it. Shooting a star bit at it will give the player a coin.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The delay between shots. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Movement Speed",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How fast each cannonball moves. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

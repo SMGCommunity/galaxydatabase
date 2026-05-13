@@ -1,7 +1,7 @@
 {
     "InternalName": "IronCannonLauncherPoint",
     "Name": "IronCannonLauncherPoint",
-    "Notes": "A point that periodically launches bullets that damage players and compatible objects upon contact.",
+    "Notes": "A point that periodically launches cannonballs that damage players and compatible objects upon contact. These cannonballs can be defeated by jumping on either of their yellow spots, or by simply shooting a star bit at it. Shooting a star bit at it will give the player a coin.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {
@@ -19,7 +19,7 @@
             "Type": "Float",
             "Games": 1,
             "Needed": false,
-            "Description": "How fast each bullet moves. Default is 30.",
+            "Description": "How fast each cannonball moves. Default is 30.",
             "Values": [],
             "Exclusives": []
         },

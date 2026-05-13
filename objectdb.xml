@@ -1,4 +1,4 @@
-<database timestamp="1778633785">
+<database timestamp="1778639928">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13648,8 +13648,10 @@ A set of invisible waterfall walls used for Wall Jumping with the Ice power-up.
 A cannon that shoots striped cannonballs.
 
 -- CLASS NOTES --
-</notes>
+A cannon that periodically launches cannonballs that damage players and compatible objects upon contact. These cannonballs can be defeated by jumping on either of their yellow spots, or by simply shooting a star bit at it. Shooting a star bit at it will give the player a coin.</notes>
 		<files />
+		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 300." values="" />
+		<field id="1" type="int" name="Movement Speed" notes="How fast each cannonball moves. Default is 30." values="" />
 	</object>
 	<object id="IronCannonLauncherPoint">
 		<name>Cannonball Spawner</name>
@@ -13660,10 +13662,10 @@ A cannon that shoots striped cannonballs.
 A spawner that generates striped cannonballs. Unlike IronCannonLauncher, it has no actual model.
 
 -- CLASS NOTES --
-A point that periodically launches bullets that damage players and compatible objects upon contact.</notes>
+A point that periodically launches cannonballs that damage players and compatible objects upon contact. These cannonballs can be defeated by jumping on either of their yellow spots, or by simply shooting a star bit at it. Shooting a star bit at it will give the player a coin.</notes>
 		<files />
 		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 300." values="" />
-		<field id="1" type="float" name="Movement Speed" notes="How fast each bullet moves. Default is 30." values="" />
+		<field id="1" type="float" name="Movement Speed" notes="How fast each cannonball moves. Default is 30." values="" />
 	</object>
 	<object id="IslandFleetDiscPlanet">
 		<name>Sky Station -- Disk Planet</name>
