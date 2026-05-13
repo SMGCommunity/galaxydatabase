@@ -24,7 +24,7 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Item Count",
+            "Name": "Number of Items",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,

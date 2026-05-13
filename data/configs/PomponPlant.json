@@ -1,7 +1,7 @@
 {
     "InternalName": "PomponPlant",
     "Name": "PomponPlant",
-    "Notes": "A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player. If one of the players touch the plant with their pointer, it will swing around.",
+    "Notes": "A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player or with a Star Bit. If one of the players touch the plant with their pointer, it will swing around.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {
@@ -28,11 +28,11 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Item Count",
+            "Name": "Number of Items",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The number of items to spawn.",
+            "Description": "The number of items to spawn. Default is 1. Limit is 32 on Coins. Limit is 70 on Star Bits.",
             "Values": [],
             "Exclusives": []
         }

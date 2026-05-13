@@ -25812,7 +25812,7 @@
         "ClassNameSMG1": "PomponPlant",
         "ClassNameSMG2": "PomponPlant",
         "Name": "Bubbly Plant without Effects",
-        "Notes": "A bubbly plant that releases some items when touched; used in Honeyhive Galaxy. It does not emit any particle effects when touched.",
+        "Notes": "A bubbly plant that releases some items when touched; used in Honeyhive Galaxy and Gold Leaf Galaxy. It does not emit any particle effects when touched.",
         "Category": "levelfeature",
         "AreaShape": "Any",
         "ListSMG1": "ObjInfo",

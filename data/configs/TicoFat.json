@@ -5,6 +5,28 @@
     "Games": 1,
     "Progress": 1,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Broken Item Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The item that spawns upon feeding the Luma. This can freeze the game, for some reason.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "None"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "1-Up Mushroom"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Life Mushroom"
+                }
+            ],
+            "Exclusives": []
+        },
         "Obj_arg1": {
             "Name": "Requested Star Bits",
             "Type": "Integer",
@@ -14,8 +36,26 @@
             "Values": [],
             "Exclusives": []
         },
+        "Obj_arg2": {
+            "Name": "Skip First Dialogue?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the first message will be skipped, meaning the player can feed the Luma right away.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Transforming Speed",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The speed the Luma travels when transforming.",
+            "Values": [],
+            "Exclusives": []
+        },
         "Obj_arg7": {
-            "Name": "Hungry Luma Save Data",
+            "Name": "Save Data",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,

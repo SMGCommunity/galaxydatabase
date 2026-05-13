@@ -18,13 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TicoAstro</h1>
-			<p>A special Luma NPC that appears when a certain Green Star is collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.</p>
+			<p>A special Luma NPC that appears when a certain number of Green Stars are collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used. Default is 0.</p></td><td><ul><li>0: Yellow</li><li>1: Blue</li><li>2: Green</li><li>3: Red</li><li>4: Purple</li><li>5: Pink</li></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Behavior</b>: Its general behavior.</p></td><td><ul><li>0: Default</li><li>1: Transform after talking, start appearance camera</li><li>3: Transform after talking</li><li>5: Idle (Does not react, needs SW_APPEAR / SW_SLEEP)</li><li>7: Moves on path</li><li>8: Appears instantly with SW_APPEAR / SW_SLEEP</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Required Green Stars</b>: The amount of Green Stars required for this NPC to spawn. Any value above 2 will make the Luma always spawned in.</p></td><td><ul><li>-1: 0 Green Stars</li><li>0: 1 Green Star</li><li>1: 2 Green Stars</li><li>2: 3 Green Stars</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">

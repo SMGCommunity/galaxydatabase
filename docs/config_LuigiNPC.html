@@ -18,19 +18,33 @@
 		</header>
 		<div class="contents">
 			<h1>Config: LuigiNPC</h1>
-			<p>A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.</p>
+			<p>A non-playable variant of Luigi that can be talked to. This object will only appear under certain conditions, which is determined by the value of Obj_arg0. This can be bypassed by using SW_APPEAR / SW_SLEEP.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Behavior</b>: The animation/behavior to be used. The animation will always be "Normal" for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing.</p></td><td><ul><li>-1: Normal (Always appeared, cannot spawn Power Star)</li><li>0: Normal</li><li>1: Stuck to a wall, then Normal</li><li>2: Panicked</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Behavior</b>: The animation/behavior to be used. If the object is called LuigiEvent, 2 will be added to the value. For any value greater than 0, the object will only appear under certain conditions, unless bypassed with SW_APPEAR / SW_SLEEP.</p></td><td><ul><li>-1: Normal</li><li>0: Afraid</li><li>1: Normal (Observatory)</li><li>2: Normal (Good Egg)</li><li>3: Stuck to a wall, then Normal (Honeyhive)</li><li>4: Panicked (Battlerock)</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_B</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>n/a</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>AppearPowerStar</td><td>n/a</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

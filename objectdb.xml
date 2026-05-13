@@ -1,4 +1,4 @@
-<database timestamp="1778551341">
+<database timestamp="1778633785">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13715,10 +13715,10 @@ A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn C
 A bubble that can contain collectible items.
 
 -- CLASS NOTES --
-A bubble that can contain various items.</notes>
+A bubble that can contain Coins or Star Bits. It pops if in contact with the player or a Star Bit.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The kind of item that it contains. Default is 0." values="0 = Coins, 1 = Star Bits, 2 = Nothing" />
-		<field id="1" type="int" name="Item Count" notes="The number of items it contains. Default is 1." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items it contains. Default is 1. Limit is 32 for Coins. There is not limit on Star Bits." values="" />
 	</object>
 	<object id="ItemCollectionPlanet">
 		<name>Starship Mario -- Power-Up Display Room</name>
@@ -14386,12 +14386,12 @@ A special Toad NPC variant for the Comet Observatory. This object is also requir
 -- CLASS NOTES --
 A variant of a Toad that is used in the Comet Observatory. It features a wide range of different behaviors and equipment. It can attach to Sling Pods.</notes>
 		<files />
-		<field id="1" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
+		<field id="1" type="int" name="Color Frame" notes="The color frame to be used. If set to be Purple, it will carry the Postman Bag." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
 		<field id="2" type="int" name="Behavior" notes="The animation/behavior to be used." values="-1 = Default, 0 = Spinning, 1 = Breakdancing, 2 = Faster spinning, 3 = Far talking range, 4 = Connects to collision below (Broken in SMG2), 5 = Swimming, 6 = Digging, 7 = Sleeping, 8 = Spawns Power Star, 9 = Guarding, 10 = Excited/jumping, 11 = Scared, 12 = Holds Star Bit, 13 = Panicking while running" />
 		<field id="4" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4." values="-1 = Appears immediately, 0 = Gets launched from box" />
 		<field id="5" type="bool" name="Strict LOD Distances?" notes="If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models." values="" />
 		<field id="6" type="bool" name="Invalidate Sensor?" notes="If set, its body sensor will be invalidated so that all sensor-related interactions have no effect." values="" />
-		<field id="7" type="int" name="Equipment" notes="The equipment that he wears/carries." values="-1 = Nothing, 0 = Backpack &amp; Headlamp on, 1 = Snorkel, 2 = Pickaxe, 3 = Postman Bag, 4 = Spear and Shield, 5 = Glasses, 6 = Star Bit" />
+		<field id="7" type="int" name="Equipment" notes="The equipment that he wears/carries. If Obj_arg1 is set to 2, it will carry the Postman Bag as well as whatever is chosen for this argument." values="-1 = Nothing, 0 = Backpack &amp; Headlamp on, 1 = Snorkel, 2 = Pickaxe, 3 = Postman Bag, 4 = Spear and Shield, 5 = Glasses, 6 = Star Bit" />
 	</object>
 	<object id="KinopioBank">
 		<name>Banktoad</name>
@@ -17420,9 +17420,9 @@ A generic planet with a model and optional collision with a far clipping distanc
 A special Luigi NPC who can be found in some levels to give you a Power Star when talked to.
 
 -- CLASS NOTES --
-A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.</notes>
+A non-playable variant of Luigi that can be talked to. This object will only appear under certain conditions, which is determined by the value of Obj_arg0. This can be bypassed by using SW_APPEAR / SW_SLEEP.</notes>
 		<files />
-		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. The animation will always be &quot;Normal&quot; for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing." values="-1 = Normal (Always appeared, cannot spawn Power Star), 0 = Normal, 1 = Stuck to a wall, then Normal, 2 = Panicked" />
+		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. If the object is called LuigiEvent, 2 will be added to the value. For any value greater than 0, the object will only appear under certain conditions, unless bypassed with SW_APPEAR / SW_SLEEP." values="-1 = Normal, 0 = Afraid, 1 = Normal (Observatory), 2 = Normal (Good Egg), 3 = Stuck to a wall, then Normal (Honeyhive), 4 = Panicked (Battlerock)" />
 	</object>
 	<object id="LuigiIntrusively">
 		<name>Playable Luigi</name>
@@ -17446,9 +17446,9 @@ An NPC variant of Luigi. It enables the player to play as Luigi when talked to i
 Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
-A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.</notes>
+A non-playable variant of Luigi that can be talked to. This object will only appear under certain conditions, which is determined by the value of Obj_arg0. This can be bypassed by using SW_APPEAR / SW_SLEEP.</notes>
 		<files />
-		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. The animation will always be &quot;Normal&quot; for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing." values="-1 = Normal (Always appeared, cannot spawn Power Star), 0 = Normal, 1 = Stuck to a wall, then Normal, 2 = Panicked" />
+		<field id="0" type="int" name="Behavior" notes="The animation/behavior to be used. If the object is called LuigiEvent, 2 will be added to the value. For any value greater than 0, the object will only appear under certain conditions, unless bypassed with SW_APPEAR / SW_SLEEP." values="-1 = Normal, 0 = Afraid, 1 = Normal (Observatory), 2 = Normal (Good Egg), 3 = Stuck to a wall, then Normal (Honeyhive), 4 = Panicked (Battlerock)" />
 	</object>
 	<object id="LuigiOnMarioParts">
 		<name>Mario Squared -- Yellow Tile</name>
@@ -17961,8 +17961,9 @@ A controller for The Chimp's Skating Challenge which sets up the mini-game and G
 A glass planet with orange balls and a watermelon trapped inside. The watermelon grows by smashing these orange balls into it.
 
 -- CLASS NOTES --
-</notes>
+A planet with marbles rolling around the inside of it with a giant watermelon in the middle. If the player ground pounds near a marble, it will launch itself into the watermelon, causing it to grow.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Marbles" notes="The number of marbles to appear inside the planet. Default is 3." values="" />
 	</object>
 	<object id="MarinePlant">
 		<name>Underwater Plant</name>
@@ -22066,10 +22067,10 @@ A collision polygon without an actual visual model.</notes>
 A bubbly plant that releases some items when touched; used in Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
-A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player. If one of the players touch the plant with their pointer, it will swing around.</notes>
+A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player or with a Star Bit. If one of the players touch the plant with their pointer, it will swing around.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = Coins, 0 = Star Bits, 1 = No items" />
-		<field id="1" type="int" name="Item Count" notes="The number of items to spawn." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to spawn. Default is 1. Limit is 32 on Coins. Limit is 70 on Star Bits." values="" />
 	</object>
 	<object id="Pompon4Plant">
 		<name>Bubbly Plant without Effects</name>
@@ -22077,13 +22078,13 @@ A bubbly plant that bounces the player off when they touch it. It can spawn item
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A bubbly plant that releases some items when touched; used in Honeyhive Galaxy. It does not emit any particle effects when touched.
+A bubbly plant that releases some items when touched; used in Honeyhive Galaxy and Gold Leaf Galaxy. It does not emit any particle effects when touched.
 
 -- CLASS NOTES --
-A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player. If one of the players touch the plant with their pointer, it will swing around.</notes>
+A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player or with a Star Bit. If one of the players touch the plant with their pointer, it will swing around.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = Coins, 0 = Star Bits, 1 = No items" />
-		<field id="1" type="int" name="Item Count" notes="The number of items to spawn." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to spawn. Default is 1. Limit is 32 on Coins. Limit is 70 on Star Bits." values="" />
 	</object>
 	<object id="Popo">
 		<name>Smeech</name>
@@ -22948,7 +22949,7 @@ A cloud that is usually raining. The player can stand on it using the Bee power-
 A cloud platform that can be stood on using the Bee power-up. If the player does not have this power-up and steps on the platform, they will fall through it. The platform remains stationary or moves on a path. By default, rain will fall from this platform, causing the player to lose the Bee power-up upon passing under it.</notes>
 		<files />
 		<field id="0" type="int" name="Rain/Shadow Length" notes="Sets the rain length. This also sets the shadow drop length. Default is 1000. No rain will appear if Obj_arg3 is set." values="" />
-		<field id="3" type="bool" name="Is not Raining?" notes="If set, no rain will fall from the cloud." values="" />
+		<field id="3" type="bool" name="Is not Raining?" notes="If set, the cloud will be white, and no rain will fall from the cloud." values="" />
 	</object>
 	<object id="RasterScrollArea">
 		<name>Wobbling Screen Area</name>
@@ -26078,7 +26079,7 @@ A strange spiderweb-like object which the player can use to be launched in a str
 A sticky object that grabs the player when they get close, unless they have the Spring or Boo power-ups. The player can use the Star Pointer to sling themselves in any direction.</notes>
 		<files />
 		<field id="0" type="int" name="Sling Time" notes="The amount of time in frames before the player slows down. Default is 80." values="" />
-		<field id="1" type="int" name="Height" notes="The height of the Sling Pod." values="" />
+		<field id="1" type="int" name="Height" notes="The height of the Sling Pod. Default is 100." values="" />
 	</object>
 	<object id="SpaceDustL">
 		<name>Large Space Dust Effect</name>
@@ -26962,7 +26963,7 @@ A small blue crystal that releases some Star Bits or Coins when broken using the
 A small blue crystal that releases some Star Bits or Coins when broken using the Rock power-up. The Star Bits will automatically move towards the player.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = Star Bits, 1 = Coins" />
-		<field id="1" type="int" name="Item Count" notes="The number of items to spawn. Default is 4. Limit is 32 for Coins. There is no limit on Star Bits." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to spawn. Default is 4. Limit is 32 for Coins. There is no limit on Star Bits." values="" />
 	</object>
 	<object id="StarPieceFlow">
 		<name>Moving Star Bit Group</name>
@@ -29107,10 +29108,11 @@ A cute star-shaped NPC that can be talked to. It supports various different beha
 A variant of a Luma that does not appear until collecting a specific amount of Green Stars.
 
 -- CLASS NOTES --
-A special Luma NPC that appears when a certain Green Star is collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.</notes>
+A special Luma NPC that appears when a certain number of Green Stars are collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink" />
 		<field id="1" type="int" name="Behavior" notes="Its general behavior." values="0 = Default, 1 = Transform after talking, start appearance camera, 3 = Transform after talking, 5 = Idle (Does not react, needs SW_APPEAR / SW_SLEEP), 7 = Moves on path, 8 = Appears instantly with SW_APPEAR / SW_SLEEP" />
+		<field id="2" type="int" name="Required Green Stars" notes="The amount of Green Stars required for this NPC to spawn. Any value above 2 will make the Luma always spawned in." values="-1 = 0 Green Stars, 0 = 1 Green Star, 1 = 2 Green Stars, 2 = 3 Green Stars" />
 	</object>
 	<object id="TicoBaby">
 		<name>Master Luma</name>
@@ -29157,7 +29159,7 @@ One of the main collectibles in a Galaxy. There should only be one in every prop
 The dark purple Luma holding star-shaped wands who can move Prankster Comets around in exchange for some Star Bits.
 
 -- CLASS NOTES --
-</notes>
+A bigger purple Luma that requests a certain number of Star Bits. If the player feeds them the 20 Star Bits, it will transform, disappear and alter the game's comet cycles.</notes>
 		<files />
 	</object>
 	<object id="TicoDomeLecture">
@@ -29169,7 +29171,7 @@ The dark purple Luma holding star-shaped wands who can move Prankster Comets aro
 The blue Luma who transforms into the Terrace's Pull Star during the cutscene when the player first enters the dome.
 
 -- CLASS NOTES --
-</notes>
+A special blue Luma NPC that can only appear in a cutscene. It may transform into the Dome's Pull Star.</notes>
 		<files />
 	</object>
 	<object id="TicoFat">
@@ -29183,8 +29185,11 @@ A pink Luma that is hungry for Star Bits.
 -- CLASS NOTES --
 A bigger Luma that requests a certain number of Star Bits. If the player feeds them the requested amount, it will transform, disappear and activate a switch. If the player has fed it all the Star Bits before and Obj_arg7 is not -1, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional. Despite there only being 7 instances of TicoFat in SMG1, the game's save data can handle more.</notes>
 		<files />
+		<field id="0" type="int" name="Broken Item Type" notes="The item that spawns upon feeding the Luma. This can freeze the game, for some reason." values="-1 = None, 0 = 1-Up Mushroom, 1 = Life Mushroom" />
 		<field id="1" type="int" name="Requested Star Bits" notes="The number of requested Star Bits. Default is 10." values="" />
-		<field id="7" type="int" name="Hungry Luma Save Data" notes="The save data slot that keeps track of the number of star bits fed. Setting this to -1 will make the Hungry Luma respawn every time." values="" />
+		<field id="2" type="bool" name="Skip First Dialogue?" notes="If set, the first message will be skipped, meaning the player can feed the Luma right away." values="" />
+		<field id="4" type="float" name="Transforming Speed" notes="The speed the Luma travels when transforming." values="" />
+		<field id="7" type="int" name="Save Data" notes="The save data slot that keeps track of the number of star bits fed. Setting this to -1 will make the Hungry Luma respawn every time." values="" />
 	</object>
 	<object id="TicoFatCoin">
 		<name>Hungry Luma [Coins]</name>
@@ -29223,7 +29228,7 @@ A pink Luma that is hungry for Star Bits and transforms into a portal to a galax
 -- CLASS NOTES --
 A hungry luma NPC that appears under certain conditions. After it has been fed, the NPC will appear as a Pink Luma on any subsequent time the stage is visited.</notes>
 		<files />
-		<field id="7" type="int" name="Galaxy Index" notes="The index of the galaxy the player can go to. If the index is out of bounds, the Pink Luma will always be present." values="0 = Sweet Sweet, 1 = Sling Pod, 2 = Drip Drop, 3 = Boo's Boneyard, 4 = Snow Cap, 5 = Sand Spiral, 6 = Bigmouth" />
+		<field id="7" type="int" name="Save Data" notes="The save data slot that keeps track of the number of star bits fed. This also determines the galaxy name that appears in the message. If the index is out of bounds, the Pink Luma will always be present." values="0 = Sweet Sweet, 1 = Sling Pod, 2 = Drip Drop, 3 = Boo's Boneyard, 4 = Snow Cap, 5 = Sand Spiral, 6 = Bigmouth" />
 	</object>
 	<object id="TicoRail">
 		<name>Moving Luma</name>
@@ -29248,8 +29253,9 @@ A decorative variant of a Luma that moves on a set path. If two or more TicoRail
 A decorative Luma used in the cutscene of Rosalina reading to the Lumas in the Library.
 
 -- CLASS NOTES --
-</notes>
+A special Luma NPC that can only appear in a cutscene. It has very little functionality compared to that of a regular Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink" />
 	</object>
 	<object id="TicoSeedGuidanceCube">
 		<name>Hungry Luma Feeding Explanation Area [Cube]</name>

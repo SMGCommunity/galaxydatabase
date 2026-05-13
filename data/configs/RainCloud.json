@@ -19,7 +19,7 @@
             "Type": "Boolean",
             "Games": 1,
             "Needed": false,
-            "Description": "If set, no rain will fall from the cloud.",
+            "Description": "If set, the cloud will be white, and no rain will fall from the cloud.",
             "Values": [],
             "Exclusives": []
         },

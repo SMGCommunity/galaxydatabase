@@ -1,8 +1,15 @@
 {
     "InternalName": "TicoComet",
     "Name": "TicoComet",
-    "Notes": "",
+    "Notes": "A bigger purple Luma that requests a certain number of Star Bits. If the player feeds them the 20 Star Bits, it will transform, disappear and alter the game's comet cycles.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used.",
+            "Exclusives": []
+        }
+    }
 }

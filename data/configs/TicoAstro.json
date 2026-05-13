@@ -1,7 +1,7 @@
 {
     "InternalName": "TicoAstro",
     "Name": "TicoAstro",
-    "Notes": "A special Luma NPC that appears when a certain Green Star is collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.",
+    "Notes": "A special Luma NPC that appears when a certain number of Green Stars are collected, defined by Obj_arg2. Its behaviours are similar to that of Tico.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
@@ -69,6 +69,32 @@
                 {
                     "Value": "8",
                     "Notes": "Appears instantly with SW_APPEAR / SW_SLEEP"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Required Green Stars",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The amount of Green Stars required for this NPC to spawn. Any value above 2 will make the Luma always spawned in.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "0 Green Stars"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "1 Green Star"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "2 Green Stars"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "3 Green Stars"
                 }
             ],
             "Exclusives": []

@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The color frame to be used.",
+            "Description": "The color frame to be used. If set to be Purple, it will carry the Postman Bag.",
             "Values": [
                 {
                     "Value": "-1",
@@ -146,7 +146,7 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The equipment that he wears/carries.",
+            "Description": "The equipment that he wears/carries. If Obj_arg1 is set to 2, it will carry the Postman Bag as well as whatever is chosen for this argument.",
             "Values": [
                 {
                     "Value": "-1",

@@ -1,8 +1,18 @@
 {
     "InternalName": "MarblePlanet",
     "Name": "MarblePlanet",
-    "Notes": "",
+    "Notes": "A planet with marbles rolling around the inside of it with a giant watermelon in the middle. If the player ground pounds near a marble, it will launch itself into the watermelon, causing it to grow.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Marbles",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of marbles to appear inside the planet. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

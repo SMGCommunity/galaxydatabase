@@ -1,7 +1,7 @@
 {
     "InternalName": "LuigiNPC",
     "Name": "LuigiNPC",
-    "Notes": "A non-playable variant of Luigi that can be talked to. In the case of LuigiEvent, it appears by default unless Obj_arg0 is set. If the object is LuigiNPC, Obj_arg0 will always yield Normal animation behavior, except for when it is set to 0, in which case, Luigi will be scared and can spawn a Power Star.",
+    "Notes": "A non-playable variant of Luigi that can be talked to. This object will only appear under certain conditions, which is determined by the value of Obj_arg0. This can be bypassed by using SW_APPEAR / SW_SLEEP.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
@@ -10,23 +10,31 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The animation/behavior to be used. The animation will always be \"Normal\" for LuigiNPC. Some behaviors have quirks that change based on certain conditions, such as 2 on LuigiEvent having an upward launch behavior when SW_APPEAR / SW_SLEEP is used, turning into Normal behavior upon landing.",
+            "Description": "The animation/behavior to be used. If the object is called LuigiEvent, 2 will be added to the value. For any value greater than 0, the object will only appear under certain conditions, unless bypassed with SW_APPEAR / SW_SLEEP.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Normal (Always appeared, cannot spawn Power Star)"
-                },
-                {
-                    "Value": "0",
                     "Notes": "Normal"
                 },
                 {
+                    "Value": "0",
+                    "Notes": "Afraid"
+                },
+                {
                     "Value": "1",
-                    "Notes": "Stuck to a wall, then Normal"
+                    "Notes": "Normal (Observatory)"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Panicked"
+                    "Notes": "Normal (Good Egg)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Stuck to a wall, then Normal (Honeyhive)"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Panicked (Battlerock)"
                 }
             ],
             "Exclusives": []
@@ -37,9 +45,33 @@
             "Description": "Appears when this switch is activated.",
             "Exclusives": []
         },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
         "SW_AWAKE": {
             "Games": 1,
             "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         }
     }

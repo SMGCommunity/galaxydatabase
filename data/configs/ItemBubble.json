@@ -1,7 +1,7 @@
 {
     "InternalName": "ItemBubble",
     "Name": "ItemBubble",
-    "Notes": "A bubble that can contain various items.",
+    "Notes": "A bubble that can contain Coins or Star Bits. It pops if in contact with the player or a Star Bit.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
@@ -28,18 +28,12 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Item Count",
+            "Name": "Number of Items",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The number of items it contains. Default is 1.",
+            "Description": "The number of items it contains. Default is 1. Limit is 32 for Coins. There is not limit on Star Bits.",
             "Values": [],
-            "Exclusives": []
-        },
-        "SW_APPEAR": {
-            "Games": 1,
-            "Needed": false,
-            "Description": "Appears when this switch is activated.",
             "Exclusives": []
         },
         "SW_DEAD": {

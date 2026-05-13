@@ -19,7 +19,7 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The height of the Sling Pod.",
+            "Description": "The height of the Sling Pod. Default is 100.",
             "Values": [],
             "Exclusives": []
         }
