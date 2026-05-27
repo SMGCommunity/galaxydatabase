@@ -1,7 +1,7 @@
 {
     "InternalName": "BenefitItemInvincible",
     "Name": "BenefitItemInvincible",
-    "Notes": "An item that grants the player the Invincibility power-up when collected. This temporary power-up state lasts for 20 seconds, and makes the player invincible to everything except DeathArea and Black Holes.",
+    "Notes": "An item that grants the player the Invincibility power-up when collected. This temporary power-up state lasts for 20 seconds, and makes the player invincible to everything except DeathArea and Black Holes. If the player runs into another power-up that isn't the Cloud Flower, the item will be knocked away.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

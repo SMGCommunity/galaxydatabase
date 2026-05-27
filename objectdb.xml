@@ -1,4 +1,4 @@
-<database timestamp="1778639928">
+<database timestamp="1779853223">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2047,7 +2047,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A collectable power-up that transforms the player into a Rainbow character.
 
 -- CLASS NOTES --
-An item that grants the player the Invincibility power-up when collected. This temporary power-up state lasts for 20 seconds, and makes the player invincible to everything except DeathArea and Black Holes.</notes>
+An item that grants the player the Invincibility power-up when collected. This temporary power-up state lasts for 20 seconds, and makes the player invincible to everything except DeathArea and Black Holes. If the player runs into another power-up that isn't the Cloud Flower, the item will be knocked away.</notes>
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
@@ -13773,7 +13773,7 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom dependi
 A drill power-up that allows the player to dig through certain dirt upon spinning.
 
 -- CLASS NOTES --
-A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water, RollingWater or Sling/Launch Stars, or upon usage of a Pull Star.</notes>
+A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player will lose this item upon taking damage, contact with water, RollingWater or Sling/Launch Stars, or upon usage of a Pull Star. If the player collects another power-up, they will lose the spin drill, unless the player is in the drilling state.</notes>
 		<files />
 		<field id="0" type="bool" name="Against Collision Normal?" notes="If set, it will always dig against the normal of the collision triangle below." values="" />
 		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
@@ -19390,12 +19390,12 @@ Displays a model of a power-up that cannot be collected. These objects only serv
 A Bee Mushroom that transforms the player into a Bee character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell.</notes>
+A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell. Collecting the power-up while already being in water will not get rid of it, though the animations are buggy.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)" />
-		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
+		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point &quot;down&quot;." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside container, 2 = Rotation updates while inside container" />
@@ -19414,7 +19414,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)" />
-		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
+		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point &quot;down&quot;." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside container, 2 = Rotation updates while inside container" />
@@ -19453,7 +19453,7 @@ A collectable item that turns the player into a Spring character. This power-up 
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)" />
-		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
+		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point &quot;down&quot;." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside container, 2 = Rotation updates while inside container" />
@@ -19491,7 +19491,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared (Bounces up first in SMG1 if in a crystal)" />
-		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
+		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point &quot;down&quot;." values="-1 = Contained in a crystal (SMG1)/None (SMG2), 0 = Contained in a bubble, 1 = None" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble, and always visibly rotates inside of a crystal." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside container, 2 = Rotation updates while inside container" />
@@ -19510,7 +19510,7 @@ A collectable item that turns the player into a Rock character. This power-up st
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
-		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in." values="-1 = None, 0 = Contained in a bubble, 1 = None" />
+		<field id="3" type="int" name="Container" notes="Specifies the container the item appears in. The bubble has a shadow that is not effected by gravity, and will instead always point &quot;down&quot;." values="-1 = None, 0 = Contained in a bubble, 1 = None" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a container." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside container, 2 = Rotation updates while inside container" />
@@ -26375,7 +26375,7 @@ A breakable rock that can be destroyed by either ground-pounding it or slinging 
 A single cloud platform created by the Cloud power-up. Does nothing when placed directly, though.
 
 -- CLASS NOTES --
-A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds.</notes>
+A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds. Like CloudStep, if the player does not have the Bee or Cloud power-ups, the platform will disappear.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudFrontDefineArea">
@@ -26399,7 +26399,7 @@ An area that controls and sets the facing direction of all Cloud Flower platform
 A Cloud Flower that turns the player into a Cloud character, which allows them to create up to three temporary cloud platforms.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water.</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water, though collecting the power-up while already being in water will not get rid of it, and the player can even create clouds underwater.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudMarioItem">
@@ -26411,7 +26411,7 @@ A collectable item that turns the player into a Cloud character. This power-up s
 An unused duplicate of the Cloud Flower object.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water.</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms. The player will lose this power-up upon taking damage or contact with water, though collecting the power-up while already being in water will not get rid of it, and the player can even create clouds underwater.</notes>
 		<files />
 	</object>
 	<object id="SpinDriver">
@@ -26482,7 +26482,7 @@ An area that displays a layout showing how to perform Spin Attacks with the Wiim
 A small blue switch that activates a switch when flipped over.
 
 -- CLASS NOTES --
-A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
+A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
 		<files />
 	</object>
 	<object id="SpinLeverSwitchForceAnim">
@@ -26494,7 +26494,7 @@ A lever that can be activated using most of the player's attacks, explosions or 
 A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if its SW_B gets activated, making it unusable. See Fiery Flotilla's starting planet for an example use case and setup.
 
 -- CLASS NOTES --
-A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
+A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
 		<files />
 	</object>
 	<object id="SpinningBox">
@@ -29204,7 +29204,7 @@ A pink Luma that is hungry for Coins.
 -- CLASS NOTES --
 A bigger Luma that requests a certain number of Coins. If the player gives them Coins, it will transform, disappear and activate a switch. If the player already gave it Coins before, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional.</notes>
 		<files />
-		<field id="1" type="int" name="Requested Coins" notes="The number of requested Coins. Default is 5." values="" />
+		<field id="1" type="int" name="Requested Coins" notes="The number of requested Coins. Default is 5. Negative values that are not -1 will reward the player coins instead of taking them." values="" />
 		<field id="7" type="bool" name="Special Talking Camera?" notes="If set, it will use the camera with the name 独自会話 when talked to." values="" />
 	</object>
 	<object id="TicoFatStarPiece">

@@ -1,7 +1,7 @@
 {
     "InternalName": "MorphItemNeoBee",
     "Name": "MorphItemNeoBee",
-    "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell.",
+    "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee. The player will lose this power-up upon taking damage, or upon contact with water, WaterPressure bubbles and RollingWater. In SMG1, it may appear inside of a rotating crystal, which can be destroyed by a spin attack, ground pound, or koopa shell. Collecting the power-up while already being in water will not get rid of it, though the animations are buggy.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -64,7 +64,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns.",
+            "Description": "Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point \"down\".",
             "Values": [
                 {
                     "Value": "-1",

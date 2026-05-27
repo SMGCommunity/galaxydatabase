@@ -10,7 +10,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of requested Coins. Default is 5.",
+            "Description": "The number of requested Coins. Default is 5. Negative values that are not -1 will reward the player coins instead of taking them.",
             "Values": [],
             "Exclusives": []
         },

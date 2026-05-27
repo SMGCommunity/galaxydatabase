@@ -64,7 +64,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns.",
+            "Description": "Specifies the container the item appears in. In SMG1, if SW_APPEAR is set, the container will not appear until the item respawns. In SMG2, the bubble has a shadow that is not effected by gravity, and will instead always point \"down\".",
             "Values": [
                 {
                     "Value": "-1",

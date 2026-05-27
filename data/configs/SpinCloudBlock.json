@@ -1,7 +1,7 @@
 {
     "InternalName": "SpinCloudBlock",
     "Name": "SpinCloudBlock",
-    "Notes": "A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds.",
+    "Notes": "A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds. Like CloudStep, if the player does not have the Bee or Cloud power-ups, the platform will disappear.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {}

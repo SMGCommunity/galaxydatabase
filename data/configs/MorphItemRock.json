@@ -64,7 +64,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Specifies the container the item appears in.",
+            "Description": "Specifies the container the item appears in. The bubble has a shadow that is not effected by gravity, and will instead always point \"down\".",
             "Values": [
                 {
                     "Value": "-1",
