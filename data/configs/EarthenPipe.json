@@ -1,7 +1,7 @@
 {
     "InternalName": "EarthenPipe",
     "Name": "EarthenPipe",
-    "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.",
+    "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes that differ depending on the game. In SMG2, some of these modes are unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -28,7 +28,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The pipe's behavior after being entered.",
+            "Description": "The pipe's behavior after being entered. In SMG1, the EarthenPipeS collision binder cuts 200 units off the bottom of the pipe.",
             "Values": [
                 {
                     "Value": "-1",
@@ -44,15 +44,15 @@
                 },
                 {
                     "Value": "3",
-                    "Notes": "Eject without warping"
+                    "Notes": "Entrance and exit with EarthenPipeS binder (SMG1) / Eject without warping (SMG2)"
                 },
                 {
                     "Value": "4",
-                    "Notes": "Eject without warping and spawns Coins"
+                    "Notes": "Eject without warping and spawns Coins (SMG2 Only)"
                 },
                 {
                     "Value": "5",
-                    "Notes": "Eject without warping and spawns Star Bits"
+                    "Notes": "Eject without warping and spawns Star Bits (SMG2 Only)"
                 }
             ],
             "Exclusives": []

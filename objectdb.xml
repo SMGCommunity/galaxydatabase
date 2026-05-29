@@ -1,4 +1,4 @@
-<database timestamp="1779853223">
+<database timestamp="1780088505">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7841,11 +7841,11 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The iconic pipe used to warp the player from one place to another.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes that differ depending on the game. In SMG2, some of these modes are unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
+		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered. In SMG1, the EarthenPipeS collision binder cuts 200 units off the bottom of the pipe." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Entrance and exit with EarthenPipeS binder (SMG1) / Eject without warping (SMG2), 4 = Eject without warping and spawns Coins (SMG2 Only), 5 = Eject without warping and spawns Star Bits (SMG2 Only)" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change once the pipe is left." values="0: = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
@@ -7861,11 +7861,11 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 A Warp Pipe with a vortex that sucks in the player if they are nearby.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes that differ depending on the game. In SMG2, some of these modes are unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
+		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered. In SMG1, the EarthenPipeS collision binder cuts 200 units off the bottom of the pipe." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Entrance and exit with EarthenPipeS binder (SMG1) / Eject without warping (SMG2), 4 = Eject without warping and spawns Coins (SMG2 Only), 5 = Eject without warping and spawns Star Bits (SMG2 Only)" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Column ID in StageBgmInfo to change once the pipe is left." values="0: = Use music for current scenario from ScenarioBgmInfo." />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
@@ -32318,7 +32318,7 @@ A generic particles effect with a clipping radius of 500 units and a far clippin
 A blue pipe with some visual water leaking out of it. Can be used to create ice platforms when touched while using the Ice power-up.
 
 -- CLASS NOTES --
-A long pipe with a splashing water spout on the top. If the player touches the spout while using the Ice power-up, an ice platform appears. The player can stand on the platform while the power-up is active. If the player goes off the platform or looses their power-up, the platform disappears again. This object does not come with its own collision model.</notes>
+A long pipe with a splashing water spout on the top. If the player touches the spout while using the Ice power-up, an ice platform appears. The player can stand on the platform while the power-up is active. If the player goes off the platform or loses their power-up, the platform disappears again. This object does not come with its own collision model.</notes>
 		<files />
 		<field id="0" type="float" name="Pipe Height" notes="The pipe's length. Default is 500." values="" />
 	</object>
