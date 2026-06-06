@@ -1,4 +1,4 @@
-<database timestamp="1780088505">
+<database timestamp="1780766952">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3127,7 +3127,7 @@ Planet-like objects that feature a large Pull Star inside them. The player can u
 An area that, if entered, notifies the player how to use Pull Stars.
 
 -- CLASS NOTES --
-If the player stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
+If the player stands inside this area and a Pull Star (GCaptureTarget) is on screen, the game will display an explanation about how to use Pull Stars.</notes>
 		<files />
 	</object>
 	<object id="BlueStarGuidanceCube">
@@ -3139,7 +3139,7 @@ If the player stands inside this area, the game will display an explanation abou
 An area that, if entered, notifies the player how to use Pull Stars.
 
 -- CLASS NOTES --
-If the player stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
+If the player stands inside this area and a Pull Star (GCaptureTarget) is on screen, the game will display an explanation about how to use Pull Stars.</notes>
 		<files />
 	</object>
 	<object id="Bomb">
