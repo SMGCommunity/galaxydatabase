@@ -1,7 +1,7 @@
 {
     "InternalName": "ForbidSupportTicoArea",
     "Name": "ForbidSupportTicoArea",
-    "Notes": "An area that prevents the second player's pointer and actions while the main player character is inside this area.",
+    "Notes": "An area that prevents any second player interactions with objects inside of it.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
