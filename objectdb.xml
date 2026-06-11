@@ -1,4 +1,4 @@
-<database timestamp="1781136962">
+<database timestamp="1781142453">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1383,7 +1383,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A decorative asteroid belt that can be seen in the background of Battle Belt Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -1600,7 +1600,7 @@ A generic object with a model and collision that will play its Move animations o
 		<files />
 	</object>
 	<object id="BattleUnizoLandPlanet">
-		<name>Battle Belt -- Land Urchin Planet</name>
+		<name>Battle Belt -- Hot Urchin Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -1630,7 +1630,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="BattleWaterTeresaPlanet">
-		<name>Battle Belt -- Water Boo Planet</name>
+		<name>Battle Belt -- Underwater Boo Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -2466,7 +2466,7 @@ An area that activates a switch once the player enters it while riding a Big Bub
 The big cake that can be seen during the game's ending credits.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -2481,7 +2481,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A large cloud platform that can be stood on using the Bee and Cloud power-ups.
 
 -- CLASS NOTES --
-A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary, and can move on a path if the object is called CloudStep, and otherwise through BCSV editing.</notes>
 		<files />
 	</object>
 	<object id="BigCloudStepMountainTop">
@@ -2493,7 +2493,7 @@ A cloud platform that can be stood on using the Bee or Cloud power-ups. If the p
 A ring-shaped cloud platform that can be stood on using the Bee and Cloud power-ups.
 
 -- CLASS NOTES --
-A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary, and can move on a path if the object is called CloudStep, and otherwise through BCSV editing.</notes>
 		<files />
 	</object>
 	<object id="BigCoinBlockStep">
@@ -2654,7 +2654,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A floating asteroid that appears in Good Egg Galaxy and Boss Blitz Galaxy.
+A floating asteroid that appears in the Good Egg and Boulder Bowl Galaxies.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -2814,7 +2814,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of platforms used on the tree planet in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -2829,7 +2829,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of planks used on the tree planet in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -3673,7 +3673,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A group of bricks used as floating debris in both Clockwork Ruins Galaxy and Upside Dizzy Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -3852,7 +3852,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of decorative wooden blocks from Rightside Down Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -5229,7 +5229,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small cloud platform that can be stood on with the Bee or Cloud power-ups.
 
 -- CLASS NOTES --
-A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary, and can move on a path if the object is called CloudStep, and otherwise through BCSV editing.</notes>
 		<files />
 	</object>
 	<object id="CloudTunnel">
@@ -5286,7 +5286,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A decorative windmill from Cloudy Court Galaxy and Grandmaster Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -6151,7 +6151,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.
+A set of 2 rotating platforms used on the cylinder planet of Sky Station Galaxy.
 
 -- CLASS NOTES --
 A map object with a model and optional collision that usually rotates around one of its axes. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RotateMoveObjStart, RotateMoveObjMove, RotateMoveObjStop, Appear, RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, and RotatorRotateSignLoop. Also supports color change (ColorChange.brk) as well as texture change (TexChange.btk/.btp) animations. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
@@ -6192,7 +6192,7 @@ A flower-like enemy that moves around in a twirling motion. They attack by turni
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where Major Burrows is fought; used in both Gusty Garden Galaxy and Boss Blitz Galaxy.
+The planet where Major Burrows is fought in the Gusty Garden and Boss Blitz Galaxies.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -6931,7 +6931,7 @@ An area that can kill the player and compatible objects when entered.</notes>
 A cloud used in the background of Fluffy Bluff Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7194,15 +7194,15 @@ A red cactus enemy that consists of four body parts, including the head. It can 
 		<files />
 	</object>
 	<object id="DigMineBigStrongBlockStep">
-		<name>Spin Dig -- Medium Used-Block</name>
+		<name>Spin Dig -- Medium Used Block</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Medium sized Used-Block used in several galaxies (Flip-Swap Galaxy, Spin-Dig Galaxy, etc.).
+A Medium sized Used Block used in several galaxies (Flip-Swap Galaxy, Spin-Dig Galaxy, etc.).
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7284,7 +7284,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where Fiery Dino Piranha is fought in the Melty Molten and Boss Blitz Galaxies.
+The planet where Fiery Dino Piranha is fought in the Good Egg and Boss Blitz Galaxies.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -7736,7 +7736,7 @@ A generic map object with a model and collision. It starts the Bound animation w
 A set of clouds used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7751,7 +7751,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of crystals used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7766,7 +7766,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of flowers used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7781,7 +7781,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of ice crystals used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7796,7 +7796,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of castle blocks used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7811,7 +7811,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of lava particles used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -7826,7 +7826,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of metal particles used as space debris.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -9165,7 +9165,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlowerHighlandPlanetB">
-		<name>Honeybloom -- Buzz Planet</name>
+		<name>Honeybloom -- Choppah Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9195,7 +9195,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlowerHighlandPlanetD">
-		<name>Honeybloom -- Bee Eater Planet</name>
+		<name>Honeybloom -- Spindleburr Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9385,7 +9385,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of three decorative fireballs used in the background of Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -11782,7 +11782,7 @@ A Koopa Troopa that throws hammers to attack the player. These hammers can be de
 		<field id="3" type="bool" name="Connect to Collision?" notes="If enabled, it will be attached to the collision below." values="" />
 	</object>
 	<object id="HammerHeadPackun">
-		<name>Prickly Piranha Plant</name>
+		<name>Spiny Piranha Plant</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -11795,7 +11795,7 @@ A large flower enemy that attacks the player by crushing them with its large hea
 		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
 	<object id="HammerHeadPackunSpike">
-		<name>Spiny Piranha Plant</name>
+		<name>Prickly Piranha Plant</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -13130,7 +13130,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The ice layer used on the skating planet in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -14469,7 +14469,7 @@ A decorative falling crystal. It's dead by default since its appearance is contr
 		<files />
 	</object>
 	<object id="KoopaBackEffect">
-		<name>Peach's Castle -- Decorative Bowser Portal</name>
+		<name>Prologue -- Decorative Bowser Portal</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -14477,7 +14477,7 @@ A decorative falling crystal. It's dead by default since its appearance is contr
 The large portal that Bowser disappears through during the intro sequence at Peach's Castle.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -14637,7 +14637,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A background tower with a torch used in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -15160,7 +15160,7 @@ A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMidd
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A generic airship that is used in Space Junk Galaxy, Bowser's Airship Armada and Fleet Glide Galaxy.
+A generic airship that is used in Space Junk Galaxy, Bowser's Airship Armada and Fleet Glide Galaxy. In SMG2, the Airship's upper propellers have collision.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports optional Low, Middle and Bloom models.</notes>
@@ -17637,7 +17637,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A blue pole used on the second planet of the first mission of Melty Monster Galaxy. The actual climbing occurs on an invisible pole object that is placed inside it.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -18082,10 +18082,10 @@ Creates and registers several objects that appear in the cutscene where Starship
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The chimney used on Starship Mario.
+The chimney used on Starship Mario. It has no collision, and the warping is instead done via ChimneyEntryObj.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -18100,7 +18100,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A rocket booster used on the back of Starship Mario.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -18142,7 +18142,7 @@ A generic planet with a model and collision intended for use on Starship Mario. 
 The blue core used in the power-up display room of Starship Mario.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -19618,7 +19618,7 @@ A map object with a model and optional collision that can be clipped in a Matter
 A set of decorative donuts, pancakes and more used in the background of Sweet Mystery Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -19633,7 +19633,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of candy canes, pretzels and more; used in the background of Sweet Mystery Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -20420,7 +20420,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The cover used at the top of Throwback Galaxy.
+The cover used at the top of Throwback Galaxy. It bears Bowser's emblem.
 
 -- CLASS NOTES --
 A cover that can be moved once by activating its SW_A switch. Its "Move" animation specifies how it moves. After that, the cover will not disappear.</notes>
@@ -20623,7 +20623,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where King Kaliente is fought; used in Good Egg Galaxy and Boss Blitz Galaxy.
+The planet where King Kaliente is fought in the Good Egg and Boss Blitz Galaxies.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -21019,7 +21019,7 @@ A point in space that can be used to specify the position where the player gets 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The grass planet used in several bonus sections.
+The hexagonal grass planet used in several bonus sections.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -21034,7 +21034,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The dirt planet used in several bonus sections.
+The hexagonal dirt planet used in several bonus sections.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -21999,7 +21999,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The boss fought at the end of the third mission in Ghostly Galaxy and Boss Blitz Galaxy.
+The boss fought at the end of the third mission in the Ghostly and Boss Blitz Galaxies.
 
 -- CLASS NOTES --
 A ghostly rock boss that attacks by throwing large stones against the player. While all of them damage the player when hit, the yellow ones drop a Coin and the black ones cause a Bomb Boo to appear with which the player can attack the boss. During the second phase, the boss creates two rock hands that can be used for attacking the player and defending itself. In SMG1, it will spawn a Power Star, although this requires a properly configured Scenario entry.</notes>
@@ -22012,7 +22012,7 @@ A ghostly rock boss that attacks by throwing large stones against the player. Wh
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where Bouldergeist is fought in Ghostly Galaxy.
+The planet where Bouldergeist is fought in Ghostly Galaxy and Boss Blitz Galaxy.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -22265,7 +22265,7 @@ A cutscene controller that manages major parts of the prologue sequence. This in
 A set of fireballs used in the background of Bowser Jr.'s Fiery Flotilla.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -22875,12 +22875,12 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="RailMoveNormalLift">
-		<name>Flash Black -- Yellow Moving Platform</name>
+		<name>Generic Yellow Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A simple moving platform that is yellow.
+A simple moving platform that is yellow; used in Flash Black Galaxy.
 
 -- CLASS NOTES --
 A simpler version of RailMoveObj with fewer configuration options. It can use optional sound effects whose names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
@@ -23325,7 +23325,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of rotating fireballs used on the snake blocks planet in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -23350,7 +23350,7 @@ An area that changes into what direction the shadows of Snake Blocks point that 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of four solid purple blocks used in Beat Block Galaxy.
+A set of four solid purple blocks in a 2x2 arrangement, used in Beat Block Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports optional Low, Middle and Bloom models.</notes>
@@ -23380,7 +23380,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of two solid purple blocks used in Beat Block Galaxy.
+A set of two solid purple blocks in a 2x1 arrangement, used in Beat Block Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports optional Low, Middle and Bloom models.</notes>
@@ -23495,12 +23495,12 @@ A generic planet with a model and collision. It is meant to use collision triang
 		<field id="3" type="bool" name="Reverse?" notes="If set, the &quot;Reverse&quot; animation will be played if it exists." values="" />
 	</object>
 	<object id="ReverseGravity2DDossunPlanet">
-		<name>Rightside Down -- Thwomps Planet</name>
+		<name>Rightside Down -- Thwomp Section</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet with the Thwomps used in Rightside Down Galaxy.
+The section with many Thwomps used in Rightside Down Galaxy.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -23510,7 +23510,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ReverseGravity2DLiftPlanet">
-		<name>Rightside Down -- Slide Planet</name>
+		<name>Rightside Down -- Slide Section</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -23522,12 +23522,12 @@ A generic object with a model, collision and a Move.bva visibility animation tha
 		<files />
 	</object>
 	<object id="ReverseGravity2DRoofActionPlanet">
-		<name>Rightside Down -- Fire Flower Planet</name>
+		<name>Rightside Down -- Fire Flower Section</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where the Fire Flower is located in Rightside Down Galaxy.
+The section where the Fire Flower is located in Rightside Down Galaxy.
 
 -- CLASS NOTES --
 A generic object with a model, collision and a Move.bva visibility animation that will play its Move animations once certain conditions are met. The Move.bva animation's initial frame will be used until the conditions are met. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.</notes>
@@ -24587,7 +24587,7 @@ A variant of SimpleMapObj. This is a generic map object with a model, collision 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A tall destroyable wood box intended to be used in Dusty Dune Galaxy.
+An unused tall destroyable wood box intended to be used in Dusty Dune Galaxy; this wood box being slightly shorter than the one used in Dusty Dune.
 
 -- CLASS NOTES --
 A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
@@ -25370,7 +25370,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of decorative coral used in Starshine Beach Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -25385,7 +25385,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of decorative flowers used in Starshine Beach Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -25400,7 +25400,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of decorative flower petals used in Cloudy Court Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -26623,7 +26623,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A comet that appears near the end of the game's ending credits.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -26638,7 +26638,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A decorative image of Starship Mario that appears during the game's ending credits.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -27241,7 +27241,7 @@ A spider enemy that hangs from a thread of webbing. When the player is nearby, i
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A brown Used Block that serves as a platform in several galaxies.
+The classic brown Used Block that serves as a platform in several galaxies.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports optional Low, Middle and Bloom models.</notes>
@@ -27961,7 +27961,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="SwitchingMoveBuzzAreaBlockBlue">
-		<name>Flip-Out -- Chopper Section Blue Walls</name>
+		<name>Flip-Out -- Choppah Section Blue Walls</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -27979,7 +27979,7 @@ A platform that can move and rotate when SW_A gets activated. If the switch gets
 		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveBuzzAreaBlockRed">
-		<name>Flip-Out -- Chopper Section Red Walls</name>
+		<name>Flip-Out -- Choppah Section Red Walls</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -30610,7 +30610,7 @@ An unfinished large version of the Bomp, but the model is still visually the sam
 A set of paint tubes used in the background of Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -30625,7 +30625,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A set of paint tubes used in the background of Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -31386,7 +31386,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 		<files />
 	</object>
 	<object id="UnizoLand">
-		<name>Land Urchin</name>
+		<name>Hot Urchin</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -31398,7 +31398,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 		<files />
 	</object>
 	<object id="UnizoLauncher">
-		<name>Land Urchin Spawner</name>
+		<name>Hot Urchin Spawner</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -31536,7 +31536,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="VsBoomerangBrosPlanet">
-		<name>Boom Bunker -- Hammer Bros. Planet</name>
+		<name>Boom Bunker -- Boomerang Bros. Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -31856,7 +31856,7 @@ A spawner that creates rolling Chomps that move on a set path. The Chomps can be
 A planet filled with Chomp heads used in the background of Chompworks Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -32248,7 +32248,7 @@ Creates a rain effect. Requires an instance of TimeStopScreenEffect in the curre
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of red rotating metal platforms from Space Storm Galaxy.
+A set of 4 red rotating metal platforms from Space Storm Galaxy.
 
 -- CLASS NOTES --
 A map object with a model and optional collision that usually rotates around one of its axes. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RotateMoveObjStart, RotateMoveObjMove, RotateMoveObjStop, Appear, RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, and RotatorRotateSignLoop. Also supports color change (ColorChange.brk) as well as texture change (TexChange.btk/.btp) animations. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
@@ -32262,7 +32262,7 @@ A map object with a model and optional collision that usually rotates around one
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of blue rotating metal platforms from Space Storm Galaxy.
+A set of 4 blue rotating metal platforms from Space Storm Galaxy.
 
 -- CLASS NOTES --
 A map object with a model and optional collision that usually rotates around one of its axes. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RotateMoveObjStart, RotateMoveObjMove, RotateMoveObjStop, Appear, RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, and RotatorRotateSignLoop. Also supports color change (ColorChange.brk) as well as texture change (TexChange.btk/.btp) animations. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
@@ -32276,7 +32276,7 @@ A map object with a model and optional collision that usually rotates around one
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of thin red rotating metal platforms from Space Storm Galaxy.
+A set of 4 thin red rotating metal platforms from Space Storm Galaxy.
 
 -- CLASS NOTES --
 A map object with a model and optional collision that usually rotates around one of its axes. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RotateMoveObjStart, RotateMoveObjMove, RotateMoveObjStop, Appear, RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, and RotatorRotateSignLoop. Also supports color change (ColorChange.brk) as well as texture change (TexChange.btk/.btp) animations. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
@@ -32749,7 +32749,7 @@ A map object with a model and optional collision that usually rotates around one
 Decorative wood debris from Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -32764,7 +32764,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 Decorative wood debris from Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
+A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
