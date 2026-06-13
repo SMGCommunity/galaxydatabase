@@ -14,7 +14,11 @@
             "Values": [
                 {
                     "Value": "-2",
-                    "Notes": "Shrinks instantly upon contact."
+                    "Notes": "Shrinks instantly upon contact. Doesn't play SE_OJ_COLLAPSE_PLANE_SHRINK."
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Shrinks instantly upon contact. Doesn't play SE_OJ_COLLAPSE_PLANE_SHRINK."
                 }
             ],
             "Exclusives": []
