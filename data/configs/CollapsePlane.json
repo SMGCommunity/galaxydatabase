@@ -11,7 +11,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "Specifies how long it takes for the tile to disappear after being stepped on. Default is 140 frames.",
-            "Values": [],
+            "Values": [
+                {
+                    "Value": "-2",
+                    "Notes": "Shrinks instantly upon contact."
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {

@@ -1,4 +1,4 @@
-<database timestamp="1781142453">
+<database timestamp="1781379120">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5593,7 +5593,7 @@ A green tile that slowly disappears once the player touches it.
 -- CLASS NOTES --
 A framed platform that will shrink down and disappear after the player stepped on it. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
-		<field id="0" type="int" name="Shrinking Time" notes="Specifies how long it takes for the tile to disappear after being stepped on. Default is 140 frames." values="" />
+		<field id="0" type="int" name="Shrinking Time" notes="Specifies how long it takes for the tile to disappear after being stepped on. Default is 140 frames." values="-2 = Shrinks instantly upon contact." />
 	</object>
 	<object id="CollectTico">
 		<name>Silver Star Controller</name>
