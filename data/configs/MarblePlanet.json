@@ -13,6 +13,18 @@
             "Description": "The number of marbles to appear inside the planet. Default is 3.",
             "Values": [],
             "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when all marbles have hit the core.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when all marbles have hit the core.",
+            "Exclusives": []
         }
     }
 }

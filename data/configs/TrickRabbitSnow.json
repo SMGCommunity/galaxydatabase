@@ -1,8 +1,39 @@
 {
     "InternalName": "TrickRabbitSnow",
     "Name": "TrickRabbitSnow",
-    "Notes": "",
+    "Notes": "An individual Star Bunny used in a chasing minigame that has to be linked to a TrickRabbitSnowCollect.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "LinkNamePos": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "隠れ位置",
+                    "Notes": "Position where the bunny appears from"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        }
+    }
 }

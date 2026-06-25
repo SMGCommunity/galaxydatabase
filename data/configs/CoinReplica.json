@@ -1,8 +1,30 @@
 {
     "InternalName": "CoinReplica",
     "Name": "CoinReplica",
-    "Notes": "",
+    "Notes": "A Coin that can only be collected if its SW_A is activated. Alternatively, it can be destroyed using SW_B.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appear with a Hop?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the Coin bounces upwards when appearing.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The Coin becomes collectible when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Destroys the Coin when activated.",
+            "Exclusives": []
+        }
+    }
 }

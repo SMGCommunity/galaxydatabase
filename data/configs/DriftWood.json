@@ -1,8 +1,20 @@
 {
     "InternalName": "DriftWood",
     "Name": "DriftWood",
-    "Notes": "",
+    "Notes": "An icy obstacle that moves on a path.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Rail": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "MirrorActor": {
+            "Games": 1,
+            "Description": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,8 +1,37 @@
 {
     "InternalName": "MiniatureGalaxy",
     "Name": "MiniatureGalaxy",
-    "Notes": "",
+    "Notes": "A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Galaxy Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Regular galaxy, uses MiniatureGalaxyUnknown"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Secret galaxy, uses MiniHatenaGalaxy"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Boss galaxy, uses MiniatureGalaxyUnknownKoopa"
+                }
+            ],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

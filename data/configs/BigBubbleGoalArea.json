@@ -1,8 +1,15 @@
 {
     "InternalName": "BigBubbleGoalArea",
     "Name": "BigBubbleGoalArea",
-    "Notes": "",
+    "Notes": "An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, activated when the bubble is inside the area.",
+            "Exclusives": []
+        }
+    }
 }

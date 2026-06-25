@@ -1,8 +1,21 @@
 {
     "InternalName": "CollisionBlocker",
     "Name": "CollisionBlocker",
-    "Notes": "",
+    "Notes": "Creates an invisible spherical force that pushes the player away.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Destroys the object when activated.",
+            "Exclusives": []
+        }
+    }
 }

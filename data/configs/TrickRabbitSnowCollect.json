@@ -1,8 +1,37 @@
 {
     "InternalName": "TrickRabbitSnowCollect",
     "Name": "TrickRabbitSnowCollect",
-    "Notes": "",
+    "Notes": "Controls a Star Bunny chase minigame and spawns a Power Star once all linked Star Bunnies (TrickRabbitSnow) have been caught.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Time Limit",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Time limit for the minigame in seconds. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        }
+    }
 }

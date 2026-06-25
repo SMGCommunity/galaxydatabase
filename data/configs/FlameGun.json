@@ -1,8 +1,37 @@
 {
     "InternalName": "FlameGun",
     "Name": "FlameGun",
-    "Notes": "",
+    "Notes": "An unfinished pig statue that shoots invisible fire.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Behavior of the statue. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Shoot fire intermittently"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shoot fire continuously and rotate around"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shoot fire continuously forwards"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, the statue stands still until this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: CoinReplica</h1>
-			<p></p>
+			<p>A Coin that can only be collected if its SW_A is activated. Alternatively, it can be destroyed using SW_B.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Appear with a Hop?</b>: If set, the Coin bounces upwards when appearing.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>The Coin becomes collectible when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>Destroys the Coin when activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
