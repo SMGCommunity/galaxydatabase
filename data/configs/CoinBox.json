@@ -1,8 +1,8 @@
 {
     "InternalName": "CoinBox",
     "Name": "CoinBox",
-    "Notes": "",
+    "Notes": "A point which spawns a single Coin if the player uses a Spin Attack or flies in a tornado nearby.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {}
 }

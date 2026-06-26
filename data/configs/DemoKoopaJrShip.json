@@ -1,8 +1,43 @@
 {
     "InternalName": "DemoKoopaJrShip",
     "Name": "DemoKoopaJrShip",
-    "Notes": "",
+    "Notes": "A version of Bowser Jr.'s ship used during cutscenes.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appearance Mode",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Specifies how the object appears during the dialogue.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears from the object's position"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Appears from the distance"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Appears from above"
+                }
+            ],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        }
+    }
 }

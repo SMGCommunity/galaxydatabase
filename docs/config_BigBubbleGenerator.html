@@ -18,7 +18,23 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BigBubbleGenerator</h1>
-			<p></p>
+			<p>A generator that creates Big Bubbles, which can be entered and controlled by the player.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Spawn Timer</b>: Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Minimum Size</b>: Minimum size of the bubbles, multiplied by 100. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Maximum Size</b>: Maximum size of the bubbles, multiplied by 100. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Move Limitter ID</b>: ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Bubble Shape</b>: Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used.</p></td><td><ul><li>-1: Sphere</li><li>0: Cube</li><li>1: Octahedron</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

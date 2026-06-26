@@ -1,4 +1,4 @@
-<database timestamp="1781383765">
+<database timestamp="1782386158">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2322,8 +2322,10 @@ An unused standalone version of the Big Bubble that does not render. Can be ente
 An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+A variant of CubeCameraArea that only changes the camera if the player is riding a Big Bubble.</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
+		<field id="1" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
 	</object>
 	<object id="BigBubbleCameraCylinder">
 		<name>Big Bubble Camera Area [Cylinder]</name>
@@ -2334,8 +2336,10 @@ An area that causes the camera to change when the player enters it while riding 
 An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+A variant of CubeCameraArea that only changes the camera if the player is riding a Big Bubble.</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
+		<field id="1" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
 	</object>
 	<object id="BigBubbleCameraSphere">
 		<name>Big Bubble Camera Area [Sphere]</name>
@@ -2346,8 +2350,10 @@ An area that causes the camera to change when the player enters it while riding 
 An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+A variant of CubeCameraArea that only changes the camera if the player is riding a Big Bubble.</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
+		<field id="1" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
 	</object>
 	<object id="BigBubbleGenerator">
 		<name>Big Bubble Generator</name>
@@ -2358,8 +2364,13 @@ An area that causes the camera to change when the player enters it while riding 
 A generator that creates Big Bubbles, which can be entered and controlled by the player.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates Big Bubbles, which can be entered and controlled by the player.</notes>
 		<files />
+		<field id="0" type="int" name="Spawn Timer" notes="Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later." values="" />
+		<field id="1" type="int" name="Minimum Size" notes="Minimum size of the bubbles, multiplied by 100. Default is 100." values="" />
+		<field id="2" type="int" name="Maximum Size" notes="Maximum size of the bubbles, multiplied by 100. Default is 100." values="" />
+		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game." values="" />
+		<field id="4" type="int" name="Bubble Shape" notes="Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used." values="-1 = Sphere, 0 = Cube, 1 = Octahedron" />
 	</object>
 	<object id="BigBubbleGoalAreaBox">
 		<name>Pop Big Bubble Area [Cube]</name>
@@ -2370,7 +2381,7 @@ A generator that creates Big Bubbles, which can be entered and controlled by the
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
 		<files />
 	</object>
 	<object id="BigBubbleGoalAreaCylinder">
@@ -2382,7 +2393,7 @@ An area that pops any Big Bubble inside it. This may also activate a switch.
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
 		<files />
 	</object>
 	<object id="BigBubbleGoalAreaSphere">
@@ -2394,7 +2405,7 @@ An area that pops any Big Bubble inside it. This may also activate a switch.
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
 		<files />
 	</object>
 	<object id="BigBubbleMoveLimitterCylinder">
@@ -2430,7 +2441,7 @@ Limits the movement of Big Bubbles so that it moves on an invisible plane.
 An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+An area that activates its SW_A once the player enters it while riding a Big Bubble.</notes>
 		<files />
 	</object>
 	<object id="BigBubbleSwitchCylinder">
@@ -2442,7 +2453,7 @@ An area that activates a switch once the player enters it while riding a Big Bub
 An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+An area that activates its SW_A once the player enters it while riding a Big Bubble.</notes>
 		<files />
 	</object>
 	<object id="BigBubbleSwitchSphere">
@@ -2454,7 +2465,7 @@ An area that activates a switch once the player enters it while riding a Big Bub
 An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
-</notes>
+An area that activates its SW_A once the player enters it while riding a Big Bubble.</notes>
 		<files />
 	</object>
 	<object id="BigCake">
@@ -2630,8 +2641,13 @@ A generic planet with a model and optional collision. The normal collision mesh 
 Creates Big Bubbles that can't be moved by the player.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates Big Bubbles, which can be entered and controlled by the player.</notes>
 		<files />
+		<field id="0" type="int" name="Spawn Timer" notes="Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later." values="" />
+		<field id="1" type="int" name="Minimum Size" notes="Minimum size of the bubbles, multiplied by 100. Default is 100." values="" />
+		<field id="2" type="int" name="Maximum Size" notes="Maximum size of the bubbles, multiplied by 100. Default is 100." values="" />
+		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game." values="" />
+		<field id="4" type="int" name="Bubble Shape" notes="Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used." values="-1 = Sphere, 0 = Cube, 1 = Octahedron" />
 	</object>
 	<object id="BigPunchBoxStep">
 		<name>Supermassive -- Huge Brick Block</name>
@@ -3867,7 +3883,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A wooden planet used in Gold Leaf Galaxy on which the player hunts a Star Bunny.
 
 -- CLASS NOTES --
-</notes>
+A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.</notes>
 		<files />
 	</object>
 	<object id="Bussun">
@@ -5458,7 +5474,7 @@ A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn C
 An invisible spot that will spawn a Coin when using a Spin Attack nearby.
 
 -- CLASS NOTES --
-</notes>
+A point which spawns a single Coin if the player uses a Spin Attack or flies in a tornado nearby.</notes>
 		<files />
 	</object>
 	<object id="CoinFlower">
@@ -5522,8 +5538,9 @@ Creates a set of Coins that will appear once this object's SW_APPEAR gets trigge
 A Coin that can only be collected if a specific switch is activated.
 
 -- CLASS NOTES --
-</notes>
+A Coin that can only be collected if its SW_A is activated. Alternatively, it can be destroyed using SW_B.</notes>
 		<files />
+		<field id="0" type="bool" name="Appear with a Hop?" notes="If set, the Coin bounces upwards when appearing." values="" />
 	</object>
 	<object id="CoinRoomBrickBrownPlanet">
 		<name>Puzzle Plank -- Bonus Room</name>
@@ -5633,7 +5650,7 @@ An invisible collision polygon that is contained inside the area. Only the playe
 An invisible force that pushes the player away from it. Usually used in tight corners and sections that may lead to collision glitches.
 
 -- CLASS NOTES --
-</notes>
+Creates an invisible spherical force that pushes the player away.</notes>
 		<files />
 	</object>
 	<object id="ColorPencil">
@@ -6986,8 +7003,9 @@ A controller that sets up and controls a cutscene. TimeSheetName refers to the s
 A variant of Bowser Jr.'s Airship that appears during his boss intros.
 
 -- CLASS NOTES --
-</notes>
+A version of Bowser Jr.'s ship used during cutscenes.</notes>
 		<files />
+		<field id="0" type="int" name="Appearance Mode" notes="Specifies how the object appears during the dialogue." values="-1 = Appears from the object's position, 0 = Appears from the distance, 1 = Appears from above" />
 	</object>
 	<object id="DemoPlayerForbidUpdateArea">
 		<name>Prevent Player Update Area</name>
@@ -7126,7 +7144,7 @@ An area that applies a blurry effect to the screen when entered by the player.</
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A blue Ground Pound switch that has an arrow pointing downwards.
+A blue Ground Pound switch that has an arrow pointing downwards. It has slightly different behavior in SandClockGalaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -7543,14 +7561,14 @@ Counts the player's deaths that occur inside this area and stores them in the sa
 	</object>
 	<object id="DriftWood">
 		<name>Icy Obstacle</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 An icy obstacle that can destroy the ice platforms created by the player.
 
 -- CLASS NOTES --
-</notes>
+An icy obstacle that moves on a path.</notes>
 		<files />
 	</object>
 	<object id="Drill2DReflectMazeRoom">
@@ -8875,8 +8893,9 @@ A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will 
 An unfinished pig statue that shoots invisible fire.
 
 -- CLASS NOTES --
-</notes>
+An unfinished pig statue that shoots invisible fire.</notes>
 		<files />
+		<field id="0" type="int" name="Behavior" notes="Behavior of the statue. Default is 0." values="0 = Shoot fire intermittently, 1 = Shoot fire continuously and rotate around, 2 = Shoot fire continuously forwards" />
 	</object>
 	<object id="FlexibleSandPlanet">
 		<name>Dusty Dune -- Sand Tide Planet Solids</name>
@@ -8902,8 +8921,13 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A spherical sand planet that grows and shrinks in size.
 
 -- CLASS NOTES --
-</notes>
+An object capable of shrinking and growing between two sizes.</notes>
 		<files />
+		<field id="0" type="int" name="Maximum Scale" notes="Maximum scale of the object, multiplied by 10000. Default is 10000." values="" />
+		<field id="1" type="int" name="Minimum Scale" notes="Minimum scale of the object, multiplied by 10000. Default is 1000." values="" />
+		<field id="2" type="int" name="Scale Rate" notes="Scaling rate of the object, multiplied by 10000. Default is 20." values="" />
+		<field id="3" type="bool" name="Vanish After Shrinking?" notes="If set to 1, the object disappears after reaching the minimum scale." values="" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlexibleSphere">
 		<name>Generic Scaling Map Object [Unused]</name>
@@ -8914,8 +8938,13 @@ A spherical sand planet that grows and shrinks in size.
 A shrinking and rising object that retrieves a proper model using ShapeModelNo. However, no more models exist for this object.
 
 -- CLASS NOTES --
-</notes>
+An object capable of shrinking and growing between two sizes.</notes>
 		<files />
+		<field id="0" type="int" name="Maximum Scale" notes="Maximum scale of the object, multiplied by 10000. Default is 10000." values="" />
+		<field id="1" type="int" name="Minimum Scale" notes="Minimum scale of the object, multiplied by 10000. Default is 1000." values="" />
+		<field id="2" type="int" name="Scale Rate" notes="Scaling rate of the object, multiplied by 10000. Default is 20." values="" />
+		<field id="3" type="bool" name="Vanish After Shrinking?" notes="If set to 1, the object disappears after reaching the minimum scale." values="" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlipPanel">
 		<name>Flipswitch Panel</name>
@@ -11844,7 +11873,7 @@ A large caterpillar enemy that moves on a set path. Unlike its smaller variants,
 The large spherical water planet.
 
 -- CLASS NOTES --
-</notes>
+A planet with openable top half.</notes>
 		<files />
 	</object>
 	<object id="HazeCube">
@@ -18676,8 +18705,9 @@ A decorative background model that is meant to be placed around entire galaxies.
 A selectable Dome warp to Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniBreakDownPlanetGalaxy">
 		<name>Dome Warp to Hurry-Scurry Galaxy</name>
@@ -18688,8 +18718,9 @@ A selectable Dome warp to Battlerock Galaxy.
 A selectable Dome warp to Hurry-Scurry Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniCannonFleetGalaxy">
 		<name>Dome Warp to Dreadnought Galaxy</name>
@@ -18700,8 +18731,9 @@ A selectable Dome warp to Hurry-Scurry Galaxy.
 A selectable Dome warp to Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniCosmosGardenGalaxy">
 		<name>Dome Warp to Gusty Garden Galaxy</name>
@@ -18712,8 +18744,9 @@ A selectable Dome warp to Dreadnought Galaxy.
 A selectable Dome warp to Gusty Garden Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniCubeBubbleExLv1Galaxy">
 		<name>Dome Warp to Bubble Breeze Galaxy</name>
@@ -18724,8 +18757,9 @@ A selectable Dome warp to Gusty Garden Galaxy.
 A selectable Dome warp to Bubble Breeze Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniDarkRoomGalaxy">
 		<name>Dome Warp to Matter Splatter Galaxy</name>
@@ -18736,8 +18770,9 @@ A selectable Dome warp to Bubble Breeze Galaxy.
 A selectable Dome warp to Matter Splatter Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniEggStarGalaxy">
 		<name>Dome Warp to Good Egg Galaxy</name>
@@ -18748,8 +18783,9 @@ A selectable Dome warp to Matter Splatter Galaxy.
 A selectable Dome warp to Good Egg Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniFactoryGalaxy">
 		<name>Dome Warp to Toy Time Galaxy</name>
@@ -18760,8 +18796,9 @@ A selectable Dome warp to Good Egg Galaxy.
 A selectable Dome warp to Toy Time Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniFlipPanelExGalaxy">
 		<name>Dome Warp to Flipswitch Galaxy</name>
@@ -18772,8 +18809,9 @@ A selectable Dome warp to Toy Time Galaxy.
 A selectable Dome warp to Flipswitch Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniFloaterOtaKingGalaxy">
 		<name>Dome Warp to Bowser Jr.'s Lava Reactor</name>
@@ -18784,8 +18822,9 @@ A selectable Dome warp to Flipswitch Galaxy.
 A selectable Dome warp to Bowser Jr.'s Lava Reactor.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniHeavenlyBeachGalaxy">
 		<name>Dome Warp to Beach Bowl Galaxy</name>
@@ -18796,8 +18835,9 @@ A selectable Dome warp to Bowser Jr.'s Lava Reactor.
 A selectable Dome warp to Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniHellProminenceGalaxy">
 		<name>Dome Warp to Melty Molten Galaxy</name>
@@ -18808,8 +18848,9 @@ A selectable Dome warp to Beach Bowl Galaxy.
 A selectable Dome warp to Melty Molten Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniHoneyBeeExGalaxy">
 		<name>Dome Warp to Honeyclimb Galaxy</name>
@@ -18820,8 +18861,9 @@ A selectable Dome warp to Melty Molten Galaxy.
 A selectable Dome warp to Honeyclimb Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniHoneyBeeKingdomGalaxy">
 		<name>Dome Warp to Honeyhive Galaxy</name>
@@ -18832,8 +18874,9 @@ A selectable Dome warp to Honeyclimb Galaxy.
 A selectable Dome warp to Honeyhive Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniIceVolcanoGalaxy">
 		<name>Dome Warp to Freezeflame Galaxy</name>
@@ -18844,8 +18887,9 @@ A selectable Dome warp to Honeyhive Galaxy.
 A selectable Dome warp to Freezeflame Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniKoopaBattleVs1Galaxy">
 		<name>Dome Warp to Bowser's Star Reactor</name>
@@ -18856,8 +18900,9 @@ A selectable Dome warp to Freezeflame Galaxy.
 A selectable Dome warp to Bowser's Star Reactor.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniKoopaBattleVs2Galaxy">
 		<name>Dome Warp to Bowser's Dark Matter Plant</name>
@@ -18868,8 +18913,9 @@ A selectable Dome warp to Bowser's Star Reactor.
 A selectable Dome warp to Bowser's Dark Matter Plant.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniKoopaBattleVs3Galaxy">
 		<name>Dome Warp to Bowser's Galaxy Reactor</name>
@@ -18880,8 +18926,9 @@ A selectable Dome warp to Bowser's Dark Matter Plant.
 An unused yet fully functional selectable Dome warp to Bowser's Galaxy Reactor.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniKoopaJrShipLv1Galaxy">
 		<name>Dome Warp to Bowser Jr.'s Airship Armada</name>
@@ -18892,8 +18939,9 @@ An unused yet fully functional selectable Dome warp to Bowser's Galaxy Reactor.
 A selectable Dome warp to Bowser Jr.'s Airship Armada.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniMechaKoopaPartsCage">
 		<name>Toy Time -- Factory Cage</name>
@@ -18974,8 +19022,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A selectable Dome warp to Buoy Base Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniOceanPhantomCaveGalaxy">
 		<name>Dome Warp to Deep Dark Galaxy</name>
@@ -18986,8 +19035,9 @@ A selectable Dome warp to Buoy Base Galaxy.
 A selectable Dome warp to Deep Dark Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniOceanRingGalaxy">
 		<name>Dome Warp to Sea Slide Galaxy</name>
@@ -18998,8 +19048,9 @@ A selectable Dome warp to Deep Dark Galaxy.
 A selectable Dome warp to Sea Slide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniPhantomGalaxy">
 		<name>Dome Warp to Ghostly Galaxy</name>
@@ -19010,8 +19061,9 @@ A selectable Dome warp to Sea Slide Galaxy.
 A selectable Dome warp to Ghostly Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniPlanetAcrossPlanet">
 		<name>Yoshi Star -- Grass Bonus Planet</name>
@@ -19052,8 +19104,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A selectable Dome warp to Gold Leaf Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniSandClockGalaxy">
 		<name>Dome Warp to Dusty Dune Galaxy</name>
@@ -19064,8 +19117,9 @@ A selectable Dome warp to Gold Leaf Galaxy.
 A selectable Dome warp to Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniSkullSharkGalaxy">
 		<name>Dome Warp to Bonefin Galaxy</name>
@@ -19076,8 +19130,9 @@ A selectable Dome warp to Dusty Dune Galaxy.
 A selectable Dome warp to Bonefin Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniStarDustGalaxy">
 		<name>Dome Warp to Space Junk Galaxy</name>
@@ -19088,8 +19143,9 @@ A selectable Dome warp to Bonefin Galaxy.
 A selectable Dome warp to Space Junk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniSurfingLv1Galaxy">
 		<name>Dome Warp to Loopdeeloop Galaxy</name>
@@ -19100,8 +19156,9 @@ A selectable Dome warp to Space Junk Galaxy.
 A selectable Dome warp to Loopdeeloop Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniTamakoroExLv1Galaxy">
 		<name>Dome Warp to Rolling Green Galaxy</name>
@@ -19112,8 +19169,9 @@ A selectable Dome warp to Loopdeeloop Galaxy.
 A selectable Dome warp to Rolling Green Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MiniTriLegLv1Galaxy">
 		<name>Dome Warp to Bowser Jr.'s Robot Reactor</name>
@@ -19124,8 +19182,9 @@ A selectable Dome warp to Rolling Green Galaxy.
 A selectable Dome warp to Bowser Jr.'s Robot Reactor.
 
 -- CLASS NOTES --
-</notes>
+A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</notes>
 		<files />
+		<field id="0" type="int" name="Galaxy Type" notes="What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once." values="0 = Regular galaxy, uses MiniatureGalaxyUnknown, 1 = Secret galaxy, uses MiniHatenaGalaxy, 2 = Boss galaxy, uses MiniatureGalaxyUnknownKoopa" />
 	</object>
 	<object id="MirrorArea">
 		<name>Mirror Reflection Area</name>
@@ -24736,8 +24795,13 @@ A generic planet with a model and collision. It is meant to use collision triang
 The scaling replica of Gateway Galaxy's main planet that severs as a bonus section.
 
 -- CLASS NOTES --
-</notes>
+An object capable of shrinking and growing between two sizes.</notes>
 		<files />
+		<field id="0" type="int" name="Maximum Scale" notes="Maximum scale of the object, multiplied by 10000. Default is 10000." values="" />
+		<field id="1" type="int" name="Minimum Scale" notes="Minimum scale of the object, multiplied by 10000. Default is 1000." values="" />
+		<field id="2" type="int" name="Scale Rate" notes="Scaling rate of the object, multiplied by 10000. Default is 20." values="" />
+		<field id="3" type="bool" name="Vanish After Shrinking?" notes="If set to 1, the object disappears after reaching the minimum scale." values="" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ScenarioStarter">
 		<name>Galaxy Fly-In Controller</name>
@@ -25799,7 +25863,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The capsule-like main planet where the player encounters several Star Bunnies.
 
 -- CLASS NOTES --
-</notes>
+A capsule-shaped planet that has openable hatches on both ends.</notes>
 		<files />
 	</object>
 	<object id="SnowDiskPlanet">
@@ -27653,7 +27717,7 @@ The rideable Manta Ray from the surfing challenges in Loopdeeloop Galaxy and Loo
 A green portal that opens Sweet Sweet Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpCocoonExGalaxy">
@@ -27665,7 +27729,7 @@ A green portal that opens Sweet Sweet Galaxy's Star select screen when touched d
 A green portal that opens Sling Pod Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpCubeBubbleExLv2Galaxy">
@@ -27677,7 +27741,7 @@ A green portal that opens Sling Pod Galaxy's Star select screen when touched dur
 A green portal that opens Bubble Blast Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpFishTunnelGalaxy">
@@ -27689,7 +27753,7 @@ A green portal that opens Bubble Blast Galaxy's Star select screen when touched 
 A green portal that opens Bigmouth Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpPeachCastleFinalGalaxy">
@@ -27701,7 +27765,7 @@ A green portal that opens Bigmouth Galaxy's Star select screen when touched duri
 A green portal that opens Grand Finale Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurprisedGalaxy">
@@ -27713,7 +27777,7 @@ A green portal that opens Grand Finale Galaxy's Star select screen when touched 
 A green portal that opens Loopdeeloop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpSnowCapsuleGalaxy">
@@ -27725,7 +27789,7 @@ A green portal that opens Loopdeeloop Galaxy's Star select screen when touched d
 A green portal that opens Snow Cap Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpSurfingLv2Galaxy">
@@ -27737,7 +27801,7 @@ A green portal that opens Snow Cap Galaxy's Star select screen when touched duri
 A green portal that opens Loopdeeswoop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpTamakoroExLv2Galaxy">
@@ -27749,7 +27813,7 @@ A green portal that opens Loopdeeswoop Galaxy's Star select screen when touched 
 A green portal that opens Rolling Gizmo Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpTearDropGalaxy">
@@ -27761,7 +27825,7 @@ A green portal that opens Rolling Gizmo Galaxy's Star select screen when touched
 A green portal that opens Drip Drop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpTeresaMario2DGalaxy">
@@ -27773,7 +27837,7 @@ A green portal that opens Drip Drop Galaxy's Star select screen when touched dur
 A green portal that opens Boo's Boneyard Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SurpTransformationExGalaxy">
@@ -27785,7 +27849,7 @@ A green portal that opens Boo's Boneyard Galaxy's Star select screen when touche
 A green portal that opens Sand Spiral Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
 		<files />
 	</object>
 	<object id="SweetDecoratePartsOrange">
@@ -30023,7 +30087,7 @@ An escaping Star Bunny that runs around randomly without a path.
 An individual escaping Star Bunny as seen in Snow Cap Galaxy that is spawned and controlled by a TrickRabbitFreeRunCollect object.
 
 -- CLASS NOTES --
-</notes>
+An individual Star Bunny used in a chasing minigame that has to be linked to a TrickRabbitSnowCollect.</notes>
 		<files />
 	</object>
 	<object id="TrickRabbitFreeRunCollect">
@@ -30035,8 +30099,9 @@ An individual escaping Star Bunny as seen in Snow Cap Galaxy that is spawned and
 Sets up and controls the mini-game where the player has to catch several escaping Star Bunnies (TrickRabbitFreeRunChild) under a time limit.
 
 -- CLASS NOTES --
-</notes>
+Controls a Star Bunny chase minigame and spawns a Power Star once all linked Star Bunnies (TrickRabbitSnow) have been caught.</notes>
 		<files />
+		<field id="0" type="int" name="Time Limit" notes="Time limit for the minigame in seconds. Default is 180." values="" />
 	</object>
 	<object id="TrickRabbitGhost">
 		<name>Invisible Escaping Star Bunny with Paths</name>
@@ -32360,7 +32425,7 @@ A blue cannon that periodically shoots bubbles that trap the player inside upon 
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A massive stream of water the player can ride to be transported. Used in Sea Slide Galaxy.
+A massive stream of water the player can ride to be transported. Used in Sea Slide Galaxy.simpl
 
 -- CLASS NOTES --
 </notes>
@@ -33020,7 +33085,7 @@ A decorative portal from the World Map that appears depending on the currently s
 A group of giant apples that house a giant caterpillar from Gusty Garden Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A set of three giant apples with a green caterpillar connecting them. The caterpillar's movement is divided into three stages; first one being controlled by a cutscene and other two being controlled by switches.</notes>
 		<files />
 	</object>
 	<object id="YellowChip">

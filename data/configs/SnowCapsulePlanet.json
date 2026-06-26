@@ -1,8 +1,15 @@
 {
     "InternalName": "SnowCapsulePlanet",
     "Name": "SnowCapsulePlanet",
-    "Notes": "",
+    "Notes": "A capsule-shaped planet that has openable hatches on both ends.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene. It's special cutscene nerve makes the hatches open.",
+            "Exclusives": []
+        }
+    }
 }

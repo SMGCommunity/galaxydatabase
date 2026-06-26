@@ -1,8 +1,59 @@
 {
     "InternalName": "WormEatenPlanet",
     "Name": "WormEatenPlanet",
-    "Notes": "",
+    "Notes": "A set of three giant apples with a green caterpillar connecting them. The caterpillar's movement is divided into three stages; first one being controlled by a cutscene and other two being controlled by switches.",
     "Games": 1,
     "Progress": 0,
-    "Parameters": {}
+    "Parameters": {
+        "Point_arg0": {
+            "Name": "Point Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Behavior of the caterpillar on this point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No special behavior"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "The caterpillar enters an apple at this point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "The caterpillar comes to rest at this point, waiting for the next movement"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "The caterpillar leaves an apple at this point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Starts the second movement of the caterpillar.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Starts the third movement of the caterpillar.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path for the caterpillar to move on.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene. It's special cutscene nerve starts the first movement of the caterpillar.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,8 +1,73 @@
 {
     "InternalName": "BigBubbleGenerator",
     "Name": "BigBubbleGenerator",
-    "Notes": "",
+    "Notes": "A generator that creates Big Bubbles, which can be entered and controlled by the player.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawn Timer",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Minimum Size",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Minimum size of the bubbles, multiplied by 100. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Maximum Size",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Maximum size of the bubbles, multiplied by 100. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Move Limitter ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Bubble Shape",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Sphere"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Cube"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Octahedron"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

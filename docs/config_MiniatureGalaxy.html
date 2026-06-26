@@ -18,7 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Config: MiniatureGalaxy</h1>
-			<p></p>
+			<p>A selectable galaxy model used inside Domes. The galaxy to warp to is specified in the name of the object. The conditions for each galaxy to unlock are specified in the GameEventFlagTable.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Galaxy Type</b>: What type of galaxy this is. Also specifies the model for the object if the galaxy hasn't been unlocked yet. Boss galaxies use model MiniKoopaGalaxy until cleared at least once.</p></td><td><ul><li>0: Regular galaxy, uses MiniatureGalaxyUnknown</li><li>1: Secret galaxy, uses MiniHatenaGalaxy</li><li>2: Boss galaxy, uses MiniatureGalaxyUnknownKoopa</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

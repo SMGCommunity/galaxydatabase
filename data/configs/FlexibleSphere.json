@@ -1,8 +1,66 @@
 {
     "InternalName": "FlexibleSphere",
     "Name": "FlexibleSphere",
-    "Notes": "",
+    "Notes": "An object capable of shrinking and growing between two sizes.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Maximum Scale",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Maximum scale of the object, multiplied by 10000. Default is 10000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Minimum Scale",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Minimum scale of the object, multiplied by 10000. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Scale Rate",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Scaling rate of the object, multiplied by 10000. Default is 20.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Vanish After Shrinking?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set to 1, the object disappears after reaching the minimum scale.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it vanishes. Obj_arg3 must be set to 1 for this to be possible.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Enables the shrinking and growing once activated.",
+            "Exclusives": []
+        }
+    }
 }

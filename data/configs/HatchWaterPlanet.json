@@ -1,8 +1,15 @@
 {
     "InternalName": "HatchWaterPlanet",
     "Name": "HatchWaterPlanet",
-    "Notes": "",
+    "Notes": "A planet with openable top half.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene. It's special cutscene nerve makes the top open.",
+            "Exclusives": []
+        }
+    }
 }
