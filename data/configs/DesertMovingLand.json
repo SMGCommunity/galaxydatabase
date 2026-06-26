@@ -1,8 +1,70 @@
 {
     "InternalName": "DesertMovingLand",
     "Name": "DesertMovingLand",
-    "Notes": "",
+    "Notes": "A moving planet that uses Obj_args instead of paths to move. It will move either up or down depending on which switch is activated.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How far it moves down/up. Positive values will initially go downwards, negative values will initially go upwards. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Initial Movement Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames it takes to move in its initial state. Default is 720.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Reverse Movement Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames it takes to move in its reverse state. Default is 720.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "This switch will be activated if the object reaches its reverse position, and will be deactivated if this object reaches its initial position. If the object is in its reverse position, it will start moving when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "This switch will be activated if the object reaches its initial position, and will be deactivated if this object reaches its reverse position. If the object is in its initial position, it will start moving when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

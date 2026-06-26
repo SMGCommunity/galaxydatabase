@@ -48,13 +48,13 @@
         "SW_A": {
             "Games": 1,
             "Needed": false,
-            "Description": "Jumps up when this switch is activated.",
+            "Description": "Jumps up when this switch is activated. Only works if Obj_arg0 is set to 2 (LuigiEvent) / 4 (LuigiNPC).",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 1,
             "Needed": false,
-            "Description": "Activated if Luigi exists in the current stage.",
+            "Description": "Activated if Luigi exists in the current stage, and other conditions are also met. (Needs more testing)",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -65,7 +65,7 @@
         "AppearPowerStar": {
             "Games": 0,
             "Needed": false,
-            "Description": "",
+            "Description": "Spawned after triggering a specific message event flow.",
             "Exclusives": []
         },
         "Message": {

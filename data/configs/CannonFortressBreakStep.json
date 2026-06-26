@@ -1,8 +1,136 @@
 {
     "InternalName": "CannonFortressBreakStep",
     "Name": "CannonFortressBreakStep",
-    "Notes": "",
+    "Notes": "A map object that can rotate around one of its axes. It will fall down at a speed of 15 when its SW_B is activated. If its RotateAxis is 0 or 2, this object's SW_B behavior causes it to change direction.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "RotateSpeed": {
+            "Name": "Rotation Speed",
+            "Games": 1,
+            "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rotation Angle",
+            "Games": 1,
+            "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Rotation Axis",
+            "Games": 1,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X-axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y-axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z-axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Rotation Speed Type",
+            "Games": 1,
+            "Description": "Decides whether RotateSpeed specifies the rotation speed, acceleration, or the time it takes to rotate to the specified angle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "RotateSpeed specifies fixed rotation speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "RotateSpeed specifies maximum rotation speed"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "RotateSpeed specifies time until desired angle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateStopTime": {
+            "Name": "Restart Delay",
+            "Games": 1,
+            "Description": "The time in frames it takes to restart rotation after stopping.",
+            "Exclusives": []
+        },
+        "RotateType": {
+            "Name": "Rotation Type",
+            "Games": 1,
+            "Description": "Specifies how the object should continue rotating after reaching the targeted angle.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Stop rotating completely"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotates again in opposite direction"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotates again in same direction"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SignMotionType": {
+            "Name": "Shake Start Type",
+            "Games": 1,
+            "Description": "Specifies whether the object will shake before it starts moving or not.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Shakes before moving"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object will fall when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        }
+    }
 }

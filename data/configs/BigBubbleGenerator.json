@@ -37,7 +37,7 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game.",
+            "Description": "ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limiters crash the game.",
             "Values": [],
             "Exclusives": []
         },

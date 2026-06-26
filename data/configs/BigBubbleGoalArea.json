@@ -1,14 +1,23 @@
 {
     "InternalName": "BigBubbleGoalArea",
     "Name": "BigBubbleGoalArea",
-    "Notes": "An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.",
+    "Notes": "An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Meter Capacity",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The capacity of the meter, in relation to Big Bubble size. Default is 1, which will activate the switch with the default Big Bubble size.",
+            "Values": [],
+            "Exclusives": []
+        },
         "SW_A": {
             "Games": 1,
             "Needed": false,
-            "Description": "If used, activated when the bubble is inside the area.",
+            "Description": "Activated when the meter has been filled.",
             "Exclusives": []
         }
     }

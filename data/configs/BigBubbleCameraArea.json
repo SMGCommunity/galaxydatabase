@@ -3,7 +3,7 @@
     "Name": "BigBubbleCameraArea",
     "Notes": "A variant of CubeCameraArea that only changes the camera if the player is riding a Big Bubble.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Camera ID",

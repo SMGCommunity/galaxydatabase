@@ -32,7 +32,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": " \nIf Obj_arg0 is set to 0: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 1: Fade time.\nIf Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo.",
+            "Description": "If Obj_arg0 is set to 0: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 1: Fade time.\nIf Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo.",
             "Values": [
                 {
                     "Value": "-1",
@@ -46,7 +46,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": " \nIf Obj_arg0 is set to 1: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 2: Fade time.",
+            "Description": "If Obj_arg0 is set to 1: Column ID in StageBgmInfo.\nIf Obj_arg0 is set to 2: Fade time.",
             "Values": [
                 {
                     "Value": "-1",

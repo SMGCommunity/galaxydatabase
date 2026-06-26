@@ -18,12 +18,18 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BigBubbleGoalArea</h1>
-			<p>An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</p>
+			<p>An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Meter Capacity</b>: The capacity of the meter, in relation to Big Bubble size. Default is 1, which will activate the switch with the default Big Bubble size.</p></td><td><ul></ul></td></tr>
+			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>If used, activated when the bubble is inside the area.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Activated when the meter has been filled.</p></td></tr>
 			</table>
 		</div>
 	</body>

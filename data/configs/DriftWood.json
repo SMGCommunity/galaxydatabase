@@ -1,7 +1,7 @@
 {
     "InternalName": "DriftWood",
     "Name": "DriftWood",
-    "Notes": "An icy obstacle that moves on a path.",
+    "Notes": "An icy obstacle that moves on a path that will destroy instances of IceStep.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {

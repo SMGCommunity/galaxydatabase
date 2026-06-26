@@ -1,7 +1,7 @@
 {
     "InternalName": "SpinLeverSwitch",
     "Name": "SpinLeverSwitch",
-    "Notes": "A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.",
+    "Notes": "A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated. In SMG2, this object connects to collision below it.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

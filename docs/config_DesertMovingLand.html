@@ -18,7 +18,31 @@
 		</header>
 		<div class="contents">
 			<h1>Config: DesertMovingLand</h1>
-			<p></p>
+			<p>A moving planet that uses Obj_args instead of paths to move. It will move either up or down depending on which switch is activated.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG1</td><td>False</td><td><p><b>Movement Speed</b>: How far it moves down/up. Positive values will initially go downwards, negative values will initially go upwards. Default is 2000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Initial Movement Time</b>: The time in frames it takes to move in its initial state. Default is 720.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Reverse Movement Time</b>: The time in frames it takes to move in its reverse state. Default is 720.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>This switch will be activated if the object reaches its reverse position, and will be deactivated if this object reaches its initial position. If the object is in its reverse position, it will start moving when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>This switch will be activated if the object reaches its initial position, and will be deactivated if this object reaches its reverse position. If the object is in its initial position, it will start moving when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG1</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

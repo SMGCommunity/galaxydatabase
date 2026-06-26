@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Config: DesertLandMoveSwitch</h1>
-			<p></p>
+			<p>A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch. This object connects to collision below it.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Timer</b>: How long the switch will remain activated before it resets again. Default behavior activates the switch indefinitely.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Already Activated?</b>: If set, the switch will already be activated and the player cannot ground pound the switch.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Gets activated when the button is pressed. If Obj_arg0 is set, the switch will be deactivated again after the time runs out.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG1</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

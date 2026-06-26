@@ -1,7 +1,7 @@
 {
     "InternalName": "PenguinRacerLeader",
     "Name": "PenguinRacerLeader",
-    "Notes": "",
+    "Notes": "A leader penguin NPC that may participate in a race.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {

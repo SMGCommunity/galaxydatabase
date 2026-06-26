@@ -1,4 +1,4 @@
-<database timestamp="1782386158">
+<database timestamp="1782516692">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2257,8 +2257,8 @@ Changes the stage's background music in various different ways if entered.
 Changes the background music using the stage's music information in StageBgmInfo. Supports several changing modes.</notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
-		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo." values="-1 = If Obj_arg0 is set to 0: value -1 will mute the music." />
-		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = If Obj_arg0 is set to 1: value -1 will mute the music." />
+		<field id="1" type="int" name="Argument 1" notes="If Obj_arg0 is set to 0: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: ChangeBgmState ID in StageBgmInfo." values="-1 = If Obj_arg0 is set to 0: value -1 will mute the music." />
+		<field id="2" type="int" name="Argument 2" notes="If Obj_arg0 is set to 1: Column ID in StageBgmInfo.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = If Obj_arg0 is set to 1: value -1 will mute the music." />
 		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmProhibitArea">
@@ -2369,7 +2369,7 @@ A generator that creates Big Bubbles, which can be entered and controlled by the
 		<field id="0" type="int" name="Spawn Timer" notes="Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later." values="" />
 		<field id="1" type="int" name="Minimum Size" notes="Minimum size of the bubbles, multiplied by 100. Default is 100." values="" />
 		<field id="2" type="int" name="Maximum Size" notes="Maximum size of the bubbles, multiplied by 100. Default is 100." values="" />
-		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game." values="" />
+		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limiters crash the game." values="" />
 		<field id="4" type="int" name="Bubble Shape" notes="Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used." values="-1 = Sphere, 0 = Cube, 1 = Octahedron" />
 	</object>
 	<object id="BigBubbleGoalAreaBox">
@@ -2381,8 +2381,9 @@ A generator that creates Big Bubbles, which can be entered and controlled by the
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.</notes>
 		<files />
+		<field id="0" type="int" name="Meter Capacity" notes="The capacity of the meter, in relation to Big Bubble size. Default is 1, which will activate the switch with the default Big Bubble size." values="" />
 	</object>
 	<object id="BigBubbleGoalAreaCylinder">
 		<name>Pop Big Bubble Area [Cylinder]</name>
@@ -2393,8 +2394,9 @@ An area that pops any Big Bubble inside it, optionally activating its SW_A. Unli
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.</notes>
 		<files />
+		<field id="0" type="int" name="Meter Capacity" notes="The capacity of the meter, in relation to Big Bubble size. Default is 1, which will activate the switch with the default Big Bubble size." values="" />
 	</object>
 	<object id="BigBubbleGoalAreaSphere">
 		<name>Pop Big Bubble Area [Sphere]</name>
@@ -2405,8 +2407,9 @@ An area that pops any Big Bubble inside it, optionally activating its SW_A. Unli
 An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
-An area that pops any Big Bubble inside it, optionally activating its SW_A. Unlike most areas, this one renders as a dark blue sphere that fills up yellow when entered.</notes>
+An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.</notes>
 		<files />
+		<field id="0" type="int" name="Meter Capacity" notes="The capacity of the meter, in relation to Big Bubble size. Default is 1, which will activate the switch with the default Big Bubble size." values="" />
 	</object>
 	<object id="BigBubbleMoveLimitterCylinder">
 		<name>Big Bubble Movement Limiter [Cylinder]</name>
@@ -2646,7 +2649,7 @@ A generator that creates Big Bubbles, which can be entered and controlled by the
 		<field id="0" type="int" name="Spawn Timer" notes="Time between generated bubbles. If set to other than -1, spawned Big Bubbles will detach from the generator, popping a short while later." values="" />
 		<field id="1" type="int" name="Minimum Size" notes="Minimum size of the bubbles, multiplied by 100. Default is 100." values="" />
 		<field id="2" type="int" name="Maximum Size" notes="Maximum size of the bubbles, multiplied by 100. Default is 100." values="" />
-		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limitters crash the game." values="" />
+		<field id="3" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Default is -1, which disables this. Nonexistent limiters crash the game." values="" />
 		<field id="4" type="int" name="Bubble Shape" notes="Shape of the generated bubbles. In the vanilla game, only spherical bubbles are used." values="-1 = Sphere, 0 = Cube, 1 = Octahedron" />
 	</object>
 	<object id="BigPunchBoxStep">
@@ -4075,7 +4078,7 @@ A map object with a model and optional collision that usually rotates around one
 The first platform that breaks off the tower planet in the Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A map object that can rotate around one of its axes. It will fall down at a speed of 15 when its SW_B is activated. If its RotateAxis is 0 or 2, this object's SW_B behavior causes it to change direction.</notes>
 		<files />
 	</object>
 	<object id="CannonFortressCollapsePlanet">
@@ -4129,7 +4132,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A small rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A map object that can rotate around one of its axes. It will fall down at a speed of 15 when its SW_B is activated. If its RotateAxis is 0 or 2, this object's SW_B behavior causes it to change direction.</notes>
 		<files />
 	</object>
 	<object id="CannonFortressRotateBreakStepB">
@@ -4141,7 +4144,7 @@ A small rotating cylindrical platform that breaks off the tower planet in Dreadn
 A rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A map object that can rotate around one of its axes. It will fall down at a speed of 15 when its SW_B is activated. If its RotateAxis is 0 or 2, this object's SW_B behavior causes it to change direction.</notes>
 		<files />
 	</object>
 	<object id="CannonFortressRotateBreakStepC">
@@ -4153,7 +4156,7 @@ A rotating cylindrical platform that breaks off the tower planet in Dreadnought 
 A large rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A map object that can rotate around one of its axes. It will fall down at a speed of 15 when its SW_B is activated. If its RotateAxis is 0 or 2, this object's SW_B behavior causes it to change direction.</notes>
 		<files />
 	</object>
 	<object id="CannonRelayPlanet">
@@ -4511,8 +4514,8 @@ Changes the stage's background music in various different ways if entered.
 Changes the background music using the stage's music information in AudStageBgmWrap and AudStageBgmTable. Supports several changing modes.</notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
-		<field id="1" type="int" name="Argument 1" notes=" &#10;If Obj_arg0 is set to 0: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: State-index in AudStageBgmTable." values="-1 = default music from MAStageBgmData (AudStageBgmWrap)." />
-		<field id="2" type="int" name="Argument 2" notes=" &#10;If Obj_arg0 is set to 1: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = mutes the music if Obj_arg0 is set to 1." />
+		<field id="1" type="int" name="Argument 1" notes="If Obj_arg0 is set to 0: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 1: Fade time.&#10;If Obj_arg0 is set to 2: State-index in AudStageBgmTable." values="-1 = default music from MAStageBgmData (AudStageBgmWrap)." />
+		<field id="2" type="int" name="Argument 2" notes="If Obj_arg0 is set to 1: Name-index in AudStageBgmTable.&#10;If Obj_arg0 is set to 2: Fade time." values="-1 = mutes the music if Obj_arg0 is set to 1." />
 	</object>
 	<object id="ChangeRoom">
 		<name>Starship Mario Character Changer</name>
@@ -5883,7 +5886,7 @@ A destroyable crystal that can contain a variety of different items. Except for 
 The large moving crystal from Battlerock Galaxy that has Luma trapped inside it.
 
 -- CLASS NOTES --
-</notes>
+A large rotating crystal containing a Yellow Luma. It can be destroyed upon contact with the player while in certain rush states, caused by objects such as MarioLauncher, SuperSpinDriver, and GCaptureTarget.</notes>
 		<files />
 	</object>
 	<object id="CrystalCageOpa">
@@ -7147,8 +7150,10 @@ An area that applies a blurry effect to the screen when entered by the player.</
 A blue Ground Pound switch that has an arrow pointing downwards. It has slightly different behavior in SandClockGalaxy.
 
 -- CLASS NOTES --
-</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch. This object connects to collision below it.</notes>
 		<files />
+		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default behavior activates the switch indefinitely." values="" />
+		<field id="1" type="bool" name="Already Activated?" notes="If set, the switch will already be activated and the player cannot ground pound the switch." values="" />
 	</object>
 	<object id="DesertLandUpSwitch">
 		<name>Ground Pound Up-Switch</name>
@@ -7159,8 +7164,10 @@ A blue Ground Pound switch that has an arrow pointing downwards. It has slightly
 A red Ground Pound switch that has an arrow pointing upwards.
 
 -- CLASS NOTES --
-</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch. This object connects to collision below it.</notes>
 		<files />
+		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default behavior activates the switch indefinitely." values="" />
+		<field id="1" type="bool" name="Already Activated?" notes="If set, the switch will already be activated and the player cannot ground pound the switch." values="" />
 	</object>
 	<object id="DesertMovingLand">
 		<name>Dusty Dune -- Large Moving Sand Disk</name>
@@ -7171,8 +7178,11 @@ A red Ground Pound switch that has an arrow pointing upwards.
 A large sand disk from Dusty Dune Galaxy that can move.
 
 -- CLASS NOTES --
-</notes>
+A moving planet that uses Obj_args instead of paths to move. It will move either up or down depending on which switch is activated.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="How far it moves down/up. Positive values will initially go downwards, negative values will initially go upwards. Default is 2000." values="" />
+		<field id="1" type="int" name="Initial Movement Time" notes="The time in frames it takes to move in its initial state. Default is 720." values="" />
+		<field id="2" type="int" name="Reverse Movement Time" notes="The time in frames it takes to move in its reverse state. Default is 720." values="" />
 	</object>
 	<object id="DesertMovingLandSmall">
 		<name>Dusty Dune -- Small Moving Sand Disk</name>
@@ -7183,8 +7193,11 @@ A large sand disk from Dusty Dune Galaxy that can move.
 A small sand disk from Dusty Dune Galaxy that can move.
 
 -- CLASS NOTES --
-</notes>
+A moving planet that uses Obj_args instead of paths to move. It will move either up or down depending on which switch is activated.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="How far it moves down/up. Positive values will initially go downwards, negative values will initially go upwards. Default is 2000." values="" />
+		<field id="1" type="int" name="Initial Movement Time" notes="The time in frames it takes to move in its initial state. Default is 720." values="" />
+		<field id="2" type="int" name="Reverse Movement Time" notes="The time in frames it takes to move in its reverse state. Default is 720." values="" />
 	</object>
 	<object id="DesertSky">
 		<name>Dusty Dune Sky</name>
@@ -7568,7 +7581,7 @@ Counts the player's deaths that occur inside this area and stores them in the sa
 An icy obstacle that can destroy the ice platforms created by the player.
 
 -- CLASS NOTES --
-An icy obstacle that moves on a path.</notes>
+An icy obstacle that moves on a path that will destroy instances of IceStep.</notes>
 		<files />
 	</object>
 	<object id="Drill2DReflectMazeRoom">
@@ -11873,7 +11886,7 @@ A large caterpillar enemy that moves on a set path. Unlike its smaller variants,
 The large spherical water planet.
 
 -- CLASS NOTES --
-A planet with openable top half.</notes>
+A planet with an openable top half.</notes>
 		<files />
 	</object>
 	<object id="HazeCube">
@@ -12533,7 +12546,7 @@ An object with a model and collision that can be Ground Pounded to move it away 
 A switch that activates something when Ground Pounded.
 
 -- CLASS NOTES --
-A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch.</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch. In SMG2, this object connects to collision below it.</notes>
 		<files />
 	</object>
 	<object id="HipDropTimerSwitch">
@@ -12545,7 +12558,7 @@ A button that can be activated using a Ground Pound attack. Once activated, it w
 A switch that activates something for a set amount of time when Ground Pounded.
 
 -- CLASS NOTES --
-A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch for a set amount of time. After the time runs out, it will reset itself.</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch for a set amount of time. After the time runs out, it will reset itself. In SMG2, this object connects to collision below it.</notes>
 		<files />
 		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default is 300." values="" />
 		<field id="1" type="int" name="Ticking Type" notes="The ticking sound effect type to be used. Default is 0." values="0 = High ticking noise, 1 = Low ticking noise" />
@@ -21002,7 +21015,7 @@ A penguin NPC that may participate in a race.</notes>
 The coach of the racing penguins from Sea Slide Galaxy who challenges the player for a race.
 
 -- CLASS NOTES --
-</notes>
+A leader penguin NPC that may participate in a race.</notes>
 		<files />
 		<field id="0" type="int" name="No Race?" notes="If set, the object will behave like a normal NPC." values="" />
 		<field id="7" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red" />
@@ -26546,7 +26559,7 @@ An area that displays a layout showing how to perform Spin Attacks with the Wiim
 A small blue switch that activates a switch when flipped over.
 
 -- CLASS NOTES --
-A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
+A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated. In SMG2, this object connects to collision below it.</notes>
 		<files />
 	</object>
 	<object id="SpinLeverSwitchForceAnim">
@@ -26558,7 +26571,7 @@ A lever that can be activated using most of the player's attacks, explosions, ru
 A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if its SW_B gets activated, making it unusable. See Fiery Flotilla's starting planet for an example use case and setup.
 
 -- CLASS NOTES --
-A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
+A lever that can be activated using most of the player's attacks, explosions, running into it with the rainbow power-up, or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated. In SMG2, this object connects to collision below it.</notes>
 		<files />
 	</object>
 	<object id="SpinningBox">
@@ -27717,7 +27730,7 @@ The rideable Manta Ray from the surfing challenges in Loopdeeloop Galaxy and Loo
 A green portal that opens Sweet Sweet Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpCocoonExGalaxy">
@@ -27729,7 +27742,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Sling Pod Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpCubeBubbleExLv2Galaxy">
@@ -27741,7 +27754,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Bubble Blast Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpFishTunnelGalaxy">
@@ -27753,7 +27766,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Bigmouth Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpPeachCastleFinalGalaxy">
@@ -27765,7 +27778,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Grand Finale Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurprisedGalaxy">
@@ -27777,7 +27790,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Loopdeeloop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpSnowCapsuleGalaxy">
@@ -27789,7 +27802,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Snow Cap Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpSurfingLv2Galaxy">
@@ -27801,7 +27814,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Loopdeeswoop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpTamakoroExLv2Galaxy">
@@ -27813,7 +27826,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Rolling Gizmo Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpTearDropGalaxy">
@@ -27825,7 +27838,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Drip Drop Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpTeresaMario2DGalaxy">
@@ -27837,7 +27850,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Boo's Boneyard Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SurpTransformationExGalaxy">
@@ -27849,7 +27862,7 @@ A portal that warps the player to a specific galaxy. It has a far clipping radiu
 A green portal that opens Sand Spiral Galaxy's Star select screen when touched during a Launch Star flight.
 
 -- CLASS NOTES --
-A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If this object is either SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected. If this object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 121 Stars with both Mario and Luigi.</notes>
+A portal that warps the player to a specific galaxy. It has a far clipping radius of 200 meters. The galaxy to warp to is specified in the name of the object, unless it is "SurprisedGalaxy", in which case it warps to SurfingLv1Galaxy. If the object is SurpTamakoroExLv2Galaxy, SurpCubeBubbleExLv2Galaxy or SurpSurfingLv2Galaxy, it will only appear once all three Green Stars have been collected, and if the object is SurpPeachCastleFinalGalaxy, it will only appear once the player has collected 120 Stars with both Mario and Luigi. Tthese checks can be bypassed with SW_APPEAR / SW_SLEEP.</notes>
 		<files />
 	</object>
 	<object id="SweetDecoratePartsOrange">
@@ -33085,7 +33098,7 @@ A decorative portal from the World Map that appears depending on the currently s
 A group of giant apples that house a giant caterpillar from Gusty Garden Galaxy.
 
 -- CLASS NOTES --
-A set of three giant apples with a green caterpillar connecting them. The caterpillar's movement is divided into three stages; first one being controlled by a cutscene and other two being controlled by switches.</notes>
+A set of three giant apples with a burrowing green worm connecting them. The worm's movement is divided into three stages; the first one being controlled by a cutscene and the other two being controlled by switches.</notes>
 		<files />
 	</object>
 	<object id="YellowChip">

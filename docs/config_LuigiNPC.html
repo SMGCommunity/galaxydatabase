@@ -30,8 +30,8 @@
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
-				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Jumps up when this switch is activated.</p></td></tr>
-				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>Activated if Luigi exists in the current stage.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Jumps up when this switch is activated. Only works if Obj_arg0 is set to 2 (LuigiEvent) / 4 (LuigiNPC).</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>Activated if Luigi exists in the current stage, and other conditions are also met. (Needs more testing)</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Talking</h2>
@@ -44,7 +44,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>AppearPowerStar</td><td>n/a</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+				<tr><td>AppearPowerStar</td><td>n/a</td><td>False</td><td><p>Spawned after triggering a specific message event flow.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

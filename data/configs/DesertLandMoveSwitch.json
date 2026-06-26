@@ -1,8 +1,44 @@
 {
     "InternalName": "DesertLandMoveSwitch",
     "Name": "DesertLandMoveSwitch",
-    "Notes": "",
+    "Notes": "A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch. This object connects to collision below it.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Timer",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How long the switch will remain activated before it resets again. Default behavior activates the switch indefinitely.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Already Activated?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the switch will already be activated and the player cannot ground pound the switch.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when the button is pressed. If Obj_arg0 is set, the switch will be deactivated again after the time runs out.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }
