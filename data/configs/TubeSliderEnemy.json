@@ -1,7 +1,7 @@
 {
     "InternalName": "TubeSliderEnemy",
     "Name": "TubeSliderEnemy",
-    "Notes": "A Spiny variant for tube slide sections. It starts to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance.",
+    "Notes": "A Spiny variant for tube slide sections. It will stand in place until its SW_A gets activated, causing it to start walking. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -25,7 +25,7 @@
         },
         "SW_A": {
             "Games": 2,
-            "Needed": true,
+            "Needed": false,
             "Description": "Starts walking once this switch is activated.",
             "Exclusives": []
         },

@@ -1,4 +1,4 @@
-<database timestamp="1782516692">
+<database timestamp="1782693403">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -30852,7 +30852,7 @@ A generator that creates Spiky Plants and lays them out on a tube slide. It need
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A Spiny variant for tube slide sections. It starts to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance.</notes>
+A Spiny variant for tube slide sections. It will stand in place until its SW_A gets activated, causing it to start walking. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
 		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
