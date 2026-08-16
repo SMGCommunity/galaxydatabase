@@ -1,4 +1,4 @@
-<database timestamp="1786878092">
+<database timestamp="1786879451">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4243,7 +4243,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A locked glass cage.
 
 -- CLASS NOTES --
-A locked cage that can be opened by activating its SW_B switch. Lastly, it also supports an optional Bloom model.</notes>
+A locked cage that can be opened by activating its SW_B switch. It also supports an optional Bloom model.</notes>
 		<files />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play sound effect" />
 		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
@@ -11225,7 +11225,7 @@ A basic object that can be destroyed through various means. Unlike other variant
 A glass cage with a metal frame that can only be opened via a switch. Used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-A locked cage that can be opened by activating its SW_B switch. Lastly, it also supports an optional Bloom model.</notes>
+A locked cage that can be opened by activating its SW_B switch. It also supports an optional Bloom model.</notes>
 		<files />
 		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play sound effect" />
 		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
@@ -31484,7 +31484,7 @@ An urchin-like enemy that rolls around and damages the player with its spikes. I
 A point that periodically spawns several Land Urchins.
 
 -- CLASS NOTES --
-</notes>
+A point that spawns four Hot Urchins. It will only generate one at a time, but it ensures that there are up to four Hot Urchins. New ones spawn every five seconds. Defeated Hot Urchins respawn.</notes>
 		<files />
 	</object>
 	<object id="UnizoShoal">
@@ -32181,7 +32181,7 @@ A generic particles effect with a clipping radius of 1000 units and a far clippi
 A breakable rock wall which covers the entrance to Beach Bowl Galaxy's underwater cave.
 
 -- CLASS NOTES --
-</notes>
+A breakable obstacle that can be destroyed with a Koopa Shell. When destroyed, it will play the "riddle solved" jingle.</notes>
 		<files />
 	</object>
 	<object id="WaterfallCaveNoBreakCover">

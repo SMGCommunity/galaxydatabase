@@ -1,8 +1,14 @@
 {
     "InternalName": "UnizoLauncher",
     "Name": "UnizoLauncher",
-    "Notes": "",
+    "Notes": "A point that spawns four Hot Urchins. It will only generate one at a time, but it ensures that there are up to four Hot Urchins. New ones spawn every five seconds. Defeated Hot Urchins respawn.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
