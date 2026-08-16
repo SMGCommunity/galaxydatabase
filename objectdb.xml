@@ -1,4 +1,4 @@
-<database timestamp="1786904550">
+<database timestamp="1786908994">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -31093,7 +31093,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A metallic UFO with a square slot at the center of one side.
 
 -- CLASS NOTES --
-</notes>
+A map object with a model and optional collision that rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="UFOBattleStageD">
@@ -31105,7 +31105,7 @@ A metallic UFO with a square slot at the center of one side.
 A big metallic UFO with four small columns on one side.
 
 -- CLASS NOTES --
-</notes>
+A map object with a model and optional collision that rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="UFOBattleStageE">
@@ -31117,7 +31117,7 @@ A big metallic UFO with four small columns on one side.
 A big metallic UFO.
 
 -- CLASS NOTES --
-</notes>
+A map object with a model and optional collision that rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="UFOBlueStarCupsule">
@@ -31210,7 +31210,7 @@ This object represents all the construction stages of the Starshroom seen in the
 A metallic bullet-shaped platform which can be broken by an explosion.
 
 -- CLASS NOTES --
-</notes>
+A destroyable map object with a model and optional collision. When hit by a nearby explosion, it will disappear immediately. Further, it rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="UFONormalD">
@@ -31222,7 +31222,7 @@ A metallic bullet-shaped platform which can be broken by an explosion.
 A variant of UFOStrongA that can be destroyed by an explosion.
 
 -- CLASS NOTES --
-</notes>
+A destroyable map object with a model and optional collision. When hit by a nearby explosion, it will disappear immediately. Further, it rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="UFOSandObstacleA">
@@ -31360,7 +31360,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A metallic UFO platform that is used in Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A map object with a model and optional collision that rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</notes>
 		<files />
 	</object>
 	<object id="Unbaba">

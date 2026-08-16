@@ -18,7 +18,43 @@
 		</header>
 		<div class="contents">
 			<h1>Config: UFOBreakable</h1>
-			<p></p>
+			<p>A destroyable map object with a model and optional collision. When hit by a nearby explosion, it will disappear immediately. Further, it rotates and optionally move on a set path. It also supports optional Low, Middle, and Bloom models.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Path_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Movement Type</b>: How the object behaves once it reaches the last path point.</p></td><td><ul><li>-1: Stops at last point</li><li>1: Moves back towards first point</li><li>2: Warps back to first point</li></ul></td></tr>
+				<tr><td>Path_arg4</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Initial Position Type</b>: The object's initial position.</p></td><td><ul><li>-1: Start at nearest position on path</li><li>1: Start at nearest path point</li><li>2: Start at first path point</li></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Movement Speed / Time</b>: The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Acceleration Time</b>: The time in frames it takes for the object to reach the movement speed set at this point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Stop Time</b>: The time in frames the object waits at this point before it continues moving again.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Speed Type</b>: Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.</p></td><td><ul><li>-1: Point_arg0 specifies movement speed</li><li>1: Point_arg0 specifies time until next point</li></ul></td></tr>
+			</table>
+			<h2>MapParts arguments</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>MoveConditionType</td><td>SMG1</td><td>False</td><td><p><b>Move Start Type</b>: How the platform starts moving.</p></td><td><ul><li>0: Already moving</li><li>1: Moves once stepped on, needs to be stepped on again when it reaches the last point</li><li>2: Moves once stepped on</li></ul></td></tr>
+				<tr><td>RotateSpeed</td><td>SMG1</td><td>False</td><td><p><b>Rotation Speed</b>: How fast the object rotates. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>SignMotionType</td><td>SMG1</td><td>False</td><td><p><b>Shake Start Type</b>: Specifies whether the object will shake before it starts moving or not.</p></td><td><ul><li>0: Don't shake</li><li>1: Shakes before moving</li><li>2: Shakes before moving</li><li>3: Don't shake</li><li>4: Shakes before moving</li><li>5: Shakes before moving</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated when destroyed.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>If used, the object won't move until this switch gets activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>False</td><td><p>The path that it can move on.</p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG1</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG1</td><td>False</td><td><p>Can be followed by another BaseMtxFollower object.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
