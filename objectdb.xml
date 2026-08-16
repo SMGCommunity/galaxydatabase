@@ -1,4 +1,4 @@
-<database timestamp="1786879451">
+<database timestamp="1786885277">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -32579,14 +32579,14 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative whirlpool that is meant to connect the water surface to an actual WhirlPoolAccelerator.
+A decorative whirlpool of configurable size. Its swirl gets considerably thinner toward the bottom.
 
 -- CLASS NOTES --
-</notes>
+A decorative whirlpool of configurable size. Its radius and height are controlled by its scale_x and scale_y settings, respectively. From the object's original position, the swirl extends downward.</notes>
 		<files />
 	</object>
 	<object id="WhirlPoolAccelerator">
-		<name>Whirlpool</name>
+		<name>Physical Whirlpool</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -32594,7 +32594,7 @@ A decorative whirlpool that is meant to connect the water surface to an actual W
 A whirlpool of configurable size that spins the player around upon contact underwater.
 
 -- CLASS NOTES --
-</notes>
+A whirlpool of configurable size that spins the player around upon contact underwater. Its radius and height are controller by its scale_x and scale_y settings, respectively. From the object's original position, the swirl extends upward.</notes>
 		<files />
 	</object>
 	<object id="WhiteOutPlanet">

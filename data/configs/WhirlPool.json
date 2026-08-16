@@ -1,8 +1,8 @@
 {
     "InternalName": "WhirlPool",
     "Name": "WhirlPool",
-    "Notes": "",
+    "Notes": "A decorative whirlpool of configurable size. Its radius and height are controlled by its scale_x and scale_y settings, respectively. From the object's original position, the swirl extends downward.",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {}
 }
