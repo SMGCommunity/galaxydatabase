@@ -1,4 +1,4 @@
-<database timestamp="1786885277">
+<database timestamp="1786904550">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -32434,15 +32434,17 @@ A blue cannon that periodically shoots bubbles that trap the player inside upon 
 	</object>
 	<object id="WaterRoad">
 		<name>Water Stream</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A massive stream of water the player can ride to be transported. Used in Sea Slide Galaxy.simpl
+A massive stream of water the player can ride to be transported. Used in Sea Slide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A massive stream of water the player can ride to be transported. Initially, the stream won't be there as it needs to be spawned and formed through a cutscene. After reaching the stream's end, the player will jump out of the stream. Then, the stream disappears completely, though it can be respawned by executing the cutscene again.</notes>
 		<files />
+		<field id="0" type="int" name="Useless" notes="Read but never used for anything. Default is -1." values="" />
+		<field id="1" type="float" name="Radius" notes="The stream's radius. Default is 500." values="" />
 	</object>
 	<object id="WaterRoadCavePlanet">
 		<name>Sand Spiral -- Main Planet</name>
@@ -33098,7 +33100,7 @@ A decorative portal from the World Map that appears depending on the currently s
 A group of giant apples that house a giant caterpillar from Gusty Garden Galaxy.
 
 -- CLASS NOTES --
-A set of three giant apples with a burrowing green worm connecting them. Initially, the worm is idle and completely invisible. Its appearance and movement are controlled by switches and the cutscene with the name ムイムイ出現. Its initial appearance is controlled by triggering the cutscene nerve with the action name オオムイムイ出現１回目. When SW_A is activated, it starts the action with the name オオムイムイ出現２回目. Triggering the cutscene nerve then causes the worm to move further. Then, when SW_B is activated, it starts another cutscene action named  オオムイムイ出現３回目, and triggering the cutscene nerve causes the worm to move even further. Afterwards, the worm comes to a rest.</notes>
+A set of three giant apples with a burrowing green worm connecting them. Initially, the worm is idle and completely invisible. Its appearance and movement are controlled by switches and the cutscene with the name ムイムイ出現. Its initial appearance is controlled by triggering the cutscene nerve during the part named オオムイムイ出現１回目. When SW_A is activated, it starts the part with the name オオムイムイ出現２回目. Triggering the cutscene nerve then causes the worm to move further. Then, when SW_B is activated, it starts another cutscene part named  オオムイムイ出現３回目, and triggering the cutscene nerve causes the worm to move even further. Afterwards, the worm comes to a rest.</notes>
 		<files />
 	</object>
 	<object id="YellowChip">

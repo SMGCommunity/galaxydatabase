@@ -18,7 +18,28 @@
 		</header>
 		<div class="contents">
 			<h1>Config: WaterRoad</h1>
-			<p></p>
+			<p>A massive stream of water the player can ride to be transported. Initially, the stream won't be there as it needs to be spawned and formed through a cutscene. After reaching the stream's end, the player will jump out of the stream. Then, the stream disappears completely, though it can be respawned by executing the cutscene again.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything. Default is -1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG1</td><td>False</td><td><p><b>Radius</b>: The stream's radius. Default is 500.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>Activated when the stream appears. If used, the stream object will be deactivated by default.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>True</td><td><p>Defines the stream's shape.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Can take part in a cutscene. When spawned during the part named ウォーターロード出現, the stream begins to appear. Once that part ends or if the object spawns during the part named ウォーターロード成長, the stream forms along the path.</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Used when the player is moving inside the stream.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

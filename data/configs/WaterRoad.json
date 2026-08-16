@@ -1,8 +1,52 @@
 {
     "InternalName": "WaterRoad",
     "Name": "WaterRoad",
-    "Notes": "",
+    "Notes": "A massive stream of water the player can ride to be transported. Initially, the stream won't be there as it needs to be spawned and formed through a cutscene. After reaching the stream's end, the player will jump out of the stream. Then, the stream disappears completely, though it can be respawned by executing the cutscene again.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Read but never used for anything. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Radius",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The stream's radius. Default is 500.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated when the stream appears. If used, the stream object will be deactivated by default.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Defines the stream's shape.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Used when the player is moving inside the stream.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene. When spawned during the part named ウォーターロード出現, the stream begins to appear. Once that part ends or if the object spawns during the part named ウォーターロード成長, the stream forms along the path.",
+            "Exclusives": []
+        }
+    }
 }
