@@ -1,4 +1,4 @@
-<database timestamp="1786908994">
+<database timestamp="1787404755">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4808,7 +4808,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 A circle of seashells that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks are placed in a radius of 300 units and attach to the nearest collision below them. If no collision is available, the individual chunks may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
@@ -4823,7 +4823,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 A circle of strawberries that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks are placed in a radius of 300 units and attach to the nearest collision below them. If no collision is available, the individual chunks may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
@@ -25744,7 +25744,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A circle of stones that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks are placed in a radius of 300 units and attach to the nearest collision below them. If no collision is available, the individual chunks may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
