@@ -23,7 +23,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Behavior</b>: How it behaves.</p></td><td><ul><li>-1: Normal</li><li>0: Sitting</li><li>1: Underwater</li><li>2: Swimming</li><li>3: Jumping & diving</li><li>4: Rides Koopa Shell</li><li>5: Normal</li><li>6: Running</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Behavior</b>: How it behaves.</p></td><td><ul><li>-1: Normal / Walking (path-only)</li><li>0: Sitting / Moves along path while sitting</li><li>1: Treading underwater / Swimming underwater (path-only)</li><li>2: Treading water / Surface swimming (path-only)</li><li>3: Jumping & diving, lacks swimming animation if a path is provided</li><li>4: Rides Koopa-Shell (path-only), stuck in place if no path is provided</li><li>5: Normal / Walking (path-only)</li><li>6: Normal / Running (path-only)</li></ul></td></tr>
 				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Blue</li><li>1: Green</li><li>2: Purple</li><li>3: Red</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
@@ -45,7 +45,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on. In SMG2, the Shadow will not move.</p></td><td><ul></ul></td></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on. In SMG2, the Shadow will not move. This can be fixed with the following code: <memory offset="0x803581A0" value="60000000"/></p></td><td><ul></ul></td></tr>
 				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
 			</table>

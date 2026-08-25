@@ -14,35 +14,35 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Normal"
+                    "Notes": "Normal / Walking (path-only)"
                 },
                 {
                     "Value": "0",
-                    "Notes": "Sitting"
+                    "Notes": "Sitting / Moves along path while sitting"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Underwater"
+                    "Notes": "Treading underwater / Swimming underwater (path-only)"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Swimming"
+                    "Notes": "Treading water / Surface swimming (path-only)"
                 },
                 {
                     "Value": "3",
-                    "Notes": "Jumping & diving"
+                    "Notes": "Jumping & diving, lacks swimming animation if a path is provided"
                 },
                 {
                     "Value": "4",
-                    "Notes": "Rides Koopa Shell"
+                    "Notes": "Rides Koopa-Shell (path-only), stuck in place if no path is provided"
                 },
                 {
                     "Value": "5",
-                    "Notes": "Normal"
+                    "Notes": "Normal / Walking (path-only)"
                 },
                 {
                     "Value": "6",
-                    "Notes": "Running"
+                    "Notes": "Normal / Running (path-only)"
                 }
             ],
             "Exclusives": []
@@ -99,7 +99,7 @@
         "Rail": {
             "Games": 3,
             "Needed": false,
-            "Description": "The optional path that it can move on. In SMG2, the Shadow will not move.",
+            "Description": "The optional path that it can move on. In SMG2, the Shadow will not move. This can be fixed with the following code: <memory offset=\"0x803581A0\" value=\"60000000\"/>",
             "Exclusives": []
         },
         "DemoCast": {

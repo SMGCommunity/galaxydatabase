@@ -1,4 +1,4 @@
-<database timestamp="1787404755">
+<database timestamp="1787688471">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -20964,7 +20964,7 @@ A sassy penguin.
 -- CLASS NOTES --
 A cute penguin NPC that can be talked to.</notes>
 		<files />
-		<field id="0" type="int" name="Behavior" notes="How it behaves." values="-1 = Normal, 0 = Sitting, 1 = Underwater, 2 = Swimming, 3 = Jumping &amp; diving, 4 = Rides Koopa Shell, 5 = Normal, 6 = Running" />
+		<field id="0" type="int" name="Behavior" notes="How it behaves." values="-1 = Normal / Walking (path-only), 0 = Sitting / Moves along path while sitting, 1 = Treading underwater / Swimming underwater (path-only), 2 = Treading water / Surface swimming (path-only), 3 = Jumping &amp; diving, lacks swimming animation if a path is provided, 4 = Rides Koopa-Shell (path-only), stuck in place if no path is provided, 5 = Normal / Walking (path-only), 6 = Normal / Running (path-only)" />
 		<field id="7" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red" />
 	</object>
 	<object id="PenguinCoach">
