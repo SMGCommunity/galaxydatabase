@@ -3,7 +3,7 @@
     "Name": "WaterBazooka",
     "Notes": "A bubble shooting Undergrunt Gunner. Type of bubble is determined by object name, if object is called ElectricBazooka the game will load the Electric variant models and bubbles. Will otherwise load the Water variant.\n\nIf in OceanPhantomCaveGalaxy, starts dead if it has already been defeated on a previous attempt at the star. Likely to avoid forcing the player to defeat the Undergrunt Gunner every time the player misses a cannon-shot.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Has Power Star?",
