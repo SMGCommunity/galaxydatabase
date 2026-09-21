@@ -1,8 +1,20 @@
 {
     "InternalName": "SubmarineSteam",
     "Name": "SubmarineSteam",
-    "Notes": "An effect object that will damage the player if they get too close.",
+    "Notes": "An effect object that will damage the player if they get too close. Utilises unique audio effects 'SE_OJ_LV_MARINE_STEAM_OUT_S' and 'SE_OJ_LV_MARINE_STEAM_OUT' if they are located in SkullSharkGalaxy.",
     "Games": 1,
-    "Progress": 1,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Begins emitting steam whilst activated. Appears to be unused.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 0,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

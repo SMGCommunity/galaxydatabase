@@ -1,4 +1,4 @@
-<database timestamp="1787688471">
+<database timestamp="1790005011">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -592,7 +592,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The glowing Beacon that serves as the engine of the Comet Observatory.
 
 -- CLASS NOTES --
-</notes>
+Object used in the Comet Observatory to indicate game progress. Has seven states including the initial 'inactive' state depending on how many.
+
+Additionally has a HitSensor that repels the player, which grows in respect to the object's current state.</notes>
 		<files />
 	</object>
 	<object id="AstroCountDownPlate">
@@ -8020,8 +8022,11 @@ A set of rotating electric balls that are placed in a circle. They can follow a 
 The electricity-shooting Undergrunt Gunner fought at the end of Toy Time Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A bubble shooting Undergrunt Gunner. Type of bubble is determined by object name, if object is called ElectricBazooka the game will load the Electric variant models and bubbles. Will otherwise load the Water variant.
+
+If in OceanPhantomCaveGalaxy, starts dead if it has already been defeated on a previous attempt at the star. Likely to avoid forcing the player to defeat the Undergrunt Gunner every time the player misses a cannon-shot.</notes>
 		<files />
+		<field id="0" type="bool" name="Has Power Star?" notes="Declare whether object spawns a power star. &quot;No&quot; by default." values="-1 = No, 0 = Yes" />
 	</object>
 	<object id="ElectricBazookaPlanet">
 		<name>Toy Time -- Undergrunt Gunner Planet</name>
@@ -27363,10 +27368,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An effect consisting of hot steam that burn the player upon contact.
+An effect consisting of constant hot steam that burns the player upon contact.
 
 -- CLASS NOTES --
-An effect object that will damage the player if they get too close.</notes>
+An effect object that will damage the player if they get too close. Utilises unique audio effects 'SE_OJ_LV_MARINE_STEAM_OUT_S' and 'SE_OJ_LV_MARINE_STEAM_OUT' if they are located in SkullSharkGalaxy.</notes>
 		<files />
 	</object>
 	<object id="SubmarineVolcano">
@@ -27378,7 +27383,7 @@ An effect object that will damage the player if they get too close.</notes>
 An effect consisting of hot steam and clouds that burn the player upon contact.
 
 -- CLASS NOTES --
-An effect object that will damage the player if they get too close.</notes>
+An effect object that will damage the player if they get too close. Utilises unique audio effects 'SE_OJ_LV_MARINE_STEAM_OUT_S' and 'SE_OJ_LV_MARINE_STEAM_OUT' if they are located in SkullSharkGalaxy.</notes>
 		<files />
 	</object>
 	<object id="SubmarineVolcanoBigColumn">
@@ -32049,8 +32054,11 @@ An area consisting of an invisible body of water that the player can swim in. Se
 A water bubble-shooting Undergrunt Gunner that appears in Gold Leaf Galaxy and Deep Dark Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A bubble shooting Undergrunt Gunner. Type of bubble is determined by object name, if object is called ElectricBazooka the game will load the Electric variant models and bubbles. Will otherwise load the Water variant.
+
+If in OceanPhantomCaveGalaxy, starts dead if it has already been defeated on a previous attempt at the star. Likely to avoid forcing the player to defeat the Undergrunt Gunner every time the player misses a cannon-shot.</notes>
 		<files />
+		<field id="0" type="bool" name="Has Power Star?" notes="Declare whether object spawns a power star. &quot;No&quot; by default." values="-1 = No, 0 = Yes" />
 	</object>
 	<object id="WaterBazookaTowerMoveStepA">
 		<name>Gold Leaf -- Grassy Tower Platforms</name>

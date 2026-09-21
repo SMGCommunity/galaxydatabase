@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown configs</th><th>Known configs</th><th>Finished configs</th><th>Total configs</th></tr>
-				<tr><th>Relative</th><td class="punknown">17.67%</td><td class="pknown">6.22%</td><td class="pfinished">76.11%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">159</td><td class="pknown">56</td><td class="pfinished">685</td><td>900</td></tr>
+				<tr><th>Relative</th><td class="punknown">17.44%</td><td class="pknown">6.22%</td><td class="pfinished">76.33%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">157</td><td class="pknown">56</td><td class="pfinished">687</td><td>900</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -57,7 +57,9 @@
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_ArrowSwitchTarget.html">ArrowSwitchTarget</a></td><td><p></p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AssemblyBlock.html">AssemblyBlock</a></td><td><p>Remains at a resting position above the object's actual position. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroChangeStageCube.html">AstroChangeStageCube</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroCore.html">AstroCore</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroCore.html">AstroCore</a></td><td><p>Object used in the Comet Observatory to indicate game progress. Has seven states including the initial 'inactive' state depending on how many.
+
+Additionally has a HitSensor that repels the player, which grows in respect to the object's current state.</p></td><td>SMG1</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroCountDownPlate.html">AstroCountDownPlate</a></td><td><p></p></td><td>SMG1</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="config_AstroDome.html">AstroDome</a></td><td><p>The enterable Domes on the Comet Observatory</p></td><td>SMG1</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeAsteroid.html">AstroDomeAsteroid</a></td><td><p></p></td><td>SMG1</td></tr>
@@ -788,7 +790,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_StoryBookAreaWarp.html">StoryBookAreaWarp</a></td><td><p>An area that will warp the player to a specific point when entered in special "picture book" stages.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_StrayTico.html">StrayTico</a></td><td><p>A Silver Star that is trapped in a bubble. It can be collected by popping the bubble. It should be linked to a proper CollectTico instance using ParentID (SMG1) / GeneratorId (SMG2).</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_StringSpider.html">StringSpider</a></td><td><p>A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits.</p></td><td>Both</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="config_SubmarineSteam.html">SubmarineSteam</a></td><td><p>An effect object that will damage the player if they get too close.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_SubmarineSteam.html">SubmarineSteam</a></td><td><p>An effect object that will damage the player if they get too close. Utilises unique audio effects 'SE_OJ_LV_MARINE_STEAM_OUT_S' and 'SE_OJ_LV_MARINE_STEAM_OUT' if they are located in SkullSharkGalaxy.</p></td><td>SMG1</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_SubmarineVolcanoBigColumn.html">SubmarineVolcanoBigColumn</a></td><td><p></p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_SunLightArea.html">SunLightArea</a></td><td><p>An area that defeats Boos and removes the Boo power-up from the player if they are not covered by "Sunshade" collision meshes. SunshadeMapParts is the only class of objects that supports these collision meshes. Thus, the area cannot be properly utilized in SMG2.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_SunshadeMapParts.html">SunshadeMapParts</a></td><td><p></p></td><td>SMG1</td></tr>
@@ -904,7 +906,9 @@ Objects with a View Group ID of 0 will always be active, even without a correspo
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WarpPod.html">WarpPod</a></td><td><p>A warp pad that teleports the player between this and another linked instance. It is also possible to hide the model entirely. In SMG1, some teleporters are unlocked using Grand Stars, however, this functionality is deprecated in SMG2. Furthermore, the colored paths do not exist in SMG2 anymore.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WatchTowerRotateStep.html">WatchTowerRotateStep</a></td><td><p>A large rotating windmill with four platforms that move along with the windmill's frame. If registered to a cutscene, it will not move until its special cutscene nerve action gets triggered.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WaterArea.html">WaterArea</a></td><td><p>An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes. In SMG2 it crashes when used alongside a HipDropTimerSwitch with TimeStopScreenEffect.</p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_WaterBazooka.html">WaterBazooka</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="config_WaterBazooka.html">WaterBazooka</a></td><td><p>A bubble shooting Undergrunt Gunner. Type of bubble is determined by object name, if object is called ElectricBazooka the game will load the Electric variant models and bubbles. Will otherwise load the Water variant.
+
+If in OceanPhantomCaveGalaxy, starts dead if it has already been defeated on a previous attempt at the star. Likely to avoid forcing the player to defeat the Undergrunt Gunner every time the player misses a cannon-shot.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WaterFortressRain.html">WaterFortressRain</a></td><td><p>Creates a rain effect. Requires an instance of TimeStopScreenEffect in the current stage. This can be created by a HipDropTimerSwitch with Obj_arg2 set to 2. If TimeStopScreenEffect becomes active, it will use slower particles instead.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WaterLeakPipe.html">WaterLeakPipe</a></td><td><p>A long pipe with a splashing water spout on the top. If the player touches the spout while using the Ice power-up, an ice platform appears. The player can stand on the platform while the power-up is active. If the player goes off the platform or loses their power-up, the platform disappears again. This object does not come with its own collision model.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_WaterPlant.html">WaterPlant</a></td><td><p>A group of decorative seaweed that can appear in many shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</p></td><td>Both</td></tr>
