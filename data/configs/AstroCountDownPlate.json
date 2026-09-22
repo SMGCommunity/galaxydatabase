@@ -1,8 +1,15 @@
 {
     "InternalName": "AstroCountDownPlate",
     "Name": "AstroCountDownPlate",
-    "Notes": "",
+    "Notes": "An object that plays a countdown animation via code, counting down from 50 and pausing depending on the total number of collected stars. The animation pulls its colour values from BRK files titled \"Green\" and \"Red\". There is an additional \"Revival\" BRK used when the Comet Observatory is first entered in a playthrough.\n\nNumber locations are determined via a BTK file titled \"Number\".\n\nAdditionally plays sound effects corresponding to startSound and startLevelSound.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

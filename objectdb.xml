@@ -1,4 +1,4 @@
-<database timestamp="1790013567">
+<database timestamp="1790093554">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -606,7 +606,11 @@ Additionally has a HitSensor that repels the player, which grows in respect to t
 The number located at the start of the Comet Observatory that counts down the amount of stars you need to finish the game.
 
 -- CLASS NOTES --
-</notes>
+An object that plays a countdown animation via code, counting down from 50 and pausing depending on the total number of collected stars. The animation pulls its colour values from BRK files titled "Green" and "Red". There is an additional "Revival" BRK used when the Comet Observatory is first entered in a playthrough.
+
+Number locations are determined via a BTK file titled "Number".
+
+Additionally plays sound effects corresponding to startSound and startLevelSound.</notes>
 		<files />
 	</object>
 	<object id="AstroDecoratePartsA">
@@ -16393,7 +16397,8 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 A small bridge segment that collapses when stepped on.
 
 -- CLASS NOTES --
-</notes>
+An object that begins Move animations and sends an SW_B signal when the player collides with its collision. It uses several sound effects. It can alternatively be started with SW_A.
+AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="LavaBreakColumn">
@@ -16429,7 +16434,8 @@ A generic object with a model and collision that will play its Move animations o
 A long tipping rock platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
-</notes>
+An object that begins Move animations and sends an SW_B signal when the player collides with its collision. It uses several sound effects. It can alternatively be started with SW_A.
+AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockC">
@@ -16441,7 +16447,8 @@ A long tipping rock platform used at the start of the Lava Spire section.
 A tipping rock stair platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
-</notes>
+An object that begins Move animations and sends an SW_B signal when the player collides with its collision. It uses several sound effects. It can alternatively be started with SW_A.
+AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockD">
@@ -16453,7 +16460,8 @@ A tipping rock stair platform used at the start of the Lava Spire section.
 A wide tipping rock platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
-</notes>
+An object that begins Move animations and sends an SW_B signal when the player collides with its collision. It uses several sound effects. It can alternatively be started with SW_A.
+AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="LavaBubble">
@@ -29005,7 +29013,7 @@ A map object with a model and optional collision that usually rotates around one
 The large bone with bouncy meat.
 
 -- CLASS NOTES --
-</notes>
+An object type that detects when the player's HitSphere collides with its own, and then plays an animation. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="TeresaRacePartsBallA">
@@ -29104,7 +29112,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The golden metal hatch from the Boo Box Planet in Deep Dark Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with no collision that plays an animation when its activation conditions are met. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </notes>
 		<files />
 	</object>
 	<object id="TeresaRoomGlaringLight">
