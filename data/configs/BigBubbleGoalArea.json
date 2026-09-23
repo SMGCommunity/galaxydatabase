@@ -3,7 +3,7 @@
     "Name": "BigBubbleGoalArea",
     "Notes": "An area that pops any Big Bubble inside it, optionally activating its SW_A. This area renders a dark blue billboarded circular meter at the center of this area that turns yellow as it gets filled.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Meter Capacity",

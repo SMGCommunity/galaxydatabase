@@ -18,7 +18,22 @@
 		</header>
 		<div class="contents">
 			<h1>Config: AnmModelSwitchMoveEventCamera</h1>
-			<p></p>
+			<p>An object with no collision that plays an animation when its activation conditions are met. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. </p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>n/a</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>n/a</td><td>False</td><td><p>Can be activated when the object is killed through a cutscene action.</p></td></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p>Starts movement when activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>n/a</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>n/a</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

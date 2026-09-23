@@ -1,8 +1,27 @@
 {
     "InternalName": "BigBubbleMoveLimitter",
     "Name": "BigBubbleMoveLimitter",
-    "Notes": "",
+    "Notes": "An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. ",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Move Limitter ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Bubble Range",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

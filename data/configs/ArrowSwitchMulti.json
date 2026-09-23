@@ -1,8 +1,18 @@
 {
     "InternalName": "ArrowSwitchMulti",
     "Name": "ArrowSwitchMulti",
-    "Notes": "",
+    "Notes": "An arrow switch with multiple targets. Activates and deactivates SW_A values assigned to ArrowSwitchTarget based on its current state. Rotates anti-clockwise.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Target Group ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": true,
+            "Description": "Sets the initial direction and ArrowSwitchTarget.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

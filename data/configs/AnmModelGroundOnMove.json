@@ -1,8 +1,32 @@
 {
     "InternalName": "AnmModelGroundOnMove",
     "Name": "AnmModelGroundOnMove",
-    "Notes": "",
+    "Notes": "An object that begins Move animations and sends an SW_B signal when the player collides with its collision. It uses several sound effects. It can alternatively be started with SW_A.\nAnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. ",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Starts movement when activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Activated when player interacts with collision.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        }
+    }
 }

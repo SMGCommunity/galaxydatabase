@@ -1,7 +1,7 @@
 {
     "InternalName": "AstroDome",
     "Name": "AstroDome",
-    "Notes": "The enterable Domes on the Comet Observatory",
+    "Notes": "The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed.",
     "Games": 1,
     "Progress": 1,
     "Parameters": {
@@ -9,8 +9,8 @@
             "Name": "Dome",
             "Type": "Integer",
             "Games": 1,
-            "Needed": false,
-            "Description": "",
+            "Needed": true,
+            "Description": "ID corresponding to each dome, in order of appearance.",
             "Values": [
                 {
                     "Value": "0",

@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: ArrowSwitchTarget</h1>
-			<p></p>
+			<p>Target objects for ArrowSwitchMulti that activate their SW_A values when ArrowSwitchMulti's state corresponds with their assigned state.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>True</td><td><p><b>Target Group ID</b>: ID to be assigned to a group of four ArrowSwitchTarget objects and one ArrowSwitchMulti</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>n/a</td><td>True</td><td><p><b>Target State</b>: The value from 0-3 that corresponds to ArrowSwitchMulti's state.</p></td><td><ul><li>0: 0°</li><li>1: -90°</li><li>2: 180°</li><li>3: 90°</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p>Activates when ArrowSwitchMulti's state matches Obj_arg1.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

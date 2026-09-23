@@ -3,7 +3,7 @@
     "Name": "BigBubbleGenerator",
     "Notes": "A generator that creates Big Bubbles, which can be entered and controlled by the player.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Spawn Timer",
