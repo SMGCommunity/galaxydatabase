@@ -31,7 +31,7 @@
         },
         "SW_A": {
             "Games": 1,
-            "Needed": true,
+            "Needed": false,
             "Description": "Starts enemy battle when activated.",
             "Exclusives": []
         },

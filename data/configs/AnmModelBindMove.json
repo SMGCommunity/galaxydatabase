@@ -3,7 +3,7 @@
     "Name": "AnmModelBindMove",
     "Notes": "An object type that detects when the player's HitSphere collides with its own, and then plays an animation. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. ",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "SW_APPEAR": {
             "Games": 0,

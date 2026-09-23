@@ -1,8 +1,50 @@
 {
     "InternalName": "ArrowSwitchTarget",
     "Name": "ArrowSwitchTarget",
-    "Notes": "",
+    "Notes": "Target objects for ArrowSwitchMulti that activate their SW_A values when ArrowSwitchMulti's state corresponds with their assigned state.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Target Group ID",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": true,
+            "Description": "ID to be assigned to a group of four ArrowSwitchTarget objects and one ArrowSwitchMulti",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Target State",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": true,
+            "Description": "The value from 0-3 that corresponds to ArrowSwitchMulti's state.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "0°"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "-90°"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "180°"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "90°"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Activates when ArrowSwitchMulti's state matches Obj_arg1.",
+            "Exclusives": []
+        }
+    }
 }

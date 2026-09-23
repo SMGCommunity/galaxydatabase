@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BigBubbleMoveLimitter</h1>
-			<p></p>
+			<p>An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. </p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Move Limitter ID</b>: ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Bubble Range</b>: Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

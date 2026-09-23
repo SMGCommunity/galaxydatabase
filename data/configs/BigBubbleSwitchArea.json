@@ -5,10 +5,54 @@
     "Games": 1,
     "Progress": 1,
     "Parameters": {
-        "SW_A": {
+        "Obj_arg0": {
+            "Name": "Deactivate Outside Area",
+            "Type": "Boolean",
             "Games": 1,
             "Needed": false,
+            "Description": "If enabled, SW_A will be disabled again after leaving the area.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Negate Output?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, SW_A will be deactivated instead.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Ground Use Only? (Defunct)",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Functionally disables the area.\n\nIf set, the player must be on the ground to activate SW_A. As this area is only active whilst the player is in a bubble, Mario never touches the ground and the area never activates.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": true,
             "Description": "Gets activated when ths player is inside the area while riding a Big Bubble.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, this switch needs to be activated in order to make this area manipulate SW_A.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         }
     }
