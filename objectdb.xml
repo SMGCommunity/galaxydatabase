@@ -1,4 +1,4 @@
-<database timestamp="1790179333">
+<database timestamp="1790241927">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2429,10 +2429,10 @@ An area that pops any Big Bubble inside it, optionally activating its SW_A. This
 Limits the movement of Big Bubbles so that it moves on the lateral surface of an invisible cylinder.
 
 -- CLASS NOTES --
-An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. </notes>
+An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
 		<files />
 		<field id="0" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game." values="" />
-		<field id="1" type="int" name="Bubble Range" notes="Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible." values="" />
+		<field id="1" type="int" name="Attachment Location" notes="Aligns the BigBubble with one of three potential positons relative to the plane of restriction.&#10;&#10;If Obj_arg1 = -1: Attaches the BigBubble to the exact middle of the plane of restriction.&#10;If Obj_arg1 = 0: Attaches the BigBubble to the outward facing side of the plane of restriction.&#10;If Obj_arg1 = 1: Attaches the BigBubble to the inward facing side of the plane of restriction." values="-1 = Center, 0 = Outside, 1 = Inside" />
 	</object>
 	<object id="BigBubbleMoveLimitterPlane">
 		<name>Big Bubble Movement Limiter [Planar]</name>
@@ -2443,10 +2443,10 @@ An object that limits the movement of a player within a BigBubble assigned to it
 Limits the movement of Big Bubbles so that it moves on an invisible plane.
 
 -- CLASS NOTES --
-An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. </notes>
+An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
 		<files />
 		<field id="0" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game." values="" />
-		<field id="1" type="int" name="Bubble Range" notes="Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible." values="" />
+		<field id="1" type="int" name="Attachment Location" notes="Aligns the BigBubble with one of three potential positons relative to the plane of restriction.&#10;&#10;If Obj_arg1 = -1: Attaches the BigBubble to the exact middle of the plane of restriction.&#10;If Obj_arg1 = 0: Attaches the BigBubble to the outward facing side of the plane of restriction.&#10;If Obj_arg1 = 1: Attaches the BigBubble to the inward facing side of the plane of restriction." values="-1 = Center, 0 = Outside, 1 = Inside" />
 	</object>
 	<object id="BigBubbleSwitchBox">
 		<name>Big Bubble Switch Area [Cube]</name>
