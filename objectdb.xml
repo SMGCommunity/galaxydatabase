@@ -1,4 +1,4 @@
-<database timestamp="1790241927">
+<database timestamp="1790242611">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2428,6 +2428,8 @@ An area that pops any Big Bubble inside it, optionally activating its SW_A. This
 		<notes>-- OBJECT NOTES --
 Limits the movement of Big Bubbles so that it moves on the lateral surface of an invisible cylinder.
 
+Default radius and size are both 500.
+
 -- CLASS NOTES --
 An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
 		<files />
@@ -2441,6 +2443,8 @@ An object that limits the movement of a player within a BigBubble assigned to it
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 Limits the movement of Big Bubbles so that it moves on an invisible plane.
+
+Default size is 500 x 1000 (x,y).
 
 -- CLASS NOTES --
 An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
