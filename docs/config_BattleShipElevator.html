@@ -18,7 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BattleShipElevator</h1>
-			<p></p>
+			<p>A MapPart that detects a collision with the player's HitSensor, plays an animation and then moves following a path. Plays SE_OJ_B_SHIP_ELEV_START at the beginning of its movement, SE_OJ_LV_B_SHIP_ELEV_MOVE whilst it's moving and then SE_OJ_B_SHIP_ELEV_STOP when it stops. </p>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>True</td><td><p>The path that it can move on.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<database timestamp="1790350953">
+<database timestamp="1790352985">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1517,14 +1517,14 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="BattleShipElevator">
 		<name>Battlerock -- Yellow Elevator</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The yellow elevator platform used in the third mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A MapPart that detects a collision with the player's HitSensor, plays an animation and then moves following a path. Plays SE_OJ_B_SHIP_ELEV_START at the beginning of its movement, SE_OJ_LV_B_SHIP_ELEV_MOVE whilst it's moving and then SE_OJ_B_SHIP_ELEV_STOP when it stops. </notes>
 		<files />
 	</object>
 	<object id="BattleShipElevatorCover">

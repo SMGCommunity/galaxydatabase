@@ -1,8 +1,15 @@
 {
     "InternalName": "BattleShipElevator",
     "Name": "BattleShipElevator",
-    "Notes": "",
+    "Notes": "A MapPart that detects a collision with the player's HitSensor, plays an animation and then moves following a path. Plays SE_OJ_B_SHIP_ELEV_START at the beginning of its movement, SE_OJ_LV_B_SHIP_ELEV_MOVE whilst it's moving and then SE_OJ_B_SHIP_ELEV_STOP when it stops. ",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Rail": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        }
+    }
 }
