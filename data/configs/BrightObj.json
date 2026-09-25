@@ -3,10 +3,10 @@
     "Name": "BrightObj",
     "Notes": "Seemingly broken object. Intended to generate a lens-flare of variable size via its Obj_arg0, however does not function outside of BrightSun, which has hardcoded values.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Radius",
+            "Name": "Radius (Defunct)",
             "Type": "Integer",
             "Games": 0,
             "Needed": false,
