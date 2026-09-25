@@ -1,4 +1,4 @@
-<database timestamp="1790320871">
+<database timestamp="1790323094">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3746,8 +3746,9 @@ A decorative background model that is meant to be placed around entire galaxies.
 A bright light that creates a lens flare effect when looked at.
 
 -- CLASS NOTES --
-</notes>
+Seemingly broken object. Intended to generate a lens-flare of variable size via its Obj_arg0, however does not function outside of BrightSun, which has hardcoded values.</notes>
 		<files />
+		<field id="0" type="int" name="Radius" notes="" values="" />
 	</object>
 	<object id="BrightSun">
 		<name>Sunlight Effect</name>
