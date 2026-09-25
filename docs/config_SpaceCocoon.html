@@ -21,10 +21,17 @@
 			<p>A sticky object that grabs the player when they get close, unless they have the Spring or Boo power-ups. The player can use the Star Pointer to sling themselves in any direction.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Sling Time</b>: The amount of time in frames before the player slows down. Default is 80.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Height</b>: The height of the Sling Pod. Default is 100.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Sling Time</b>: The amount of time in frames before the player slows down. Default is 60.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Default Length</b>: The height of the Sling Pod. Default is 100.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Is Toad Attached?</b>: Attaches a toad to the object. If the toad is attached, the object sends an SW_A signal upon releasing the Toad.</p></td><td><ul><li>-1: No</li><li>0: Yes</li></ul></td><td><ul><li>Requires SW_A to be set.</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p>SW_A activates when a Kinopio is released from the object.</p></td></tr>
 			</table>
 		</div>
 	</body>

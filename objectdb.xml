@@ -1,4 +1,4 @@
-<database timestamp="1790323094">
+<database timestamp="1790350747">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -26195,8 +26195,8 @@ A strange spiderweb-like object which the player can use to be launched in a str
 -- CLASS NOTES --
 A sticky object that grabs the player when they get close, unless they have the Spring or Boo power-ups. The player can use the Star Pointer to sling themselves in any direction.</notes>
 		<files />
-		<field id="0" type="int" name="Sling Time" notes="The amount of time in frames before the player slows down. Default is 80." values="" />
-		<field id="1" type="int" name="Height" notes="The height of the Sling Pod. Default is 100." values="" />
+		<field id="0" type="int" name="Sling Time" notes="The amount of time in frames before the player slows down. Default is 60." values="" />
+		<field id="1" type="int" name="Default Length" notes="The height of the Sling Pod. Default is 100." values="" />
 	</object>
 	<object id="SpaceDustL">
 		<name>Large Space Dust Effect</name>
