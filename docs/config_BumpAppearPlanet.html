@@ -18,7 +18,11 @@
 		</header>
 		<div class="contents">
 			<h1>Config: BumpAppearPlanet</h1>
-			<p>A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.</p>
+			<p>A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.
+
+To do this, the game reads scaling values applied to the object's HitSensors via its skeletal animations BumpAppearPlanetPush and BumpAppearPlanetPull. It then applies these values to the collision models BumpAppearPlanetB and C. These animations play both SE_OJ_BUMP_APPEAR_PLN_OUT and SE_OJ_BUMP_APPEAR_PLN_IN respectively.
+
+</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>

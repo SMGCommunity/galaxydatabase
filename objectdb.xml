@@ -1,4 +1,4 @@
-<database timestamp="1790242611">
+<database timestamp="1790320871">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3912,7 +3912,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A wooden planet used in Gold Leaf Galaxy on which the player hunts a Star Bunny.
 
 -- CLASS NOTES --
-A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.</notes>
+A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.
+
+To do this, the game reads scaling values applied to the object's HitSensors via its skeletal animations BumpAppearPlanetPush and BumpAppearPlanetPull. It then applies these values to the collision models BumpAppearPlanetB and C. These animations play both SE_OJ_BUMP_APPEAR_PLN_OUT and SE_OJ_BUMP_APPEAR_PLN_IN respectively.
+
+</notes>
 		<files />
 	</object>
 	<object id="Bussun">

@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown configs</th><th>Known configs</th><th>Finished configs</th><th>Total configs</th></tr>
-				<tr><th>Relative</th><td class="punknown">16.56%</td><td class="pknown">5.67%</td><td class="pfinished">77.78%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">149</td><td class="pknown">51</td><td class="pfinished">700</td><td>900</td></tr>
+				<tr><th>Relative</th><td class="punknown">16.56%</td><td class="pknown">5.56%</td><td class="pfinished">77.89%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">149</td><td class="pknown">50</td><td class="pfinished">701</td><td>900</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -149,7 +149,11 @@ Additionally plays sound effects corresponding to startSound and startLevelSound
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_BrightObj.html">BrightObj</a></td><td><p></p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BrightSun.html">BrightSun</a></td><td><p>Draws a bright sun-like sphere in the background that moves with the camera's position. If the player is inside a LensFlareArea, the lens flare effect will be rendered around the sun.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BringEnemy.html">BringEnemy</a></td><td><p>This registers and controls the enemies requested by a CareTakerHunter. This object should be linked to a CareTakerHunter object. Otherwise, it's useless on its own. The requested enemies have to be linked to this object. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.</p></td><td>SMG2</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="config_BumpAppearPlanet.html">BumpAppearPlanet</a></td><td><p>A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BumpAppearPlanet.html">BumpAppearPlanet</a></td><td><p>A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.
+
+To do this, the game reads scaling values applied to the object's HitSensors via its skeletal animations BumpAppearPlanetPush and BumpAppearPlanetPull. It then applies these values to the collision models BumpAppearPlanetB and C. These animations play both SE_OJ_BUMP_APPEAR_PLN_OUT and SE_OJ_BUMP_APPEAR_PLN_IN respectively.
+
+</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_Bussun.html">Bussun</a></td><td><p>A dinosaur enemy that moves around on a path. It can be defeated by stomping on its belly. It damages the player upon contact.</p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="config_Butler.html">Butler</a></td><td><p>An elderly, dark-brown luma NPC that can be talked to. By default, it is hidden, and may only appear under certain conditions or via SW_SLEEP.</p></td><td>SMG1</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_ButlerExplain.html">ButlerExplain</a></td><td><p></p></td><td>SMG1</td></tr>
