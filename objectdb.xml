@@ -1,4 +1,4 @@
-<database timestamp="1790352985">
+<database timestamp="1790401923">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1692,7 +1692,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy. Plays the SE_OJ_LV_BEAM_GO_ROUND sound upon first init.</notes>
 		<files />
 	</object>
 	<object id="BeeEater">
