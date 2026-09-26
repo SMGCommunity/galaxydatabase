@@ -10,17 +10,43 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "The amount of time in frames before the player slows down. Default is 80.",
+            "Description": "The amount of time in frames before the player slows down. Default is 60.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Height",
+            "Name": "Default Length",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
             "Description": "The height of the Sling Pod. Default is 100.",
             "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Is Toad Attached?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Attaches a toad to the object. If the toad is attached, the object sends an SW_A signal upon releasing the Toad.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Yes"
+                }
+            ],
+            "Exclusives": [
+                "Requires SW_A to be set."
+            ]
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "SW_A activates when a Kinopio is released from the object.",
             "Exclusives": []
         }
     }

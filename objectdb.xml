@@ -1,4 +1,4 @@
-<database timestamp="1790179333">
+<database timestamp="1790401923">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1517,14 +1517,14 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="BattleShipElevator">
 		<name>Battlerock -- Yellow Elevator</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The yellow elevator platform used in the third mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A MapPart that detects a collision with the player's HitSensor, plays an animation and then moves following a path. Plays SE_OJ_B_SHIP_ELEV_START at the beginning of its movement, SE_OJ_LV_B_SHIP_ELEV_MOVE whilst it's moving and then SE_OJ_B_SHIP_ELEV_STOP when it stops. </notes>
 		<files />
 	</object>
 	<object id="BattleShipElevatorCover">
@@ -1692,7 +1692,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy. Plays the SE_OJ_LV_BEAM_GO_ROUND sound upon first init.</notes>
 		<files />
 	</object>
 	<object id="BeeEater">
@@ -2428,11 +2428,13 @@ An area that pops any Big Bubble inside it, optionally activating its SW_A. This
 		<notes>-- OBJECT NOTES --
 Limits the movement of Big Bubbles so that it moves on the lateral surface of an invisible cylinder.
 
+Default radius and size are both 500.
+
 -- CLASS NOTES --
-An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. </notes>
+An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
 		<files />
 		<field id="0" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game." values="" />
-		<field id="1" type="int" name="Bubble Range" notes="Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible." values="" />
+		<field id="1" type="int" name="Attachment Location" notes="Aligns the BigBubble with one of three potential positons relative to the plane of restriction.&#10;&#10;If Obj_arg1 = -1: Attaches the BigBubble to the exact middle of the plane of restriction.&#10;If Obj_arg1 = 0: Attaches the BigBubble to the outward facing side of the plane of restriction.&#10;If Obj_arg1 = 1: Attaches the BigBubble to the inward facing side of the plane of restriction." values="-1 = Center, 0 = Outside, 1 = Inside" />
 	</object>
 	<object id="BigBubbleMoveLimitterPlane">
 		<name>Big Bubble Movement Limiter [Planar]</name>
@@ -2442,11 +2444,13 @@ An object that limits the movement of a player within a BigBubble assigned to it
 		<notes>-- OBJECT NOTES --
 Limits the movement of Big Bubbles so that it moves on an invisible plane.
 
+Default size is 500 x 1000 (x,y).
+
 -- CLASS NOTES --
-An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. </notes>
+An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized "plane of restriction" that BigBubble's movement is restricted to, depending on object name.</notes>
 		<files />
 		<field id="0" type="int" name="Move Limitter ID" notes="ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game." values="" />
-		<field id="1" type="int" name="Bubble Range" notes="Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible." values="" />
+		<field id="1" type="int" name="Attachment Location" notes="Aligns the BigBubble with one of three potential positons relative to the plane of restriction.&#10;&#10;If Obj_arg1 = -1: Attaches the BigBubble to the exact middle of the plane of restriction.&#10;If Obj_arg1 = 0: Attaches the BigBubble to the outward facing side of the plane of restriction.&#10;If Obj_arg1 = 1: Attaches the BigBubble to the inward facing side of the plane of restriction." values="-1 = Center, 0 = Outside, 1 = Inside" />
 	</object>
 	<object id="BigBubbleSwitchBox">
 		<name>Big Bubble Switch Area [Cube]</name>
@@ -3742,8 +3746,9 @@ A decorative background model that is meant to be placed around entire galaxies.
 A bright light that creates a lens flare effect when looked at.
 
 -- CLASS NOTES --
-</notes>
+Seemingly broken object. Intended to generate a lens-flare of variable size via its Obj_arg0, however does not function outside of BrightSun, which has hardcoded values.</notes>
 		<files />
+		<field id="0" type="int" name="Radius (Defunct)" notes="" values="" />
 	</object>
 	<object id="BrightSun">
 		<name>Sunlight Effect</name>
@@ -3908,7 +3913,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A wooden planet used in Gold Leaf Galaxy on which the player hunts a Star Bunny.
 
 -- CLASS NOTES --
-A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.</notes>
+A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.
+
+To do this, the game reads scaling values applied to the object's HitSensors via its skeletal animations BumpAppearPlanetPush and BumpAppearPlanetPull. It then applies these values to the collision models BumpAppearPlanetB and C. These animations play both SE_OJ_BUMP_APPEAR_PLN_OUT and SE_OJ_BUMP_APPEAR_PLN_IN respectively.
+
+</notes>
 		<files />
 	</object>
 	<object id="Bussun">
@@ -26186,8 +26195,8 @@ A strange spiderweb-like object which the player can use to be launched in a str
 -- CLASS NOTES --
 A sticky object that grabs the player when they get close, unless they have the Spring or Boo power-ups. The player can use the Star Pointer to sling themselves in any direction.</notes>
 		<files />
-		<field id="0" type="int" name="Sling Time" notes="The amount of time in frames before the player slows down. Default is 80." values="" />
-		<field id="1" type="int" name="Height" notes="The height of the Sling Pod. Default is 100." values="" />
+		<field id="0" type="int" name="Sling Time" notes="The amount of time in frames before the player slows down. Default is 60." values="" />
+		<field id="1" type="int" name="Default Length" notes="The height of the Sling Pod. Default is 100." values="" />
 	</object>
 	<object id="SpaceDustL">
 		<name>Large Space Dust Effect</name>
