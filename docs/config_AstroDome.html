@@ -18,12 +18,18 @@
 		</header>
 		<div class="contents">
 			<h1>Config: AstroDome</h1>
-			<p>The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed.</p>
+			<p>The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed for cutscene. Detects the player interacting with a HitSphere and begins scene transition to an area specified by Obj_arg0.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>True</td><td><p><b>Dome</b>: ID corresponding to each dome, in order of appearance.</p></td><td><ul><li>0: Terrace</li><li>1: Fountain</li><li>2: Kitchen</li><li>3: Bedroom</li><li>4: Engine</li><li>5: Garden</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>n/a</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

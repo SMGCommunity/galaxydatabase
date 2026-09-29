@@ -1,7 +1,7 @@
 {
     "InternalName": "BigBubbleMoveLimitter",
     "Name": "BigBubbleMoveLimitter",
-    "Notes": "An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. ",
+    "Notes": "An object that limits the movement of a player within a BigBubble assigned to it via a BigBubbleGenerator. Creates a differently shaped and sized \"plane of restriction\" that BigBubble's movement is restricted to, depending on object name.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {
@@ -9,18 +9,31 @@
             "Name": "Move Limitter ID",
             "Type": "Integer",
             "Games": 1,
-            "Needed": false,
+            "Needed": true,
             "Description": "ID of the BigBubbleMoveLimitter associated with generated bubbles. Nonexistent generators crash the game.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Bubble Range",
+            "Name": "Attachment Location",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "Range from center axis of limiter. Only useful on BigBubbleMoveLimitterCylinder. Will pull the bubble back towards the center if possible.",
-            "Values": [],
+            "Description": "Aligns the BigBubble with one of three potential positons relative to the plane of restriction.\n\nIf Obj_arg1 = -1: Attaches the BigBubble to the exact middle of the plane of restriction.\nIf Obj_arg1 = 0: Attaches the BigBubble to the outward facing side of the plane of restriction.\nIf Obj_arg1 = 1: Attaches the BigBubble to the inward facing side of the plane of restriction.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Center"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Outside"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Inside"
+                }
+            ],
             "Exclusives": []
         }
     }

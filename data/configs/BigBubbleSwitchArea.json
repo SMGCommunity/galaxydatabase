@@ -3,7 +3,7 @@
     "Name": "BigBubbleSwitchArea",
     "Notes": "An area that activates its SW_A once the player enters it while riding a Big Bubble.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Deactivate Outside Area",

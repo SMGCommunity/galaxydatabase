@@ -1,9 +1,9 @@
 {
     "InternalName": "BumpAppearPlanet",
     "Name": "BumpAppearPlanet",
-    "Notes": "A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.",
+    "Notes": "A planet with several bumps that rise up when its SW_A gets activated and lower down when deactivated.\n\nTo do this, the game reads scaling values applied to the object's HitSensors via its skeletal animations BumpAppearPlanetPush and BumpAppearPlanetPull. It then applies these values to the collision models BumpAppearPlanetB and C. These animations play both SE_OJ_BUMP_APPEAR_PLN_OUT and SE_OJ_BUMP_APPEAR_PLN_IN respectively.\n\n",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "SW_A": {
             "Games": 1,
