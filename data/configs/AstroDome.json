@@ -1,9 +1,9 @@
 {
     "InternalName": "AstroDome",
     "Name": "AstroDome",
-    "Notes": "The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed.",
+    "Notes": "The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed for cutscene. Detects the player interacting with a HitSphere and begins scene transition to an area specified by Obj_arg0.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Dome",
@@ -37,6 +37,12 @@
                     "Notes": "Garden"
                 }
             ],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
             "Exclusives": []
         }
     }

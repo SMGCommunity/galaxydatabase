@@ -1,4 +1,4 @@
-<database timestamp="1790401923">
+<database timestamp="1790659528">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -649,7 +649,7 @@ The rotating gears found inside the glass of the Comet Observatory.
 The interior of a Dome.
 
 -- CLASS NOTES --
-The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed.</notes>
+The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed for cutscene. Detects the player interacting with a HitSphere and begins scene transition to an area specified by Obj_arg0.</notes>
 		<files />
 		<field id="0" type="int" name="Dome" notes="ID corresponding to each dome, in order of appearance." values="0 = Terrace, 1 = Fountain, 2 = Kitchen, 3 = Bedroom, 4 = Engine, 5 = Garden" />
 	</object>
