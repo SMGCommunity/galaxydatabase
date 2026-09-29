@@ -1,4 +1,4 @@
-<database timestamp="1790659528">
+<database timestamp="1790704372">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8489,7 +8489,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Used Block that connects sticks made up of several fireballs.
 
 -- CLASS NOTES --
-A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. If the object is called FireBarSpherical, the fireballs will be curved. Interestingly, the formed shape is not a sphere.</notes>
 		<files />
 		<field id="0" type="int" name="Fireballs per Stick" notes="The number of fireballs per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
@@ -8547,7 +8547,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of the Fire Bar whose fireballs are slightly curved.
 
 -- CLASS NOTES --
-A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. If the object is called FireBarSpherical, the fireballs will be curved. Interestingly, the formed shape is not a sphere.</notes>
 		<files />
 		<field id="0" type="int" name="Fireballs per Stick" notes="The number of fireballs per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
