@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Config: AstroOverlookArea</h1>
-			<p></p>
+			<p>An area that determines the text layout to use for the Observatory's viewing platforms. Must be used in conjunction with AstroOverlookObj.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Text Layout</b>: Determines the layout used by the game. Used specifically to differentiate the Front and Back viewing platforms.</p></td><td><ul><li>0: Front</li><li>1: Back</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>n/a</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_AWAKE</td><td>n/a</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>BaseMtxFollower</td><td>n/a</td><td>False</td><td><p>Can follow another BaseMtxFollowTarget object.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

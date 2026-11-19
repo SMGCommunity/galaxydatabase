@@ -3,7 +3,7 @@
     "Name": "BeamGoRoundPlanet",
     "Notes": "A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy. Plays the SE_OJ_LV_BEAM_GO_ROUND sound upon first init.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "SW_AWAKE": {
             "Games": 1,

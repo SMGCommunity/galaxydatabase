@@ -1,8 +1,54 @@
 {
     "InternalName": "AstroDomeSky",
     "Name": "AstroDomeSky",
-    "Notes": "",
+    "Notes": "The skybox utilised in all 6 AstroDome layers. Has an obj_arg that changes the model used by the object. Plays a BTK animation for the model itself and has BTK files to show and hide the model when appropriate.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sky Model",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Selects one of six available models for the object to use.",
+            "Values": [
+                {
+                    "Value": "1",
+                    "Notes": "Terrace"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Fountain"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Kitchen"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Bedroom"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Engine"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Garden"
+                }
+            ],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 0,
+            "Description": "Continues movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

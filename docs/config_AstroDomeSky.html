@@ -18,7 +18,24 @@
 		</header>
 		<div class="contents">
 			<h1>Config: AstroDomeSky</h1>
-			<p></p>
+			<p>The skybox utilised in all 6 AstroDome layers. Has an obj_arg that changes the model used by the object. Plays a BTK animation for the model itself and has BTK files to show and hide the model when appropriate.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Sky Model</b>: Selects one of six available models for the object to use.</p></td><td><ul><li>1: Terrace</li><li>2: Fountain</li><li>3: Kitchen</li><li>4: Bedroom</li><li>5: Engine</li><li>6: Garden</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>n/a</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>n/a</td><td><p>Continues movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

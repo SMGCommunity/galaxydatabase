@@ -1,8 +1,66 @@
 {
     "InternalName": "AstroMapObj",
     "Name": "AstroMapObj",
-    "Notes": "",
+    "Notes": "An object class designed specifically for the Comet Observatory and its multiple stages of activation. Otherwise inherits most arguments from SimpleMapObjFarMax.\n\nObject will \"activate\" or start active (having already played its activation animations) if certain conditions are met.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Collected Grand Star",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Defines what Grand Star is required for the object to activate.\n\n*Additionally enables the kitchen smoke effect when set to 3.",
+            "Values": [
+                {
+                    "Value": "1",
+                    "Notes": "Gateway"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Terrace"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Fountain*"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Kitchen"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Bedroom"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Engine"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

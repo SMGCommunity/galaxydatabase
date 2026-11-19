@@ -1,8 +1,20 @@
 {
     "InternalName": "AstroDomeAsteroid",
     "Name": "AstroDomeAsteroid",
-    "Notes": "",
+    "Notes": "Decorative asteroid object used in the AstroDome stage select. Appears and begins its AstroDomeAsteroid BCK animation.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 0,
+            "Description": "Continues movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

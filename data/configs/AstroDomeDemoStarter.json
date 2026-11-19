@@ -1,8 +1,21 @@
 {
     "InternalName": "AstroDomeDemoStarter",
     "Name": "AstroDomeDemoStarter",
-    "Notes": "",
+    "Notes": "An object that starts the cutscene for entering star select in AstroDome. Plays multiple sound effects and animations.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

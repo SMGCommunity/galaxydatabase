@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown configs</th><th>Known configs</th><th>Finished configs</th><th>Total configs</th></tr>
-				<tr><th>Relative</th><td class="punknown">16.22%</td><td class="pknown">5.56%</td><td class="pfinished">78.22%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">146</td><td class="pknown">50</td><td class="pfinished">704</td><td>900</td></tr>
+				<tr><th>Relative</th><td class="punknown">14.89%</td><td class="pknown">5.44%</td><td class="pfinished">79.67%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">134</td><td class="pknown">49</td><td class="pfinished">717</td><td>900</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -67,19 +67,34 @@ Number locations are determined via a BTK file titled "Number".
 
 Additionally plays sound effects corresponding to startSound and startLevelSound.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDome.html">AstroDome</a></td><td><p>The enterable Domes on the Comet Observatory. Plays an appear and disappear BRK file, and has its default appearance sound removed for cutscene. Detects the player interacting with a HitSphere and begins scene transition to an area specified by Obj_arg0.</p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeAsteroid.html">AstroDomeAsteroid</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeBlueStar.html">AstroDomeBlueStar</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeComet.html">AstroDomeComet</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeDemoAstroGalaxy.html">AstroDomeDemoAstroGalaxy</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeDemoStarter.html">AstroDomeDemoStarter</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeAsteroid.html">AstroDomeAsteroid</a></td><td><p>Decorative asteroid object used in the AstroDome stage select. Appears and begins its AstroDomeAsteroid BCK animation.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeBlueStar.html">AstroDomeBlueStar</a></td><td><p>A unique pull star used to transition to the AstroDome stage selector. Utilises the same effect data as the regular GCaptureTarget.
+
+Plays sound effect SE_SY_GCAPTURE_APPEAR on load and SE_OJ_LV_MAGIC_PNT_G_POINT when player is within a certain distance. Plays SE_OJ_MAGIC_PNT_G_ON when the cursor hovers over it.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeComet.html">AstroDomeComet</a></td><td><p>The prankster comet object that appears above MiniatureGalaxy icons when a comet is triggered. Plays a different animation for each valid colour (Red, Blue, White, Yellow, Purple). These colours correspond to their respective prankster comet types.
+
+Additionally has a Bloom model</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeDemoAstroGalaxy.html">AstroDomeDemoAstroGalaxy</a></td><td><p>The small Comet Observatory model utilised in the galaxy selector. Acts as a variant of SimpleMapObj with an additional feature for its use in the galaxy selector. It has a three frame BRK file that brightens and darkens the observatory depending on which Grand Stars have been collected.
+
+If Grand Star 5 has been collected, freezes on frame 2.
+If Grand Star 3 has been collected, freezes on frame 1.
+Otherwise, freezes on frame 0.
+</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeDemoStarter.html">AstroDomeDemoStarter</a></td><td><p>An object that starts the cutscene for entering star select in AstroDome. Plays multiple sound effects and animations.</p></td><td>SMG1</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeGalaxySelector.html">AstroDomeGalaxySelector</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroDomeSky.html">AstroDomeSky</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroEffectObj.html">AstroEffectObj</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroMapBoard.html">AstroMapBoard</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroMapObj.html">AstroMapObj</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroOverlookArea.html">AstroOverlookArea</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroOverlookObj.html">AstroOverlookObj</a></td><td><p></p></td><td>SMG1</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="config_AstroSimpleObj.html">AstroSimpleObj</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroDomeSky.html">AstroDomeSky</a></td><td><p>The skybox utilised in all 6 AstroDome layers. Has an obj_arg that changes the model used by the object. Plays a BTK animation for the model itself and has BTK files to show and hide the model when appropriate.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroEffectObj.html">AstroEffectObj</a></td><td><p>A SimpleEffectObj with an additional argument defining when the effect should appear relative to what Grand Star has been collected.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroMapBoard.html">AstroMapBoard</a></td><td><p>The map board in the center of the observatory that can be interacted with via Polari (Butler). Has no appearance riddle sound effect for use in cutscenes. Otherwise inherits SimpleMapObj.
+
+The game dynamically replaces the texture MapDummy with GalaxyMapResTIMG.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroMapObj.html">AstroMapObj</a></td><td><p>An object class designed specifically for the Comet Observatory and its multiple stages of activation. Otherwise inherits most arguments from SimpleMapObjFarMax.
+
+Object will "activate" or start active (having already played its activation animations) if certain conditions are met.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroOverlookArea.html">AstroOverlookArea</a></td><td><p>An area that determines the text layout to use for the Observatory's viewing platforms. Must be used in conjunction with AstroOverlookObj.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroOverlookObj.html">AstroOverlookObj</a></td><td><p>A controller object that checks for the AstroOverlookArea the player is currently in, checks its obj_arg0 value and sets the respective text layout. Must be used in conjunction with AstroOverlookArea.
+
+The text layout is determined by AstroNamePlateData.bcsv</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AstroSimpleObj.html">AstroSimpleObj</a></td><td><p>A variant of SimpleMapObjFarMax that has an additional function for creating a GalaxyNamePlate for use with AstroOverlookArea.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AttackRock.html">AttackRock</a></td><td><p>Usually not visible but they get activated by Bowser's attacks. Once it appears, it falls down onto ground. Then, it becomes a yellow orb that can be smashed into Bowser. Depending on the encounter number, it can also emit shockwaves.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AttackRockFinal.html">AttackRockFinal</a></td><td><p>These are usually not visible until Bowser activates them during the final fight. These fly to their actual position and will remain there. The orb can be smashed into Bowser.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_AttackRockTutorial.html">AttackRockTutorial</a></td><td><p>A rock that appears from the ground and breaks into a yellow orb which can be smashed into KoopaSeals.</p></td><td>SMG2</td></tr>
@@ -96,7 +111,7 @@ Additionally plays sound effects corresponding to startSound and startLevelSound
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_Battan.html">Battan</a></td><td><p>A stone block enemy that moves on a fixed path. Once it sees the player, it will move towards them to fall down on them. Once it lies on the ground, the weak point on its back can be Ground Pounded. It spawns 7 Star Bits when defeated.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BattanKing.html">BattanKing</a></td><td><p>A large stone block boss. He can summon Whimps that will try to attack the player like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto the player to attack them. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, the player can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BattleShipElevator.html">BattleShipElevator</a></td><td><p>A MapPart that detects a collision with the player's HitSensor, plays an animation and then moves following a path. Plays SE_OJ_B_SHIP_ELEV_START at the beginning of its movement, SE_OJ_LV_B_SHIP_ELEV_MOVE whilst it's moving and then SE_OJ_B_SHIP_ELEV_STOP when it stops. </p></td><td>SMG1</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="config_BeamGoRoundPlanet.html">BeamGoRoundPlanet</a></td><td><p>A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy. Plays the SE_OJ_LV_BEAM_GO_ROUND sound upon first init.</p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BeamGoRoundPlanet.html">BeamGoRoundPlanet</a></td><td><p>A set of two rotating cone-shaped planets with electric beams that can be found in the first Star in Dreadnought Galaxy. Plays the SE_OJ_LV_BEAM_GO_ROUND sound upon first init.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BeeEater.html">BeeEater</a></td><td><p>A stretchy plant with spikes that will lunge onto the player to damage them. Cannot be defeated, however, they can be stunned by shooting a Star Bit at them.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BeeFlowerHover.html">BeeFlowerHover</a></td><td><p>A rotating platform that can be stood on using the Bee power-up. If the player does not have this power-up and touches the platform, it will temporarily disappear.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="config_BeeJumpBall.html">BeeJumpBall</a></td><td><p>A bouncy berry that can be bounced off with the Bee power-up. If touched by the player while they don't have the Bee power-up, it will pop and reappear after about three seconds.</p></td><td>SMG2</td></tr>

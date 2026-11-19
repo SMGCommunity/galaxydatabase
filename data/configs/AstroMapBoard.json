@@ -1,8 +1,64 @@
 {
     "InternalName": "AstroMapBoard",
     "Name": "AstroMapBoard",
-    "Notes": "",
+    "Notes": "The map board in the center of the observatory that can be interacted with via Polari (Butler). Has no appearance riddle sound effect for use in cutscenes. Otherwise inherits SimpleMapObj.\n\nThe game dynamically replaces the texture MapDummy with GalaxyMapResTIMG.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Change",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Texture Change",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 0,
+            "Description": "Continues movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,8 +1,65 @@
 {
     "InternalName": "AstroEffectObj",
     "Name": "AstroEffectObj",
-    "Notes": "",
+    "Notes": "A SimpleEffectObj with an additional argument defining when the effect should appear relative to what Grand Star has been collected.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Collected Grand Star",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Defines what Grand Star is required for the effect to enable.",
+            "Values": [
+                {
+                    "Value": "1",
+                    "Notes": "Gateway"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Terrace"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Fountain"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Kitchen"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Bedroom"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Engine"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 0,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 0,
+            "Description": "Continues movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

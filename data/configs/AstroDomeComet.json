@@ -1,8 +1,15 @@
 {
     "InternalName": "AstroDomeComet",
     "Name": "AstroDomeComet",
-    "Notes": "",
+    "Notes": "The prankster comet object that appears above MiniatureGalaxy icons when a comet is triggered. Plays a different animation for each valid colour (Red, Blue, White, Yellow, Purple). These colours correspond to their respective prankster comet types.\n\nAdditionally has a Bloom model",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Can take part in a cutscene.",
+            "Exclusives": []
+        }
+    }
 }

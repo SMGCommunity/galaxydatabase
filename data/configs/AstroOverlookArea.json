@@ -1,8 +1,49 @@
 {
     "InternalName": "AstroOverlookArea",
     "Name": "AstroOverlookArea",
-    "Notes": "",
+    "Notes": "An area that determines the text layout to use for the Observatory's viewing platforms. Must be used in conjunction with AstroOverlookObj.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Text Layout",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Determines the layout used by the game. Used specifically to differentiate the Front and Back viewing platforms.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Front"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Back"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 0,
+            "Description": "Can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }

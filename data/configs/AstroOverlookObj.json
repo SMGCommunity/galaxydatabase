@@ -1,8 +1,8 @@
 {
     "InternalName": "AstroOverlookObj",
     "Name": "AstroOverlookObj",
-    "Notes": "",
+    "Notes": "A controller object that checks for the AstroOverlookArea the player is currently in, checks its obj_arg0 value and sets the respective text layout. Must be used in conjunction with AstroOverlookArea.\n\nThe text layout is determined by AstroNamePlateData.bcsv",
     "Games": 1,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {}
 }

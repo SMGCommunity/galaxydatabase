@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Config: AstroMapObj</h1>
-			<p></p>
+			<p>An object class designed specifically for the Comet Observatory and its multiple stages of activation. Otherwise inherits most arguments from SimpleMapObjFarMax.
+
+Object will "activate" or start active (having already played its activation animations) if certain conditions are met.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Collected Grand Star</b>: Defines what Grand Star is required for the object to activate.<br><br>*Additionally enables the kitchen smoke effect when set to 3.</p></td><td><ul><li>1: Gateway</li><li>2: Terrace</li><li>3: Fountain*</li><li>4: Kitchen</li><li>5: Bedroom</li><li>6: Engine</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>n/a</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>n/a</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>n/a</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>DemoCast</td><td>n/a</td><td>False</td><td><p>Can take part in a cutscene.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
