@@ -11,12 +11,7 @@
             "Games": 2,
             "Needed": false,
             "Description": "If set, the rotation of the flower will be fixed.",
-            "Values": [
-                {
-                    "Value": "",
-                    "Notes": ""
-                }
-            ],
+            "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {

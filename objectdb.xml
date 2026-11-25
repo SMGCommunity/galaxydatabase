@@ -1,4 +1,4 @@
-<database timestamp="1795050454">
+<database timestamp="1795620573">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -9316,7 +9316,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The second planet of Honeybloom Galaxy where several Buzz can be found.
+The second planet of Honeybloom Galaxy where several Choppah can be found.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -14114,12 +14114,12 @@ A purple stationary robot enemy with a spring head. It remains in the ground pas
 		<field id="1" type="int" name="Ring Duration" notes="The lifetime of an individual ring before it disappears. Default is 100." values="" />
 	</object>
 	<object id="JumpBeamerRoomPlanet">
-		<name>Battlerock -- Jump Beamer Interior Section</name>
+		<name>Battlerock -- Spring Vault Interior Section</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The large interior section with a Jump Beamer that leads outside.
+The large interior section with a Spring Vault that leads outside.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -14838,7 +14838,7 @@ A generic planet with a model and optional collision intended to be used for Bow
 The large tank boss fought at the end of Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated.</notes>
+A castle tank boss that is controlled by Bowser Jr. It features three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Starting Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -20778,7 +20778,7 @@ Creates and registers several objects that appear during the opening cutscene wh
 The octopus boss fought in both the third mission of Good Egg Galaxy and all missions of Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-A large octopus boss that resides in a large lava pool. In order to defeat it, the player has to fling its coconuts back against him. It shoots either three fireballs or a coconut. After the first phase, it will start to spawn Blue Podoboos. In SMG1, it will always spawn a Power Star when defeated, which requires a properly configured Scenario entry. There's also a "Spicy" variant which requires a few more hits. This variant does not spawn the long tentacles, though. If added and used in SMG2, it will crash the game when skipping the intro cutscene as the code does not account for the missing tentacles.</notes>
+A large octopus boss that resides in a large lava pool. In order to defeat it, the player has to fling its coconuts back against him. It shoots either three fireballs or a coconut. After the first phase, it will start to spawn Blue Lava Bubbles. In SMG1, it will always spawn a Power Star when defeated, which requires a properly configured Scenario entry. There's also a "Spicy" variant which requires a few more hits. This variant does not spawn the long tentacles, though. If added and used in SMG2, it will crash the game when skipping the intro cutscene as the code does not account for the missing tentacles.</notes>
 		<files />
 		<field id="1" type="bool" name="Spicy Variant?" notes="If set, it loads the models for the Spicy variant and requires more hits to be defeated." values="" />
 	</object>
@@ -33288,7 +33288,7 @@ A flower which Yoshi can grab with his tongue to swing himself in its direction.
 -- CLASS NOTES --
 A flower which Yoshi can grab with his tongue to swing himself in its direction. By default, the player can use it from any direction to move in any direction, but this can be restricted.</notes>
 		<files />
-		<field id="0" type="bool" name="Fixed Rotation" notes="If set, the rotation of the flower will be fixed." values=" = " />
+		<field id="0" type="bool" name="Fixed Rotation" notes="If set, the rotation of the flower will be fixed." values="" />
 		<field id="1" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
 	<object id="YoshiCaptureClimbPlanet">
